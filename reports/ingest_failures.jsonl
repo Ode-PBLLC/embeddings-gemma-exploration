@@ -1,0 +1,268 @@
+{"ts": "2026-10-16T04:10:56+00:00", "source": "aic", "id": "aic:9385", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/54113baa-f546-4cbd-ea05-9370fcaf4349/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:11:01+00:00", "source": "aic", "id": "aic:18664", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/5c8072dc-261a-8287-15a5-862231efb6c4/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:11:33+00:00", "source": "aic", "id": "aic:12794", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/95ad6d6b-941c-0070-adfe-f8e956a0c9a0/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:12:15+00:00", "source": "aic", "id": "aic:133632", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/ed37a880-b0b5-6014-21b3-a27cf71879ce/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:12:16+00:00", "source": "aic", "id": "aic:75668", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/5cc8166d-4214-3934-d15e-9a47d8a1e602/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:12:20+00:00", "source": "aic", "id": "aic:139798", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/8fa1c9e6-c890-46c6-fe5a-47c9cc2cd64b/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:12:33+00:00", "source": "aic", "id": "aic:86377", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/68e17736-38b3-73fc-ee99-03e52e208580/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:12:34+00:00", "source": "aic", "id": "aic:68837", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/e3b73c45-6d48-9be5-e471-d9f84b5efe05/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:13:10+00:00", "source": "aic", "id": "aic:106513", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/8407ae9a-1267-3abb-2036-dabf7d87e9be/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:13:11+00:00", "source": "aic", "id": "aic:106512", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/75503285-3ac8-f6f6-fab4-cd0e39a66684/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:13:12+00:00", "source": "aic", "id": "aic:106505", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/d52eff12-d6f8-1992-5975-af53d883d49b/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:13:14+00:00", "source": "aic", "id": "aic:106211", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/b1f0344c-0b91-0539-801d-f9af2631a79c/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:13:20+00:00", "source": "aic", "id": "aic:106508", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/31b65403-9676-33a4-de15-3783802884e7/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:13:23+00:00", "source": "aic", "id": "aic:106511", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/30561be8-a97d-2942-16f1-1323a2d6cc32/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:13:24+00:00", "source": "aic", "id": "aic:106510", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/5f7048f9-f516-baae-360c-103bbdc6e2fe/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:13:24+00:00", "source": "aic", "id": "aic:106518", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/ae173521-9b3c-e7cc-5d0d-637842c6f34e/full/843,/0/default.jpg"}
+{"ts": "2026-10-16T04:14:00+00:00", "source": "aic", "id": "aic:9385", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/54113baa-f546-4cbd-ea05-9370fcaf4349/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:00+00:00", "source": "aic", "id": "aic:18664", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/5c8072dc-261a-8287-15a5-862231efb6c4/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:00+00:00", "source": "aic", "id": "aic:12794", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/95ad6d6b-941c-0070-adfe-f8e956a0c9a0/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:02+00:00", "source": "aic", "id": "aic:133632", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/ed37a880-b0b5-6014-21b3-a27cf71879ce/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:08+00:00", "source": "aic", "id": "aic:75668", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/5cc8166d-4214-3934-d15e-9a47d8a1e602/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:08+00:00", "source": "aic", "id": "aic:139798", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/8fa1c9e6-c890-46c6-fe5a-47c9cc2cd64b/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:09+00:00", "source": "aic", "id": "aic:86377", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/68e17736-38b3-73fc-ee99-03e52e208580/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:10+00:00", "source": "aic", "id": "aic:68837", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/e3b73c45-6d48-9be5-e471-d9f84b5efe05/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:17+00:00", "source": "aic", "id": "aic:106513", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/8407ae9a-1267-3abb-2036-dabf7d87e9be/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:17+00:00", "source": "aic", "id": "aic:106512", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/75503285-3ac8-f6f6-fab4-cd0e39a66684/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:18+00:00", "source": "aic", "id": "aic:106505", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/d52eff12-d6f8-1992-5975-af53d883d49b/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:18+00:00", "source": "aic", "id": "aic:106211", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/b1f0344c-0b91-0539-801d-f9af2631a79c/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:25+00:00", "source": "aic", "id": "aic:106508", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/31b65403-9676-33a4-de15-3783802884e7/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:26+00:00", "source": "aic", "id": "aic:106511", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/30561be8-a97d-2942-16f1-1323a2d6cc32/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:27+00:00", "source": "aic", "id": "aic:106510", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/5f7048f9-f516-baae-360c-103bbdc6e2fe/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:14:27+00:00", "source": "aic", "id": "aic:106518", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/ae173521-9b3c-e7cc-5d0d-637842c6f34e/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:15:49+00:00", "source": "aic", "id": "aic:614", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/36a3f0f7-9bda-2c93-fee8-7c264d5ce01f/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:15:53+00:00", "source": "aic", "id": "aic:172", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/09690ae8-43b3-4814-793e-af5ce930eea8/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:16:07+00:00", "source": "aic", "id": "aic:641", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/29406788-beb5-2cfd-0b1a-fa18f2aa0ded/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:17:32+00:00", "source": "aic", "id": "aic:155956", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/b7638a21-d66b-e228-867d-18aacad93980/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:17:50+00:00", "source": "aic", "id": "aic:135135", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/8f13cb43-bace-f2a3-ea67-54a4f9907dfd/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:17:52+00:00", "source": "aic", "id": "aic:140858", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/750d06d7-b80a-ac0e-a99d-bfe3dfdc94e6/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:17:55+00:00", "source": "aic", "id": "aic:193083", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/51395c39-61e9-6700-7610-683e312e38d0/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:18:04+00:00", "source": "aic", "id": "aic:196370", "stage": "image", "error": "cannot identify image file <_io.BytesIO object at 0x7e4cec288db0>"}
+{"ts": "2026-10-16T04:18:06+00:00", "source": "aic", "id": "aic:104794", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/c58bfed2-ffe6-9c58-12a1-7a1a9bcbd247/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:18:19+00:00", "source": "aic", "id": "aic:104724", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/0a6d3f9a-9e87-24af-5d2a-ef12b2796884/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:18:21+00:00", "source": "aic", "id": "aic:100246", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/5d928d3d-54a4-a5af-daa4-9e685bec5b4a/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:18:23+00:00", "source": "aic", "id": "aic:217525", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/ebb35b49-d961-78c6-7360-5565803878bc/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:18:27+00:00", "source": "aic", "id": "aic:235587", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/179a0a3e-7cf9-e045-2d39-fc85ed08e0d6/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:18:30+00:00", "source": "aic", "id": "aic:217526", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/f60d41f1-da2a-c1d4-4914-09f6487b8e4f/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:18:31+00:00", "source": "aic", "id": "aic:217527", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/3a4e88c0-5975-6393-f6c5-e8f21751fe12/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:18:55+00:00", "source": "aic", "id": "aic:40680", "stage": "image", "error": "HTTP 403 for https://www.artic.edu/iiif/2/375cdd63-ac52-5263-34fa-a90489ddacf8/full/full/0/default.jpg"}
+{"ts": "2026-10-16T04:28:41+00:00", "source": "aic", "id": "aic:196370", "stage": "image", "error": "cannot identify image file <_io.BytesIO object at 0x754770d8e4d0>"}
+{"ts": "2026-10-16T16:18:29+00:00", "source": "nasa", "id": "nasa:Moon and Saturn", "stage": "video", "error": "duration 864s outside 10-360s"}
+{"ts": "2026-10-16T16:24:46+00:00", "source": "nasa", "id": "nasa:GSFC_20170802_m12602_Dellingr_deploymentphotoseq", "stage": "video", "error": "duration 10s outside 10-360s"}
+{"ts": "2026-10-16T16:24:47+00:00", "source": "nasa", "id": "nasa:GSFC_20180822_Parker_m13046_Sunset_Show", "stage": "video", "error": "duration 1953s outside 10-360s"}
+{"ts": "2026-10-16T16:25:18+00:00", "source": "nasa", "id": "nasa:jsc2019m000804_Hurricane_Dorian_190831", "stage": "video", "error": "duration 399s outside 10-360s"}
+{"ts": "2026-10-16T16:25:25+00:00", "source": "nasa", "id": "nasa:jsc2019m000803_Hurricane_Dorian_190830", "stage": "video", "error": "duration 1305s outside 10-360s"}
+{"ts": "2026-10-16T16:27:22+00:00", "source": "nasa", "id": "nasa:Moon and Saturn", "stage": "video", "error": "duration 864s outside 10-360s"}
+{"ts": "2026-10-16T16:27:38+00:00", "source": "nasa", "id": "nasa:JPL-20211028-JUNOf-0001-Juno Science Briefing", "stage": "video", "error": "duration 5340s outside 10-360s"}
+{"ts": "2026-10-16T16:27:39+00:00", "source": "nasa", "id": "nasa:Mars 2020 Perseverance Landing Coverage - Commentary", "stage": "video", "error": "duration 7851s outside 10-360s"}
+{"ts": "2026-10-16T16:27:41+00:00", "source": "nasa", "id": "nasa:KSC-20190716-MH-CSH01_0002-Apollo_11_50th_Gala_Broll-3226040", "stage": "video", "error": "duration 527s outside 10-360s"}
+{"ts": "2026-10-16T16:27:44+00:00", "source": "nasa", "id": "nasa:Test_Stand_4670", "stage": "video", "error": "duration 598s outside 10-360s"}
+{"ts": "2026-10-16T16:27:48+00:00", "source": "nasa", "id": "nasa:KSC-19640101-MH-NAS01-0001-The_Crawler_Transporter_The_Beginning_Historical_Footage-B_2309", "stage": "video", "error": "duration 628s outside 10-360s"}
+{"ts": "2026-10-16T16:28:23+00:00", "source": "nasa", "id": "nasa:KSC-01172026-Artemis II_Rollout_B Roll_Package", "stage": "video", "error": "duration 820s outside 10-360s"}
+{"ts": "2026-10-16T16:29:01+00:00", "source": "nasa", "id": "nasa:Coverage of the launch of the James Webb Space Telescope on an Ariane 5 rocket from the Guiana Space Center in Kourou, French Guiana", "stage": "video", "error": "duration 8146s outside 10-360s"}
+{"ts": "2026-10-16T16:29:04+00:00", "source": "nasa", "id": "nasa:KSC-20150715-MH-ISS01_0005-ISS_Project_VEG-01B-3262103", "stage": "video", "error": "duration 2459s outside 10-360s"}
+{"ts": "2026-10-16T16:29:06+00:00", "source": "nasa", "id": "nasa:KSC-20150715-MH-ISS01_0007-ISS_Project_VEG-01B-3262103", "stage": "video", "error": "duration 683s outside 10-360s"}
+{"ts": "2026-10-16T16:30:12+00:00", "source": "nasa", "id": "nasa:GSFC_20180822_Parker_m13046_Sunset_Show", "stage": "video", "error": "duration 1953s outside 10-360s"}
+{"ts": "2026-10-16T16:30:13+00:00", "source": "nasa", "id": "nasa:GSFC_20170802_m12602_Dellingr_deploymentphotoseq", "stage": "video", "error": "duration 10s outside 10-360s"}
+{"ts": "2026-10-16T16:30:16+00:00", "source": "nasa", "id": "nasa:jsc2019m000804_Hurricane_Dorian_190831", "stage": "video", "error": "duration 399s outside 10-360s"}
+{"ts": "2026-10-16T16:30:16+00:00", "source": "nasa", "id": "nasa:jsc2019m000803_Hurricane_Dorian_190830", "stage": "video", "error": "duration 1305s outside 10-360s"}
+{"ts": "2026-10-16T16:30:22+00:00", "source": "nasa", "id": "nasa:Mars 2020 Perseverance Landing Coverage - Commentary", "stage": "video", "error": "duration 7851s outside 10-360s"}
+{"ts": "2026-10-16T16:30:24+00:00", "source": "nasa", "id": "nasa:JPL-20211028-JUNOf-0001-Juno Science Briefing", "stage": "video", "error": "duration 5340s outside 10-360s"}
+{"ts": "2026-10-16T16:30:24+00:00", "source": "nasa", "id": "nasa:Moon and Saturn", "stage": "video", "error": "duration 864s outside 10-360s"}
+{"ts": "2026-10-16T16:30:25+00:00", "source": "nasa", "id": "nasa:KSC-20190716-MH-CSH01_0002-Apollo_11_50th_Gala_Broll-3226040", "stage": "video", "error": "duration 527s outside 10-360s"}
+{"ts": "2026-10-16T16:30:25+00:00", "source": "nasa", "id": "nasa:Test_Stand_4670", "stage": "video", "error": "duration 598s outside 10-360s"}
+{"ts": "2026-10-16T16:30:25+00:00", "source": "nasa", "id": "nasa:KSC-19640101-MH-NAS01-0001-The_Crawler_Transporter_The_Beginning_Historical_Footage-B_2309", "stage": "video", "error": "duration 628s outside 10-360s"}
+{"ts": "2026-10-16T16:30:27+00:00", "source": "nasa", "id": "nasa:KSC-01172026-Artemis II_Rollout_B Roll_Package", "stage": "video", "error": "duration 820s outside 10-360s"}
+{"ts": "2026-10-16T16:30:28+00:00", "source": "nasa", "id": "nasa:Coverage of the launch of the James Webb Space Telescope on an Ariane 5 rocket from the Guiana Space Center in Kourou, French Guiana", "stage": "video", "error": "duration 8146s outside 10-360s"}
+{"ts": "2026-10-16T16:30:28+00:00", "source": "nasa", "id": "nasa:KSC-20150715-MH-ISS01_0005-ISS_Project_VEG-01B-3262103", "stage": "video", "error": "duration 2459s outside 10-360s"}
+{"ts": "2026-10-16T16:30:29+00:00", "source": "nasa", "id": "nasa:KSC-20150715-MH-ISS01_0007-ISS_Project_VEG-01B-3262103", "stage": "video", "error": "duration 683s outside 10-360s"}
+{"ts": "2026-10-16T16:30:34+00:00", "source": "nasa", "id": "nasa:GSFC_3IATLAS_Briefing", "stage": "video", "error": "listed duration 3514s outside 10-360s"}
+{"ts": "2026-10-16T16:30:40+00:00", "source": "nasa", "id": "nasa:JPL-20240808-NEOWISf-0001-NEOWISE End of Mission Media Reel", "stage": "video", "error": "listed duration 490s outside 10-360s"}
+{"ts": "2026-10-16T16:30:44+00:00", "source": "nasa", "id": "nasa:NASA's DART Mission, First-Ever Planetary Defense Test", "stage": "video", "error": "listed duration 3637s outside 10-360s"}
+{"ts": "2026-10-16T16:30:49+00:00", "source": "nasa", "id": "nasa:GSFC_20100126_Nova_m10547_SuperNova", "stage": "video", "error": "listed duration 8s outside 10-360s"}
+{"ts": "2026-10-16T16:33:08+00:00", "source": "nasa", "id": "nasa:KSC-19690912-MH-NAS01-0001-Apollo_Saturn_Footage_900_Aerials_from_9121969_400_Crawler_Saturn_V_on_Pad_LUT_move_1700-DVC_1950", "stage": "video", "error": "listed duration 1502s outside 10-360s"}
+{"ts": "2026-10-16T16:33:14+00:00", "source": "nasa", "id": "nasa:NHQ_2020_1002_Launch of the Northrop Grumman CRS-14 Antares Rocket", "stage": "video", "error": "listed duration 400s outside 10-360s"}
+{"ts": "2026-10-16T16:33:18+00:00", "source": "nasa", "id": "nasa:MSFC_2023_0720_LVSA III Move to 4649", "stage": "video", "error": "listed duration 382s outside 10-360s"}
+{"ts": "2026-10-16T16:33:21+00:00", "source": "nasa", "id": "nasa:KSC-20150715-MH-ISS01_0004-ISS_Project_VEG-01B-3262103", "stage": "video", "error": "listed duration 506s outside 10-360s"}
+{"ts": "2026-10-16T16:33:22+00:00", "source": "nasa", "id": "nasa:KSC-20150715-MH-ISS01_0003-ISS_Project_VEG-01B-3262103", "stage": "video", "error": "listed duration 1241s outside 10-360s"}
+{"ts": "2026-10-16T16:33:24+00:00", "source": "nasa", "id": "nasa:GSFC_1968_50thOAO2_m12916", "stage": "video", "error": "listed duration 868s outside 10-360s"}
+{"ts": "2026-10-16T16:33:33+00:00", "source": "nasa", "id": "nasa:KSC-20150715-MH-ISS01_0006-ISS_Project_VEG-01B-3262103", "stage": "video", "error": "listed duration 8095s outside 10-360s"}
+{"ts": "2026-10-16T16:33:36+00:00", "source": "nasa", "id": "nasa:KSC-20150715-MH-ISS01_0001-ISS_Project_VEG-01B-3262103", "stage": "video", "error": "listed duration 1763s outside 10-360s"}
+{"ts": "2026-10-16T18:41:06+00:00", "source": "nasa", "id": "nasa:KSC ART II Cause Way Launch low angle", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T18:41:08+00:00", "source": "nasa", "id": "nasa:KSC-20251105-MH-CSH01-0002-Artemis_II_ Launch_Simulation_LCC-M17495", "stage": "audio", "error": "listed duration 501s > 330s"}
+{"ts": "2026-10-16T18:41:09+00:00", "source": "nasa", "id": "nasa:KSC ART II Cause Way Launch high angle", "stage": "audio", "error": "listed duration 574s > 330s"}
+{"ts": "2026-10-16T18:41:10+00:00", "source": "nasa", "id": "nasa:Causeway Main Launch dust removal", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T18:41:11+00:00", "source": "nasa", "id": "nasa:KSC-20260612-MH-CSH01-0001-Artemis_III_Launch_Sim_2_LCC-M21434", "stage": "audio", "error": "listed duration 557s > 330s"}
+{"ts": "2026-10-16T18:41:12+00:00", "source": "nasa", "id": "nasa:KSC-04012026-C4829", "stage": "audio", "error": "listed duration 388s > 330s"}
+{"ts": "2026-10-16T18:41:13+00:00", "source": "nasa", "id": "nasa:2018-10-31 - RS-25 Engine Test - 4K Full Duration", "stage": "audio", "error": "listed duration 525s > 330s"}
+{"ts": "2026-10-16T18:41:14+00:00", "source": "nasa", "id": "nasa:2016-07-29 - RS-25 Engine Test - 4K Full Duration", "stage": "audio", "error": "listed duration 674s > 330s"}
+{"ts": "2026-10-16T18:41:15+00:00", "source": "nasa", "id": "nasa:SSC_2025-11-12_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 528s > 330s"}
+{"ts": "2026-10-16T18:41:16+00:00", "source": "nasa", "id": "nasa:SSC_2022-01-19_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 528s > 330s"}
+{"ts": "2026-10-16T18:41:17+00:00", "source": "nasa", "id": "nasa:SSC_2025-06-20_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:41:18+00:00", "source": "nasa", "id": "nasa:SSC_2022-03-30_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 526s > 330s"}
+{"ts": "2026-10-16T18:41:19+00:00", "source": "nasa", "id": "nasa:SSC_2022-02-24_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:41:20+00:00", "source": "nasa", "id": "nasa:SSC_2023-11-29_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1436s > 330s"}
+{"ts": "2026-10-16T18:41:21+00:00", "source": "nasa", "id": "nasa:SSC_2023-05-10_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1405s > 330s"}
+{"ts": "2026-10-16T18:41:22+00:00", "source": "nasa", "id": "nasa:SSC_2021-12-15_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 523s > 330s"}
+{"ts": "2026-10-16T18:41:24+00:00", "source": "nasa", "id": "nasa:AFRC_2022_13854_CarpetDIEM_II_VIDEO_FILE", "stage": "audio", "error": "listed duration 486s > 330s"}
+{"ts": "2026-10-16T18:41:39+00:00", "source": "nasa", "id": "nasa:KSC-20260806-MH-GEB01-0002-Artemis_III_Launch_Simulation_Terminal_Count_Sim_FR_1&2_LCC-M26396", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:41:41+00:00", "source": "nasa", "id": "nasa:KSC-20221116-MH-AJN01-0001-Artemis_I_Isolated_Launch_Views-3314595", "stage": "audio", "error": "listed duration 1387s > 330s"}
+{"ts": "2026-10-16T18:41:43+00:00", "source": "nasa", "id": "nasa:SSC_2024-02-29_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1389s > 330s"}
+{"ts": "2026-10-16T18:41:44+00:00", "source": "nasa", "id": "nasa:SLS_KSC_01282026_ART II at Pad sunset anamorphic", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:41:44+00:00", "source": "nasa", "id": "nasa:SSC_2021_0406_RS25EngineTest", "stage": "audio", "error": "listed duration 678s > 330s"}
+{"ts": "2026-10-16T18:41:45+00:00", "source": "nasa", "id": "nasa:SSC_2022-02-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:41:47+00:00", "source": "nasa", "id": "nasa:SSC_2021_0520_RS25EngineTest", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:41:49+00:00", "source": "nasa", "id": "nasa:SSC_2021-09-30_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 523s > 330s"}
+{"ts": "2026-10-16T18:41:50+00:00", "source": "nasa", "id": "nasa:SSC_2023-04-05_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:41:52+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-15_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1173s > 330s"}
+{"ts": "2026-10-16T18:41:58+00:00", "source": "nasa", "id": "nasa:KSC-20230324-MH-CSH01_0002-Launch_Director_Plaque_Award_Ceremony-3326295", "stage": "audio", "error": "listed duration 437s > 330s"}
+{"ts": "2026-10-16T18:42:00+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1263s > 330s"}
+{"ts": "2026-10-16T18:42:01+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-27_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1205s > 330s"}
+{"ts": "2026-10-16T18:42:02+00:00", "source": "nasa", "id": "nasa:SSC_2023-03-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 542s > 330s"}
+{"ts": "2026-10-16T18:42:03+00:00", "source": "nasa", "id": "nasa:SSC_2023-02-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:42:04+00:00", "source": "nasa", "id": "nasa:SSC_2024-03-27_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1213s > 330s"}
+{"ts": "2026-10-16T18:42:05+00:00", "source": "nasa", "id": "nasa:SSC_2024-04-03_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1275s > 330s"}
+{"ts": "2026-10-16T18:42:06+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1275s > 330s"}
+{"ts": "2026-10-16T18:42:07+00:00", "source": "nasa", "id": "nasa:KSC-20221116-VP-MMS01-0001-Artemis_I_Live_Launch_Coverage_4K_FULL_PROGRAM_lowbitrate", "stage": "audio", "error": "listed duration 19387s > 330s"}
+{"ts": "2026-10-16T18:42:08+00:00", "source": "nasa", "id": "nasa:SSC_2023-04-26_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1511s > 330s"}
+{"ts": "2026-10-16T18:42:09+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-01_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1441s > 330s"}
+{"ts": "2026-10-16T18:42:10+00:00", "source": "nasa", "id": "nasa:SSC_2023-05-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1208s > 330s"}
+{"ts": "2026-10-16T18:42:11+00:00", "source": "nasa", "id": "nasa:SSC_2023-10-17_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1326s > 330s"}
+{"ts": "2026-10-16T18:42:12+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-22_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1247s > 330s"}
+{"ts": "2026-10-16T18:42:13+00:00", "source": "nasa", "id": "nasa:SSC_2023-03-21_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 628s > 330s"}
+{"ts": "2026-10-16T18:42:14+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-17_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1198s > 330s"}
+{"ts": "2026-10-16T18:42:14+00:00", "source": "nasa", "id": "nasa:SSC-2021-04-06_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T18:42:17+00:00", "source": "nasa", "id": "nasa:SSC_2024-02-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1317s > 330s"}
+{"ts": "2026-10-16T18:42:19+00:00", "source": "nasa", "id": "nasa:SSC_2023-02-22_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 628s > 330s"}
+{"ts": "2026-10-16T18:42:23+00:00", "source": "nasa", "id": "nasa:April 2020 SLS Resource Reel Short Form (V1)", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:42:27+00:00", "source": "nasa", "id": "nasa:SSC_2021-08-05_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 515s > 330s"}
+{"ts": "2026-10-16T18:44:00+00:00", "source": "nasa", "id": "nasa:KSC ART II Cause Way Launch low angle", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T18:44:00+00:00", "source": "nasa", "id": "nasa:KSC ART II Cause Way Launch high angle", "stage": "audio", "error": "listed duration 574s > 330s"}
+{"ts": "2026-10-16T18:44:00+00:00", "source": "nasa", "id": "nasa:KSC-04012026-C4829", "stage": "audio", "error": "listed duration 388s > 330s"}
+{"ts": "2026-10-16T18:44:00+00:00", "source": "nasa", "id": "nasa:Causeway Main Launch dust removal", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T18:44:00+00:00", "source": "nasa", "id": "nasa:KSC-20221116-MH-AJN01-0001-Artemis_I_Isolated_Launch_Views-3314595", "stage": "audio", "error": "listed duration 1387s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:KSC-20230324-MH-CSH01_0002-Launch_Director_Plaque_Award_Ceremony-3326295", "stage": "audio", "error": "listed duration 437s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:KSC-20221116-VP-MMS01-0001-Artemis_I_Live_Launch_Coverage_4K_FULL_PROGRAM_lowbitrate", "stage": "audio", "error": "listed duration 19387s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:2018-10-31 - RS-25 Engine Test - 4K Full Duration", "stage": "audio", "error": "listed duration 525s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:2016-07-29 - RS-25 Engine Test - 4K Full Duration", "stage": "audio", "error": "listed duration 674s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SSC_2025-11-12_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 528s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SSC_2022-01-19_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 528s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SSC_2025-06-20_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SSC_2022-03-30_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 526s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SSC_2022-02-24_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SSC_2023-11-29_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1436s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SSC_2023-05-10_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1405s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SSC_2021-12-15_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 523s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:AFRC_2022_13854_CarpetDIEM_II_VIDEO_FILE", "stage": "audio", "error": "listed duration 486s > 330s"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:SLS_KSC_01282026_ART II at Pad sunset anamorphic", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:44:01+00:00", "source": "nasa", "id": "nasa:AFRC-2024-14057-4-X-59 Rollout Ceremony-NP", "stage": "audio", "error": "listed duration 2240s > 330s"}
+{"ts": "2026-10-16T18:44:02+00:00", "source": "nasa", "id": "nasa:AFRC-2026-14622-X-59_Flt17_FSS_B-ROLL_6-5-26_YT", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:44:14+00:00", "source": "nasa", "id": "nasa:KSC-01172026-Artemis II_Rollout_B Roll_Package", "stage": "audio", "error": "duration 820s outside 8-330s"}
+{"ts": "2026-10-16T18:44:15+00:00", "source": "nasa", "id": "nasa:KSC-20260401-VP-JCR01-0001-Artemis_II_Live_Launch_Coverage_4K-M19183", "stage": "audio", "error": "no ~preview/~small mp4"}
+{"ts": "2026-10-16T18:44:17+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-GEB01-0002-Artemis_II_Launch_Firing_Room_1_LCC_Rover-M19183", "stage": "audio", "error": "listed duration 856s > 330s"}
+{"ts": "2026-10-16T18:44:18+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-JMB01-0001-Artemis_II_Launch_UAS_4K-M19183", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:44:21+00:00", "source": "nasa", "id": "nasa:SLS_KSC_01282026_ART II at Pad sunset timelapse", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:44:21+00:00", "source": "nasa", "id": "nasa:KSC-20221116-MH-GEB01-High_Speed_Film_Artemis_I-Tracking_Cameras_WON-3327398", "stage": "audio", "error": "listed duration 3371s > 330s"}
+{"ts": "2026-10-16T18:44:21+00:00", "source": "nasa", "id": "nasa:SSC_2024-02-29_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1389s > 330s"}
+{"ts": "2026-10-16T18:44:21+00:00", "source": "nasa", "id": "nasa:SSC_2021_0406_RS25EngineTest", "stage": "audio", "error": "listed duration 678s > 330s"}
+{"ts": "2026-10-16T18:44:21+00:00", "source": "nasa", "id": "nasa:SSC_2022-02-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:44:21+00:00", "source": "nasa", "id": "nasa:SSC_2021_0520_RS25EngineTest", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:44:21+00:00", "source": "nasa", "id": "nasa:SSC_2023-04-05_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:44:22+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-15_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1173s > 330s"}
+{"ts": "2026-10-16T18:44:22+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1263s > 330s"}
+{"ts": "2026-10-16T18:44:22+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-27_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1205s > 330s"}
+{"ts": "2026-10-16T18:44:22+00:00", "source": "nasa", "id": "nasa:SSC_2023-03-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 542s > 330s"}
+{"ts": "2026-10-16T18:44:28+00:00", "source": "nasa", "id": "nasa:KSC-20220828-MH-GEB01-0001-Artemis_Astronaut_Photo_Op_Pad_39B-3311987", "stage": "audio", "error": "effectively silent (loudest -47 dBFS)"}
+{"ts": "2026-10-16T18:45:32+00:00", "source": "nasa", "id": "nasa:KSC-20221116-VP-MMS01-0001-Artemis_I_Live_Launch_Coverage_720p-3314595", "stage": "audio", "error": "duration 19386s outside 8-330s"}
+{"ts": "2026-10-16T18:45:33+00:00", "source": "nasa", "id": "nasa:KSC-20221116-MH-GEB01-High_Speed_Film_Artemis_I_Pad_Cameras_WON-3327396", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:45:35+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-AJN01-0001-Artemis_II_Isolated_Launch_Views-M19183", "stage": "audio", "error": "listed duration 2645s > 330s"}
+{"ts": "2026-10-16T18:45:36+00:00", "source": "nasa", "id": "nasa:KSC-20221116-MH-NAS01-0001-Artemis_I_Post_Launch_Ground_Systems_LC_39B-3318786", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:45:38+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-SEA01-0001-Artemis_II_Launch_Suit_Up_4K", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2023-02-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2024-03-27_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1213s > 330s"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1275s > 330s"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-01_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1441s > 330s"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2023-04-26_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1511s > 330s"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2023-05-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1208s > 330s"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2023-10-17_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1326s > 330s"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2023-03-21_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 628s > 330s"}
+{"ts": "2026-10-16T18:45:42+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-17_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1198s > 330s"}
+{"ts": "2026-10-16T18:45:48+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-NAS01-0001-Artemis_II_Launch_WB57_SEO_Downlink", "stage": "audio", "error": "listed duration 698s > 330s"}
+{"ts": "2026-10-16T18:45:48+00:00", "source": "nasa", "id": "nasa:SSC_2024-02-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1317s > 330s"}
+{"ts": "2026-10-16T18:45:48+00:00", "source": "nasa", "id": "nasa:SSC-2021-04-06_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T18:45:48+00:00", "source": "nasa", "id": "nasa:MSFC_20240821_CS2_LVSA_rollout-UAS_Broll", "stage": "audio", "error": "no audio stream"}
+{"ts": "2026-10-16T18:45:48+00:00", "source": "nasa", "id": "nasa:SSC_2023-02-22_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 628s > 330s"}
+{"ts": "2026-10-16T18:45:49+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-NAS01-0001-Artemis_II_Launch_WB57_Visible", "stage": "audio", "error": "listed duration 479s > 330s"}
+{"ts": "2026-10-16T18:45:49+00:00", "source": "nasa", "id": "nasa:SSC_2021-08-05_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 515s > 330s"}
+{"ts": "2026-10-16T18:45:49+00:00", "source": "nasa", "id": "nasa:April 2020 SLS Resource Reel Short Form (V1)", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:45:50+00:00", "source": "nasa", "id": "nasa:April 2020 SLS Resource Reel Long Form(V2)", "stage": "audio", "error": "listed duration 1322s > 330s"}
+{"ts": "2026-10-16T18:45:56+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-NAS01-0001-Artemis_II_Launch_WB57_Raw_Visible_Downlink", "stage": "audio", "error": "listed duration 687s > 330s"}
+{"ts": "2026-10-16T18:45:58+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-JBP01-0001-Artemis_II_Launch_Cessna_MX20_MWIR_ISO3-M19183", "stage": "audio", "error": "listed duration 1705s > 330s"}
+{"ts": "2026-10-16T18:46:00+00:00", "source": "nasa", "id": "nasa:SSC_2021_0318_GreenRun2_ResourceReel", "stage": "audio", "error": "listed duration 532s > 330s"}
+{"ts": "2026-10-16T18:46:01+00:00", "source": "nasa", "id": "nasa:SSC_GreenRunResourceReel20210116", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:46:03+00:00", "source": "nasa", "id": "nasa:KSC-20260401-VP-JCR01-0001-Artemis_II_Live_Launch_Coverage_1080p-Part2of2-M19183", "stage": "audio", "error": "duration 1409s outside 8-330s"}
+{"ts": "2026-10-16T18:46:04+00:00", "source": "nasa", "id": "nasa:SSC_020-12-20 - Wet Dress-Rehearsal_B-ROLL", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:46:05+00:00", "source": "nasa", "id": "nasa:SSC_2021-07-27_Camera816-TR-SLSCST-00011_203616 - 204620", "stage": "audio", "error": "listed duration 633s > 330s"}
+{"ts": "2026-10-16T18:46:09+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-JBP01-0001-Artemis_II_Launch_Cessna_GSS_8k_120fps-M19183", "stage": "audio", "error": "listed duration 492s > 330s"}
+{"ts": "2026-10-16T18:46:11+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-JBP01-0001-Artemis_II_Launch_Cessna_MX20_SWIR_ISO4-M19183", "stage": "audio", "error": "listed duration 1705s > 330s"}
+{"ts": "2026-10-16T18:46:12+00:00", "source": "nasa", "id": "nasa:MSFC_20230412_April Resource Reel", "stage": "audio", "error": "listed duration 830s > 330s"}
+{"ts": "2026-10-16T18:46:12+00:00", "source": "nasa", "id": "nasa:KSC-20260401-MH-JBP01-0001-Artemis_II_Launch_Cessna_GSS_8k_60fps-M19183", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:46:14+00:00", "source": "nasa", "id": "nasa:MAF_20220524_CS2_ES_Move to Final", "stage": "audio", "error": "listed duration 331s > 330s"}
+{"ts": "2026-10-16T18:46:14+00:00", "source": "nasa", "id": "nasa:Aerial Footage Of B-Stand w-Artemis I Core Stage - 2020-02-09 - Full 4K", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:KSC ART II Cause Way Launch low angle", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:KSC-20251105-MH-CSH01-0002-Artemis_II_ Launch_Simulation_LCC-M17495", "stage": "audio", "error": "listed duration 501s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:KSC ART II Cause Way Launch high angle", "stage": "audio", "error": "listed duration 574s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:Causeway Main Launch dust removal", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:2018-10-31 - RS-25 Engine Test - 4K Full Duration", "stage": "audio", "error": "listed duration 525s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:2016-07-29 - RS-25 Engine Test - 4K Full Duration", "stage": "audio", "error": "listed duration 674s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:SSC_2025-11-12_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 528s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:SSC_2022-01-19_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 528s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:SSC_2025-06-20_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:SSC_2022-03-30_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 526s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:SSC_2022-02-24_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:SSC_2023-11-29_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1436s > 330s"}
+{"ts": "2026-10-16T18:47:08+00:00", "source": "nasa", "id": "nasa:AFRC_2022_13854_CarpetDIEM_II_VIDEO_FILE", "stage": "audio", "error": "listed duration 486s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:KSC-20260612-MH-CSH01-0001-Artemis_III_Launch_Sim_2_LCC-M21434", "stage": "audio", "error": "listed duration 557s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:KSC-04012026-C4829", "stage": "audio", "error": "listed duration 388s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:SSC_2023-05-10_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1405s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:SSC_2021-12-15_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 523s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:SSC_2024-02-29_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1389s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:SSC_2021_0406_RS25EngineTest", "stage": "audio", "error": "listed duration 678s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:SSC_2022-02-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 529s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:NASA Administrator Jim Bridenstine gives Artemis update with core stage of Space Launch System", "stage": "audio", "error": "listed duration 2613s > 330s"}
+{"ts": "2026-10-16T18:47:10+00:00", "source": "nasa", "id": "nasa:SSC_2021_0520_RS25EngineTest", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:47:17+00:00", "source": "nasa", "id": "nasa:SSC_2021-09-30_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 523s > 330s"}
+{"ts": "2026-10-16T18:47:17+00:00", "source": "nasa", "id": "nasa:KSC-20260806-MH-GEB01-0002-Artemis_III_Launch_Simulation_Terminal_Count_Sim_FR_1&2_LCC-M26396", "stage": "audio", "error": "effectively silent (loudest -180 dBFS)"}
+{"ts": "2026-10-16T18:47:17+00:00", "source": "nasa", "id": "nasa:SSC_2023-04-05_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:47:17+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-15_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1173s > 330s"}
+{"ts": "2026-10-16T18:47:17+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1263s > 330s"}
+{"ts": "2026-10-16T18:47:17+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-27_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1205s > 330s"}
+{"ts": "2026-10-16T18:47:19+00:00", "source": "nasa", "id": "nasa:SSC_2023-03-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 542s > 330s"}
+{"ts": "2026-10-16T18:47:19+00:00", "source": "nasa", "id": "nasa:SSC_2023-02-08_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 522s > 330s"}
+{"ts": "2026-10-16T18:47:19+00:00", "source": "nasa", "id": "nasa:SSC_2024-03-27_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1213s > 330s"}
+{"ts": "2026-10-16T18:47:19+00:00", "source": "nasa", "id": "nasa:SSC_2024-04-03_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1275s > 330s"}
+{"ts": "2026-10-16T18:47:19+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1275s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC_2023-04-26_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1511s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC_2023-05-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1208s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-01_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1441s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC_2023-10-17_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1326s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC_2023-06-22_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1247s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC_2023-03-21_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 628s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC_2024-02-23_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1317s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC_2024-01-17_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 1198s > 330s"}
+{"ts": "2026-10-16T18:47:20+00:00", "source": "nasa", "id": "nasa:SSC-2021-04-06_RS-25_Engine_Test", "stage": "audio", "error": "listed duration 527s > 330s"}
+{"ts": "2026-10-16T19:01:15+00:00", "source": "aic", "id": "aic:sound-07f5cb1a-27a0-bbc5-5a34-39322f2a430a", "stage": "audio", "error": "duration 3984s outside 8-330s"}
+{"ts": "2026-10-16T19:01:16+00:00", "source": "aic", "id": "aic:sound-07f5cb1a-27a0-bbc5-5a34-39322f2a430a", "stage": "audio", "error": "duration 3984s outside 8-330s"}
+{"ts": "2026-10-16T19:01:18+00:00", "source": "aic", "id": "aic:sound-07f5cb1a-27a0-bbc5-5a34-39322f2a430a", "stage": "audio", "error": "duration 3984s outside 8-330s"}
+{"ts": "2026-10-16T19:02:24+00:00", "source": "aic", "id": "aic:sound-5151ce4c-0c82-6ae2-ea64-3323faf4a508", "stage": "audio", "error": "duration 3135s outside 8-330s"}
+{"ts": "2026-10-16T19:02:24+00:00", "source": "aic", "id": "aic:sound-fa5e0458-1aa3-ccf4-7616-b933511fa5b1", "stage": "audio", "error": "duration 3391s outside 8-330s"}
+{"ts": "2026-10-16T19:03:00+00:00", "source": "aic", "id": "aic:sound-79ec08d5-35cc-3870-4959-d08457f3d232", "stage": "audio", "error": "duration 3488s outside 8-330s"}
+{"ts": "2026-10-16T19:03:09+00:00", "source": "aic", "id": "aic:sound-031e5d5f-5a02-7dc4-faba-5f46a7914039", "stage": "audio", "error": "duration 3807s outside 8-330s"}
+{"ts": "2026-10-16T19:03:10+00:00", "source": "aic", "id": "aic:sound-d9683532-66fd-67c3-5588-021527d115af", "stage": "audio", "error": "duration 3125s outside 8-330s"}
+{"ts": "2026-10-16T19:04:45+00:00", "source": "aic", "id": "aic:sound-07f5cb1a-27a0-bbc5-5a34-39322f2a430a", "stage": "audio", "error": "duration 3984s outside 8-330s"}
+{"ts": "2026-10-16T19:04:55+00:00", "source": "aic", "id": "aic:sound-5151ce4c-0c82-6ae2-ea64-3323faf4a508", "stage": "audio", "error": "duration 3135s outside 8-330s"}
+{"ts": "2026-10-16T19:04:55+00:00", "source": "aic", "id": "aic:sound-fa5e0458-1aa3-ccf4-7616-b933511fa5b1", "stage": "audio", "error": "duration 3391s outside 8-330s"}
+{"ts": "2026-10-16T19:04:59+00:00", "source": "aic", "id": "aic:sound-79ec08d5-35cc-3870-4959-d08457f3d232", "stage": "audio", "error": "duration 3488s outside 8-330s"}
+{"ts": "2026-10-16T19:05:01+00:00", "source": "aic", "id": "aic:sound-d9683532-66fd-67c3-5588-021527d115af", "stage": "audio", "error": "duration 3125s outside 8-330s"}
+{"ts": "2026-10-16T19:05:01+00:00", "source": "aic", "id": "aic:sound-031e5d5f-5a02-7dc4-faba-5f46a7914039", "stage": "audio", "error": "duration 3807s outside 8-330s"}
+{"ts": "2026-10-16T23:28:14+00:00", "source": "moon", "id": "moon:5/28/12", "stage": "z6 child 1,0 missing; z5 quadrant used", "error": "HTTP 403 for https://s3.amazonaws.com/opmbuilder/301_moon/tiles/w/hillshaded-albedo/6/57/39.png"}

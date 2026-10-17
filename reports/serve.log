@@ -1,0 +1,65 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/624 [00:00<?, ?it/s]Loading weights:  26%|██▋       | 164/624 [00:00<00:00, 1631.85it/s]Loading weights:  53%|█████▎    | 328/624 [00:00<00:00, 1636.01it/s]Loading weights:  79%|███████▉  | 492/624 [00:00<00:00, 1575.79it/s]Loading weights: 100%|██████████| 624/624 [00:00<00:00, 1989.81it/s]
+INFO:     Started server process [20892]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53924 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53932 - "GET /moon/healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53942 - "GET /moon HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:48190 - "GET /moon/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48198 - "GET /moon/js/main.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48190 - "GET /moon/css/gallery.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48226 - "GET /moon/js/cloud.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48236 - "GET /moon/js/wall.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48210 - "GET /moon/vendor/fonts/cormorant-garamond-latin-400-italic.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48190 - "GET /moon/vendor/fonts/work-sans-latin-500-normal.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48198 - "GET /moon/vendor/fonts/cormorant-garamond-latin-400-normal.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48200 - "GET /moon/vendor/fonts/work-sans-latin-400-normal.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48236 - "GET /moon/js/scope.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48226 - "GET /moon/js/detail.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48200 - "GET /moon/js/globe.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48210 - "GET /moon/js/anim.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48198 - "GET /moon/vendor/three/OrbitControls.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48190 - "GET /moon/vendor/three/three.module.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48200 - "GET /moon/vendor/three/lines/LineGeometry.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48236 - "GET /moon/vendor/three/lines/LineMaterial.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48226 - "GET /moon/vendor/three/lines/Line2.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48210 - "GET /moon/js/sound.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48190 - "GET /moon/vendor/three/lines/LineSegments2.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48236 - "GET /moon/vendor/three/lines/LineSegmentsGeometry.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48236 - "GET /moon/data/points.bin HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48190 - "GET /moon/data/items.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48210 - "GET /moon/data/meta.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48190 - "GET /moon/data/globe_atlas.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48190 - "GET /moon/thumbs/moon/x17_y15.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48250 - "GET /moon/media/moon/x17_y15.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48262 - "GET /moon/vendor/fonts/cormorant-garamond-latin-600-normal.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60202 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60202 - "GET /moon/thumbs/moon/x26_y30.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35212 - "GET /moon/thumbs/moon/x28_y05.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35206 - "GET /moon/thumbs/moon/x09_y08.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35180 - "GET /moon/thumbs/moon/x31_y31.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35196 - "GET /moon/thumbs/moon/x00_y00.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35174 - "GET /moon/thumbs/moon/x12_y03.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35196 - "GET /moon/thumbs/moon/x29_y05.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35180 - "GET /moon/thumbs/moon/x30_y02.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60202 - "GET /moon/thumbs/moon/x01_y31.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35206 - "GET /moon/thumbs/moon/x08_y06.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35174 - "GET /moon/thumbs/moon/x31_y03.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35212 - "GET /moon/thumbs/moon/x28_y01.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42412 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42418 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42430 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42432 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42434 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42448 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42454 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42468 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42482 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42484 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42488 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42502 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42506 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42512 - "POST /moon/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42514 - "POST /moon/search HTTP/1.1" 200 OK

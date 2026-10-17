@@ -1,0 +1,114 @@
+2026-10-15 22:32:49,514 gallery.ingest.wiki INFO candidate articles: 512 artists, 186 styles, 208 space
+2026-10-15 22:32:49,574 gallery.ingest.wiki INFO skip (missing): Adler & Sullivan, Architects
+2026-10-15 22:32:49,580 gallery.ingest.wiki INFO skip (missing): Japanese (culture or style)
+2026-10-15 22:32:50,112 gallery.ingest.wiki INFO skip (missing): Chinese (culture or style)
+2026-10-15 22:32:50,822 gallery.ingest.wiki INFO skip (disambiguation): Realism
+2026-10-15 22:32:51,738 gallery.ingest.wiki INFO skip (missing): Realism art
+2026-10-15 22:32:51,758 gallery.ingest.wiki INFO skip (disambiguation): Ptolemaic
+2026-10-15 22:32:52,708 gallery.ingest.wiki INFO skip (missing): Ptolemaic art
+2026-10-15 22:32:52,727 gallery.ingest.wiki INFO skip (missing): Imperial (roman)
+2026-10-15 22:32:53,714 gallery.ingest.wiki INFO skip (missing): Imperial art
+2026-10-15 22:32:53,735 gallery.ingest.wiki INFO skip (missing): Roman (ancient, style or period)
+2026-10-15 22:32:54,850 gallery.ingest.wiki INFO skip (missing): Peter Joseph Weber
+2026-10-15 22:32:54,860 gallery.ingest.wiki INFO skip (missing): Late period (egyptian)
+2026-10-15 22:32:55,702 gallery.ingest.wiki INFO skip (missing): Late period art
+2026-10-15 22:32:55,750 gallery.ingest.wiki INFO skip (disambiguation): Greek
+2026-10-15 22:32:56,929 gallery.ingest.wiki INFO skip (missing): Third intermediate period
+2026-10-15 22:32:57,706 gallery.ingest.wiki INFO skip (missing): Third intermediate period art
+2026-10-15 22:32:57,755 gallery.ingest.wiki INFO skip (disambiguation): Yoruba
+2026-10-15 22:32:58,795 gallery.ingest.wiki INFO skip (disambiguation): Yoruba
+2026-10-15 22:32:58,815 gallery.ingest.wiki INFO skip (missing): Navajo (Diné)
+2026-10-15 22:32:58,843 gallery.ingest.wiki INFO skip (missing): Arts of the Islamic World
+2026-10-15 22:32:59,705 gallery.ingest.wiki INFO skip (missing): Arts of the Islamic World art
+2026-10-15 22:32:59,753 gallery.ingest.wiki INFO skip (missing): High classical
+2026-10-15 22:33:00,758 gallery.ingest.wiki INFO skip (missing): High classical art
+2026-10-15 22:33:00,778 gallery.ingest.wiki INFO skip (disambiguation): Egyptian
+2026-10-15 22:33:01,776 gallery.ingest.wiki INFO skip (disambiguation): Himalayan
+2026-10-15 22:33:02,834 gallery.ingest.wiki INFO skip (disambiguation): Republic period
+2026-10-15 22:33:03,719 gallery.ingest.wiki INFO skip (missing): Republic period art
+2026-10-15 22:33:03,764 gallery.ingest.wiki INFO skip (missing): Old kingdom
+2026-10-15 22:33:04,750 gallery.ingest.wiki INFO skip (missing): Old kingdom art
+2026-10-15 22:33:04,881 gallery.ingest.wiki INFO skip (missing): Carl (Charles) J. Furst
+2026-10-15 22:33:04,919 gallery.ingest.wiki INFO skip (disambiguation): Georgian
+2026-10-15 22:33:06,613 gallery.ingest.wiki INFO skip (missing): Archaic (greek)
+2026-10-15 22:33:06,735 gallery.ingest.wiki INFO skip (missing): Archaic art
+2026-10-15 22:33:06,756 gallery.ingest.wiki INFO skip (missing): Middle kingdom
+2026-10-15 22:33:07,762 gallery.ingest.wiki INFO skip (missing): Middle kingdom art
+2026-10-15 22:33:07,769 gallery.ingest.wiki INFO skip (disambiguation): Nasca
+2026-10-15 22:33:07,789 gallery.ingest.wiki INFO skip (disambiguation): Paracas
+2026-10-15 22:33:07,796 gallery.ingest.wiki INFO skip (disambiguation): Maya
+2026-10-15 22:33:08,811 gallery.ingest.wiki INFO skip (disambiguation): Kuba
+2026-10-15 22:33:08,818 gallery.ingest.wiki INFO skip (disambiguation): Classical
+2026-10-15 22:33:09,925 gallery.ingest.wiki INFO skip (missing): Islamic (culture or style)
+2026-10-15 22:33:10,787 gallery.ingest.wiki INFO skip (missing): Late edo
+2026-10-15 22:33:11,759 gallery.ingest.wiki INFO skip (missing): Late edo art
+2026-10-15 22:33:11,782 gallery.ingest.wiki INFO skip (disambiguation): Indonesian
+2026-10-15 22:33:12,824 gallery.ingest.wiki INFO skip (missing): Meissen Porcelain Manufactory
+2026-10-15 22:33:12,832 gallery.ingest.wiki INFO skip (missing): Edo (japanese period)
+2026-10-15 22:33:13,967 gallery.ingest.wiki INFO skip (missing): Edo art
+2026-10-15 22:33:13,973 gallery.ingest.wiki INFO skip (disambiguation): Iranian
+2026-10-15 22:33:14,035 gallery.ingest.wiki INFO skip (missing): Greco-roman (egyptian)
+2026-10-15 22:33:14,745 gallery.ingest.wiki INFO skip (missing): Greco-roman art
+2026-10-15 22:33:14,773 gallery.ingest.wiki INFO skip (missing): Roman period (egyptian)
+2026-10-15 22:33:15,761 gallery.ingest.wiki INFO skip (missing): Roman period art
+2026-10-15 22:33:15,838 gallery.ingest.wiki INFO skip (missing): Edo (african)
+2026-10-15 22:33:15,845 gallery.ingest.wiki INFO skip (missing): Edo art
+2026-10-15 22:33:15,866 gallery.ingest.wiki INFO skip (missing): Kuba (democratic republic of congo style
+2026-10-15 22:33:16,820 gallery.ingest.wiki INFO skip (missing): Korean (culture or style)
+2026-10-15 22:33:17,785 gallery.ingest.wiki INFO skip (disambiguation): Wari
+2026-10-15 22:33:17,792 gallery.ingest.wiki INFO skip (disambiguation): Huari
+2026-10-15 22:33:18,755 gallery.ingest.wiki INFO skip (missing): Huari art
+2026-10-15 22:33:18,764 gallery.ingest.wiki INFO skip (disambiguation): Lambayeque
+2026-10-15 22:33:18,771 gallery.ingest.wiki INFO skip (missing): Ocucaje
+2026-10-15 22:33:19,774 gallery.ingest.wiki INFO skip (missing): Ocucaje art
+2026-10-15 22:33:19,781 gallery.ingest.wiki INFO skip (missing): Mexica (Aztec)
+2026-10-15 22:33:19,816 gallery.ingest.wiki INFO skip (disambiguation): Lambayeque
+2026-10-15 22:33:20,782 gallery.ingest.wiki INFO skip (missing): Lambayeque art
+2026-10-15 22:33:20,850 gallery.ingest.wiki INFO skip (disambiguation): Maya
+2026-10-15 22:33:20,858 gallery.ingest.wiki INFO skip (disambiguation): Etruscan
+2026-10-15 22:33:21,818 gallery.ingest.wiki INFO skip (missing): Domenico Theotokópoulos, called El Greco
+2026-10-15 22:33:21,824 gallery.ingest.wiki INFO skip (missing): Late classical
+2026-10-15 22:33:22,759 gallery.ingest.wiki INFO skip (missing): Late classical art
+2026-10-15 22:33:22,819 gallery.ingest.wiki INFO skip (disambiguation): Asante
+2026-10-15 22:33:22,826 gallery.ingest.wiki INFO skip (missing): Eighteenth dynasty
+2026-10-15 22:33:23,766 gallery.ingest.wiki INFO skip (missing): Eighteenth dynasty art
+2026-10-15 22:33:23,773 gallery.ingest.wiki INFO skip (missing): Treat & Foltz
+2026-10-15 22:33:23,780 gallery.ingest.wiki INFO skip (disambiguation): Asante
+2026-10-15 22:33:24,781 gallery.ingest.wiki INFO skip (missing): Asante art
+2026-10-15 22:33:24,802 gallery.ingest.wiki INFO skip (missing): Twenty-sixth dynasty
+2026-10-15 22:33:25,808 gallery.ingest.wiki INFO skip (missing): Twenty-sixth dynasty art
+2026-10-15 22:33:25,830 gallery.ingest.wiki INFO skip (disambiguation): Romantic
+2026-10-15 22:33:26,970 gallery.ingest.wiki INFO skip (disambiguation): Meiji
+2026-10-15 22:33:27,801 gallery.ingest.wiki INFO skip (missing): Meiji art
+2026-10-15 22:33:27,874 gallery.ingest.wiki INFO skip (disambiguation): Jacobean
+2026-10-15 22:33:28,797 gallery.ingest.wiki INFO skip (disambiguation): Queen anne
+2026-10-15 22:33:29,738 gallery.ingest.wiki INFO skip (missing): Queen anne art
+2026-10-15 22:33:29,746 gallery.ingest.wiki INFO skip (missing): Honoré-Victorin Daumier
+2026-10-15 22:33:29,777 gallery.ingest.wiki INFO skip (disambiguation): Acoma
+2026-10-15 22:33:30,784 gallery.ingest.wiki INFO skip (missing): Acoma art
+2026-10-15 22:33:30,792 gallery.ingest.wiki INFO skip (missing): Hans Burgkmair, the elder
+2026-10-15 22:33:30,839 gallery.ingest.wiki INFO skip (missing): Pierre Louis de Surugue
+2026-10-15 22:33:30,846 gallery.ingest.wiki INFO skip (missing): Corinthian (pottery style)
+2026-10-15 22:33:31,742 gallery.ingest.wiki INFO skip (missing): Corinthian art
+2026-10-15 22:33:31,748 gallery.ingest.wiki INFO skip (missing): Jacques de Gheyn, II
+2026-10-15 22:33:31,806 gallery.ingest.wiki INFO skip (disambiguation): Parthian
+2026-10-15 22:33:32,849 gallery.ingest.wiki INFO skip (missing): Jean de Gourmont
+2026-10-15 22:33:32,857 gallery.ingest.wiki INFO skip (missing): Early etruscan
+2026-10-15 22:33:33,780 gallery.ingest.wiki INFO skip (missing): Early etruscan art
+2026-10-15 22:33:39,049 gallery.ingest.wiki INFO skip (disambiguation): Khmer
+2026-10-15 22:33:40,028 gallery.ingest.wiki INFO skip (missing): Twelfth dynasty
+2026-10-15 22:33:41,027 gallery.ingest.wiki INFO skip (missing): Twelfth dynasty art
+2026-10-15 22:33:45,058 gallery.ingest.wiki INFO skip (disambiguation): Dogon
+2026-10-15 22:33:48,068 gallery.ingest.wiki INFO skip (missing): First intermediate period
+2026-10-15 22:33:49,056 gallery.ingest.wiki INFO skip (missing): First intermediate period art
+2026-10-15 22:33:50,027 gallery.ingest.wiki INFO skip (missing): Paminggir
+2026-10-15 22:33:51,041 gallery.ingest.wiki INFO skip (missing): Early dynastic (egyptian)
+2026-10-15 22:33:52,045 gallery.ingest.wiki INFO skip (missing): Early dynastic art
+2026-10-15 22:33:57,056 gallery.ingest.wiki INFO skip (missing): Indian (South Asian)
+2026-10-15 22:34:03,043 gallery.ingest.wiki INFO skip (missing): Grieksche A Factory
+2026-10-15 22:34:04,039 gallery.ingest.wiki INFO skip (missing): Rhodian (iznik pottery style)
+2026-10-15 22:34:05,062 gallery.ingest.wiki INFO skip (missing): Rhodian art
+2026-10-15 22:34:07,272 gallery.ingest.wiki INFO skip (disambiguation): Sultanabad
+2026-10-15 22:34:08,062 gallery.ingest.wiki INFO skip (missing): Sultanabad art
+2026-10-15 22:34:10,030 gallery.ingest.wiki INFO skip (missing): Coptic (historically identified as)
+2026-10-15 22:34:12,205 gallery.ingest.wiki INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/raw/wiki.parquet: 1700 rows from 289 articles; by pool {'artist': 449, 'space': 848, 'style': 403}

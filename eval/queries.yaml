@@ -1,0 +1,29 @@
+# On-topic queries calibrate retrieval quality and mixing; off-topic ones calibrate the weak threshold.
+# `demo: true` marks the five scripted demo queries.
+on_topic:
+  - {q: "loneliness", demo: true}
+  - {q: "the color blue", demo: true}
+  - {q: "storms and turbulent skies"}
+  - {q: "the night sky"}
+  - {q: "light on water", demo: true}
+  - {q: "red planet dust"}
+  - {q: "a portrait of a woman"}
+  - {q: "spirals"}
+  - {q: "gold and luxury"}
+  - {q: "explorers and voyages"}
+  - {q: "fire and heat", demo: true}
+  - {q: "gardens in bloom"}
+  - {q: "the ocean seen from far above"}
+  - {q: "ancient gods"}
+  - {q: "machines that fly", demo: true}
+off_topic:
+  - "quarterly tax filing deadlines"
+  - "how to reset my router password"
+  - "best mortgage refinance rates"
+  - "python list comprehension syntax"
+  - "fantasy football waiver wire advice"
+  - "symptoms of a sinus infection"
+  - "unsubscribe from this mailing list"
+  - "kubernetes pod crashloopbackoff"
+  - "coupon code for pizza delivery"
+  - "spreadsheet pivot table formula"

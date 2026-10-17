@@ -1,0 +1,29 @@
+2026-10-15 22:53:21,751 INFO items=5100 (image=3400 text=1700) image_input=image chunk=256
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-15 22:56:29,716 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-15 22:56:29,900 INFO Loading SentenceTransformer model from google/embeddinggemma-2.
+Loading weights:   0%|          | 0/624 [00:00<?, ?it/s]Loading weights:  26%|██▋       | 164/624 [00:00<00:00, 1630.64it/s]Loading weights:  53%|█████▎    | 330/624 [00:00<00:00, 1644.80it/s]Loading weights:  79%|███████▉  | 495/624 [00:00<00:00, 1618.92it/s]Loading weights: 100%|██████████| 624/624 [00:00<00:00, 1938.65it/s]
+2026-10-15 22:56:35,624 INFO Loaded 20 prompts with these keys: ['query', 'document', 'BitextMining', 'Classification', 'Clustering', 'CodeRetrieval', 'Document', 'FactChecking', 'InstructionRetrieval', 'MultilabelClassification', 'PairClassification', 'QuestionAnswering', 'Reranking', 'Retrieval', 'Retrieval-document', 'Retrieval-query', 'STS', 'SearchQuery', 'SentenceSimilarity', 'Summarization']
+2026-10-15 22:56:35,627 INFO model loaded in 174.8s
+[transformers] Image decoding with `torchvision` is deprecated and will be removed in future versions .Please install `torchcodec>=0.16.0` instead. 
+2026-10-15 22:56:59,208 INFO chunk 0: rows 0-255 (256 img) 22.9s, 11.2 items/s, done 256/5100
+2026-10-15 22:57:22,396 INFO chunk 1: rows 256-511 (256 img) 22.6s, 11.3 items/s, done 512/5100
+2026-10-15 22:57:46,027 INFO chunk 2: rows 512-767 (256 img) 23.0s, 11.1 items/s, done 768/5100
+2026-10-15 22:58:09,410 INFO chunk 3: rows 768-1023 (256 img) 22.7s, 11.3 items/s, done 1024/5100
+2026-10-15 22:58:31,850 INFO chunk 4: rows 1024-1279 (256 img) 21.8s, 11.7 items/s, done 1280/5100
+2026-10-15 22:58:56,463 INFO chunk 5: rows 1280-1535 (256 img) 24.0s, 10.7 items/s, done 1536/5100
+2026-10-15 22:59:19,043 INFO chunk 6: rows 1536-1791 (256 img) 21.9s, 11.7 items/s, done 1792/5100
+2026-10-15 22:59:41,740 INFO chunk 7: rows 1792-2047 (256 img) 22.1s, 11.6 items/s, done 2048/5100
+2026-10-15 23:00:05,173 INFO chunk 8: rows 2048-2303 (256 img) 22.8s, 11.2 items/s, done 2304/5100
+2026-10-15 23:00:27,855 INFO chunk 9: rows 2304-2559 (256 img) 22.0s, 11.6 items/s, done 2560/5100
+2026-10-15 23:00:50,796 INFO chunk 10: rows 2560-2815 (256 img) 22.3s, 11.5 items/s, done 2816/5100
+2026-10-15 23:01:14,796 INFO chunk 11: rows 2816-3071 (256 img) 23.3s, 11.0 items/s, done 3072/5100
+2026-10-15 23:01:37,056 INFO chunk 12: rows 3072-3327 (256 img) 21.7s, 11.8 items/s, done 3328/5100
+2026-10-15 23:01:44,856 INFO chunk 13: rows 3328-3583 (72 img) 7.6s, 33.7 items/s, done 3584/5100
+2026-10-15 23:01:46,382 INFO chunk 14: rows 3584-3839 (0 img) 1.5s, 169.3 items/s, done 3840/5100
+2026-10-15 23:01:47,817 INFO chunk 15: rows 3840-4095 (0 img) 1.4s, 181.5 items/s, done 4096/5100
+2026-10-15 23:01:49,243 INFO chunk 16: rows 4096-4351 (0 img) 1.4s, 181.5 items/s, done 4352/5100
+2026-10-15 23:01:50,783 INFO chunk 17: rows 4352-4607 (0 img) 1.5s, 168.0 items/s, done 4608/5100
+2026-10-15 23:01:52,142 INFO chunk 18: rows 4608-4863 (0 img) 1.3s, 190.3 items/s, done 4864/5100
+2026-10-15 23:01:53,561 INFO chunk 19: rows 4864-5099 (0 img) 1.4s, 168.0 items/s, done 5100/5100
+2026-10-15 23:01:53,668 INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/vectors.npy (5100, 768); embedded 5100 new rows in 318.1s (16.0 rows/s); peak VRAM 2716 MiB

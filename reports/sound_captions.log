@@ -1,0 +1,68 @@
+2026-10-16 13:23:28,151 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:28,157 INFO NASA’s Perseverance Rover Captures Puff, Whir, Zap Soun -> Puffs whirs zaps from Mars rover
+2026-10-16 13:23:28,508 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:28,514 INFO Perseverance Sends More Sounds From Mars on This Week @ -> Perseverance sends sounds from Mars
+2026-10-16 13:23:30,548 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:30,553 INFO NASA’s Perseverance Rover Hears Ingenuity Mars Helicopt -> Helicopter blades hum wind Mars
+2026-10-16 13:23:31,423 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:31,429 INFO InSight Captures Sound of a Meteoroid Striking Mars     -> Meteoroid impact sound on Mars
+2026-10-16 13:23:32,984 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:32,988 INFO Mars Report: Update on NASA’s Perseverance Rover SuperC -> Ingenuity helicopter sounds near rover
+2026-10-16 13:23:33,620 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:33,626 INFO How NASA’s Perseverance Rover Takes a Selfie            -> Rover arm motors whirring on Mars
+2026-10-16 13:23:34,149 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:34,155 INFO Open Mic on Mars                                        -> Rover microphones record Mars sounds
+2026-10-16 13:23:35,386 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:35,390 INFO Mission Overview: NASA’s Perseverance Mars Rover        -> No sound described in metadata
+2026-10-16 13:23:36,222 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:36,227 INFO The First Possible Sound of a Marsquake on This Week @N -> Marsquake sound recorded by NASA
+2026-10-16 13:23:36,758 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:36,762 INFO First Likely Marsquake Heard by NASA's InSight          -> Mars wind marsquake robotic arm
+2026-10-16 13:23:38,081 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:38,087 INFO Are There Earthquakes On Other Planets? We Asked A NASA -> NASA expert discusses planetary quakes
+2026-10-16 13:23:38,617 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:38,621 INFO The Cause of a Christmas Eve Quake on Mars on This Week -> Mars quake rumbles
+2026-10-16 13:23:39,198 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:39,204 INFO The Next Commercial Crew Test Mission to the Space Stat -> Space station mission announcement
+2026-10-16 13:23:40,452 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:40,457 INFO The Webb Telescope is Closer to Starting Its Mission of -> Webb Telescope mission launch preparation
+2026-10-16 13:23:40,752 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:40,756 INFO Sounds from Around the Milky Way                        -> Milky Way center sounds
+2026-10-16 13:23:41,449 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:41,454 INFO EUNIS Sees Evidence for Nanoflare Heating               -> Tone music as temperature rises
+2026-10-16 13:23:43,093 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:43,098 INFO NASA ScienceCasts: On the Cusp of Understanding         -> Sounding rocket study magnetic bubble cusp
+2026-10-16 13:23:43,505 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:43,511 INFO Artemis I Launch Collage                                -> Artemis launch at Kennedy Space Center
+2026-10-16 13:23:44,640 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:44,644 INFO Artemis I Launches to the Moon (Official NASA Recap)    -> Rocket lifts off Kennedy Space Center
+2026-10-16 13:23:45,536 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:45,982 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:47,256 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:47,260 INFO Around the Moon for All Humanity: Artemis II (Official  -> SLS rocket launch Kennedy Space Center
+2026-10-16 13:23:47,847 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:48,401 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:48,405 INFO Artemis II at Launch Pad 39B                            -> No sound present at launch pad
+2026-10-16 13:23:49,417 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:49,421 INFO The First Artemis Robotic Launch to the Moon on This We -> Artemis lunar robotic rover launch
+2026-10-16 13:23:49,862 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:49,865 INFO The Move to the Launch Pad for Artemis I on This Week @ -> No sound recorded in this video
+2026-10-16 13:23:50,417 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:50,420 INFO Artemis III Launch Simulation - Terminal Count Sim      -> Ambient sounds in launch control center
+2026-10-16 13:23:50,860 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:50,865 INFO Artemis I Launch Imagery                                -> Ambient sounds launch pad 39B
+2026-10-16 13:23:52,465 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:53,159 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-16 13:23:54,595 INFO HTTP Request: POST http://10.55.0.2:8091/v1/chat/completions "HTTP/1.1 200 OK"
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/o/Ode/Github/embeddings-gemma-exploration/src/gallery/sound_captions.py", line 45, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/mnt/o/Ode/Github/embeddings-gemma-exploration/src/gallery/sound_captions.py", line 38, in main
+    meta["caption"] = caption_for(client, r)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/o/Ode/Github/embeddings-gemma-exploration/src/gallery/sound_captions.py", line 28, in caption_for
+    raise RuntimeError(f"no 2-6 word caption for {item['id']} (last: {c!r})")
+RuntimeError: no 2-6 word caption for nasa:SSC_2019-02-28 - Video File - RS-25 Engine Test (last: 'RS-25 engine tests at Stennis Space Center')

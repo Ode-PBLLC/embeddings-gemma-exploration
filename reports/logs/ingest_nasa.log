@@ -1,0 +1,35 @@
+2026-10-15 22:37:52,935 gallery.ingest.nasa INFO nebula                         raw  316  after dedup  249
+2026-10-15 22:37:52,936 gallery.ingest.nasa INFO galaxy                         raw  400  after dedup  363
+2026-10-15 22:37:52,936 gallery.ingest.nasa INFO earth from orbit               raw  400  after dedup  308
+2026-10-15 22:37:52,936 gallery.ingest.nasa INFO mars surface                   raw  400  after dedup  336
+2026-10-15 22:37:52,936 gallery.ingest.nasa INFO astronaut spacewalk            raw  400  after dedup  293
+2026-10-15 22:37:52,937 gallery.ingest.nasa INFO rocket launch                  raw  400  after dedup   83
+2026-10-15 22:37:52,937 gallery.ingest.nasa INFO jupiter                        raw  400  after dedup  346
+2026-10-15 22:37:52,937 gallery.ingest.nasa INFO aurora                         raw  400  after dedup  290
+2026-10-15 22:37:52,937 gallery.ingest.nasa INFO moon                           raw  400  after dedup  274
+2026-10-15 22:37:52,937 gallery.ingest.nasa INFO saturn                         raw  400  after dedup  255
+2026-10-15 22:37:52,938 gallery.ingest.nasa INFO comet                          raw  400  after dedup  343
+2026-10-15 22:37:52,938 gallery.ingest.nasa INFO international space station    raw  400  after dedup   54
+2026-10-15 22:37:52,938 gallery.ingest.nasa INFO hurricane from space           raw  400  after dedup  248
+2026-10-15 22:37:52,938 gallery.ingest.nasa INFO solar flare                    raw  194  after dedup  137
+2026-10-15 22:37:52,939 gallery.ingest.nasa INFO apollo                         raw  400  after dedup  144
+2026-10-15 22:37:52,939 gallery.ingest.nasa INFO hubble                         raw  400  after dedup  193
+2026-10-15 22:37:52,941 gallery.ingest INFO round 1: fetching 1700 items (have 0 / 1700)
+2026-10-15 22:40:50,295 gallery.ingest.nasa INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/raw/nasa.parquet: 1700 rows
+topic
+nebula                         112
+galaxy                         112
+earth from orbit               112
+mars surface                   112
+astronaut spacewalk            112
+jupiter                        112
+aurora                         112
+moon                           112
+saturn                         112
+comet                          111
+hurricane from space           111
+solar flare                    111
+apollo                         111
+hubble                         111
+rocket launch                   83
+international space station     54

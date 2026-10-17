@@ -1,0 +1,17 @@
+2026-10-16 13:04:45,774 gallery.ingest.aic_audio INFO 191 of 1700 artworks have an audio guide
+2026-10-16 13:04:45,983 gallery.ingest WARNING failure aic aic:sound-07f5cb1a-27a0-bbc5-5a34-39322f2a430a audio: duration 3984s outside 8-330s
+2026-10-16 13:04:55,033 gallery.ingest WARNING failure aic aic:sound-5151ce4c-0c82-6ae2-ea64-3323faf4a508 audio: duration 3135s outside 8-330s
+2026-10-16 13:04:55,205 gallery.ingest WARNING failure aic aic:sound-fa5e0458-1aa3-ccf4-7616-b933511fa5b1 audio: duration 3391s outside 8-330s
+2026-10-16 13:04:59,723 gallery.ingest WARNING failure aic aic:sound-79ec08d5-35cc-3870-4959-d08457f3d232 audio: duration 3488s outside 8-330s
+2026-10-16 13:05:01,022 gallery.ingest WARNING failure aic aic:sound-d9683532-66fd-67c3-5588-021527d115af audio: duration 3125s outside 8-330s
+2026-10-16 13:05:01,134 gallery.ingest WARNING failure aic aic:sound-031e5d5f-5a02-7dc4-faba-5f46a7914039 audio: duration 3807s outside 8-330s
+2026-10-16 13:05:10,338 gallery.ingest.aic_audio INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/raw/aic_audio.parquet: 182 rows
+topic
+Painting and Sculpture of Europe       65
+Arts of Asia                           28
+Applied Arts of Europe                 27
+Arts of the Americas                   27
+Arts of Greece, Rome, and Byzantium    22
+Arts of Africa                          8
+Modern Art                              4
+Architecture and Design                 1

@@ -1,0 +1,72 @@
+2026-10-16 10:29:56,370 gallery.ingest.nasa_video INFO aurora               usable   18  after dedup   17
+2026-10-16 10:29:56,371 gallery.ingest.nasa_video INFO solar flare          usable   49  after dedup   37
+2026-10-16 10:29:56,371 gallery.ingest.nasa_video INFO sun                  usable  183  after dedup   89
+2026-10-16 10:29:56,371 gallery.ingest.nasa_video INFO earth from orbit     usable  182  after dedup  138
+2026-10-16 10:29:56,371 gallery.ingest.nasa_video INFO hurricane            usable   89  after dedup   82
+2026-10-16 10:29:56,372 gallery.ingest.nasa_video INFO nebula               usable    8  after dedup    7
+2026-10-16 10:29:56,372 gallery.ingest.nasa_video INFO galaxy               usable   84  after dedup   63
+2026-10-16 10:29:56,372 gallery.ingest.nasa_video INFO black hole           usable   19  after dedup   14
+2026-10-16 10:29:56,372 gallery.ingest.nasa_video INFO mars                 usable  136  after dedup  115
+2026-10-16 10:29:56,372 gallery.ingest.nasa_video INFO jupiter              usable   57  after dedup   52
+2026-10-16 10:29:56,372 gallery.ingest.nasa_video INFO saturn               usable   32  after dedup   25
+2026-10-16 10:29:56,373 gallery.ingest.nasa_video INFO moon                 usable  171  after dedup  132
+2026-10-16 10:29:56,373 gallery.ingest.nasa_video INFO rocket launch        usable  212  after dedup  169
+2026-10-16 10:29:56,373 gallery.ingest.nasa_video INFO space station        usable  132  after dedup  123
+2026-10-16 10:29:56,373 gallery.ingest.nasa_video INFO comet                usable   18  after dedup   13
+2026-10-16 10:29:56,373 gallery.ingest.nasa_video INFO supernova            usable   11  after dedup    8
+2026-10-16 10:29:56,373 gallery.ingest.nasa_video INFO ocean                usable  186  after dedup  133
+2026-10-16 10:29:56,374 gallery.ingest.nasa_video INFO sea ice              usable   65  after dedup   59
+2026-10-16 10:29:56,374 gallery.ingest.nasa_video INFO wildfire             usable   17  after dedup   17
+2026-10-16 10:29:56,374 gallery.ingest.nasa_video INFO volcano              usable   18  after dedup   16
+2026-10-16 10:29:56,596 gallery.ingest INFO round 1: fetching 240 items (have 0 / 240)
+2026-10-16 10:30:12,448 gallery.ingest WARNING failure nasa nasa:GSFC_20180822_Parker_m13046_Sunset_Show video: duration 1953s outside 10-360s
+2026-10-16 10:30:13,185 gallery.ingest WARNING failure nasa nasa:GSFC_20170802_m12602_Dellingr_deploymentphotoseq video: duration 10s outside 10-360s
+2026-10-16 10:30:16,088 gallery.ingest WARNING failure nasa nasa:jsc2019m000804_Hurricane_Dorian_190831 video: duration 399s outside 10-360s
+2026-10-16 10:30:16,165 gallery.ingest WARNING failure nasa nasa:jsc2019m000803_Hurricane_Dorian_190830 video: duration 1305s outside 10-360s
+2026-10-16 10:30:22,879 gallery.ingest WARNING failure nasa nasa:Mars 2020 Perseverance Landing Coverage - Commentary video: duration 7851s outside 10-360s
+2026-10-16 10:30:24,255 gallery.ingest WARNING failure nasa nasa:JPL-20211028-JUNOf-0001-Juno Science Briefing video: duration 5340s outside 10-360s
+2026-10-16 10:30:24,504 gallery.ingest WARNING failure nasa nasa:Moon and Saturn video: duration 864s outside 10-360s
+2026-10-16 10:30:25,015 gallery.ingest WARNING failure nasa nasa:KSC-20190716-MH-CSH01_0002-Apollo_11_50th_Gala_Broll-3226040 video: duration 527s outside 10-360s
+2026-10-16 10:30:25,357 gallery.ingest WARNING failure nasa nasa:Test_Stand_4670 video: duration 598s outside 10-360s
+2026-10-16 10:30:25,563 gallery.ingest WARNING failure nasa nasa:KSC-19640101-MH-NAS01-0001-The_Crawler_Transporter_The_Beginning_Historical_Footage-B_2309 video: duration 628s outside 10-360s
+2026-10-16 10:30:27,694 gallery.ingest WARNING failure nasa nasa:KSC-01172026-Artemis II_Rollout_B Roll_Package video: duration 820s outside 10-360s
+2026-10-16 10:30:28,043 gallery.ingest WARNING failure nasa nasa:Coverage of the launch of the James Webb Space Telescope on an Ariane 5 rocket from the Guiana Space Center in Kourou, French Guiana video: duration 8146s outside 10-360s
+2026-10-16 10:30:28,925 gallery.ingest WARNING failure nasa nasa:KSC-20150715-MH-ISS01_0005-ISS_Project_VEG-01B-3262103 video: duration 2459s outside 10-360s
+2026-10-16 10:30:29,327 gallery.ingest WARNING failure nasa nasa:KSC-20150715-MH-ISS01_0007-ISS_Project_VEG-01B-3262103 video: duration 683s outside 10-360s
+2026-10-16 10:30:34,060 gallery.ingest WARNING failure nasa nasa:GSFC_3IATLAS_Briefing video: listed duration 3514s outside 10-360s
+2026-10-16 10:30:40,003 gallery.ingest WARNING failure nasa nasa:JPL-20240808-NEOWISf-0001-NEOWISE End of Mission Media Reel video: listed duration 490s outside 10-360s
+2026-10-16 10:30:44,999 gallery.ingest WARNING failure nasa nasa:NASA's DART Mission, First-Ever Planetary Defense Test video: listed duration 3637s outside 10-360s
+2026-10-16 10:30:49,015 gallery.ingest WARNING failure nasa nasa:GSFC_20100126_Nova_m10547_SuperNova video: listed duration 8s outside 10-360s
+2026-10-16 10:32:45,872 gallery.ingest INFO round 2: fetching 18 items (have 222 / 240)
+2026-10-16 10:33:08,087 gallery.ingest WARNING failure nasa nasa:KSC-19690912-MH-NAS01-0001-Apollo_Saturn_Footage_900_Aerials_from_9121969_400_Crawler_Saturn_V_on_Pad_LUT_move_1700-DVC_1950 video: listed duration 1502s outside 10-360s
+2026-10-16 10:33:14,191 gallery.ingest WARNING failure nasa nasa:NHQ_2020_1002_Launch of the Northrop Grumman CRS-14 Antares Rocket video: listed duration 400s outside 10-360s
+2026-10-16 10:33:18,095 gallery.ingest WARNING failure nasa nasa:MSFC_2023_0720_LVSA III Move to 4649 video: listed duration 382s outside 10-360s
+2026-10-16 10:33:21,107 gallery.ingest WARNING failure nasa nasa:KSC-20150715-MH-ISS01_0004-ISS_Project_VEG-01B-3262103 video: listed duration 506s outside 10-360s
+2026-10-16 10:33:22,106 gallery.ingest WARNING failure nasa nasa:KSC-20150715-MH-ISS01_0003-ISS_Project_VEG-01B-3262103 video: listed duration 1241s outside 10-360s
+2026-10-16 10:33:24,110 gallery.ingest WARNING failure nasa nasa:GSFC_1968_50thOAO2_m12916 video: listed duration 868s outside 10-360s
+2026-10-16 10:33:24,120 gallery.ingest INFO round 3: fetching 6 items (have 234 / 240)
+2026-10-16 10:33:33,897 gallery.ingest WARNING failure nasa nasa:KSC-20150715-MH-ISS01_0006-ISS_Project_VEG-01B-3262103 video: listed duration 8095s outside 10-360s
+2026-10-16 10:33:36,906 gallery.ingest WARNING failure nasa nasa:KSC-20150715-MH-ISS01_0001-ISS_Project_VEG-01B-3262103 video: listed duration 1763s outside 10-360s
+2026-10-16 10:33:41,587 gallery.ingest INFO round 4: fetching 2 items (have 238 / 240)
+2026-10-16 10:33:50,994 gallery.ingest.nasa_video INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/raw/nasa_video.parquet: 240 rows
+topic
+aurora              13
+solar flare         13
+sun                 13
+earth from orbit    13
+hurricane           13
+galaxy              13
+black hole          13
+mars                13
+jupiter             13
+saturn              13
+moon                13
+rocket launch       13
+space station       13
+ocean               12
+sea ice             12
+wildfire            12
+volcano             12
+comet                9
+nebula               7
+supernova            7

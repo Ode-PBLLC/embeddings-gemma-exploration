@@ -1,0 +1,13 @@
+data/
+.venv/
+__pycache__/
+*.pyc
+web/data/
+web/thumbs
+models/
+.pytest_cache/
+web/videos
+web/audio
+data_moon/
+web_moon/
+dist/

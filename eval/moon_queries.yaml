@@ -1,0 +1,28 @@
+# The Moon set: on-topic queries a presenter might type; off-topic ones calibrate the weak threshold.
+on_topic:
+  - {q: "a huge impact basin"}
+  - {q: "dark smooth lava plains"}
+  - {q: "a fresh crater with bright rays"}
+  - {q: "mountain ranges"}
+  - {q: "a long straight cliff"}
+  - {q: "winding rilles"}
+  - {q: "the Sea of Tranquility"}
+  - {q: "craters named after astronomers"}
+  - {q: "the lunar south pole"}
+  - {q: "a crater with a central peak"}
+  - {q: "chains of small craters"}
+  - {q: "heavily cratered ancient highlands"}
+  - {q: "Tycho"}
+  - {q: "wrinkle ridges in a mare"}
+  - {q: "a bay on the edge of a sea"}
+off_topic:
+  - "quarterly tax filing deadlines"
+  - "how to reset my router password"
+  - "best mortgage refinance rates"
+  - "python list comprehension syntax"
+  - "fantasy football waiver wire advice"
+  - "symptoms of a sinus infection"
+  - "unsubscribe from this mailing list"
+  - "kubernetes pod crashloopbackoff"
+  - "coupon code for pizza delivery"
+  - "spreadsheet pivot table formula"

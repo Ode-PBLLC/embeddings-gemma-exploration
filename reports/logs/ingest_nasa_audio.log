@@ -1,0 +1,64 @@
+2026-10-16 12:46:49,527 gallery.ingest.nasa_audio INFO sounds of mars       candidates   12
+2026-10-16 12:46:49,528 gallery.ingest.nasa_audio INFO marsquakes           candidates    7
+2026-10-16 12:46:49,528 gallery.ingest.nasa_audio INFO sonification         candidates    2
+2026-10-16 12:46:49,528 gallery.ingest.nasa_audio INFO space plasma sounds  candidates    4
+2026-10-16 12:46:49,528 gallery.ingest.nasa_audio INFO launches             candidates   99
+2026-10-16 12:46:49,529 gallery.ingest.nasa_audio INFO engine tests         candidates  127
+2026-10-16 12:46:49,529 gallery.ingest.nasa_audio INFO aircraft             candidates   82
+2026-10-16 12:46:49,727 gallery.ingest INFO round 1: fetching 40 items (have 0 / 40)
+2026-10-16 12:47:08,004 gallery.ingest WARNING failure nasa nasa:KSC ART II Cause Way Launch low angle audio: listed duration 527s > 330s
+2026-10-16 12:47:08,349 gallery.ingest WARNING failure nasa nasa:KSC-20251105-MH-CSH01-0002-Artemis_II_ Launch_Simulation_LCC-M17495 audio: listed duration 501s > 330s
+2026-10-16 12:47:08,383 gallery.ingest WARNING failure nasa nasa:KSC ART II Cause Way Launch high angle audio: listed duration 574s > 330s
+2026-10-16 12:47:08,408 gallery.ingest WARNING failure nasa nasa:Causeway Main Launch dust removal audio: listed duration 527s > 330s
+2026-10-16 12:47:08,448 gallery.ingest WARNING failure nasa nasa:2018-10-31 - RS-25 Engine Test - 4K Full Duration audio: listed duration 525s > 330s
+2026-10-16 12:47:08,487 gallery.ingest WARNING failure nasa nasa:2016-07-29 - RS-25 Engine Test - 4K Full Duration audio: listed duration 674s > 330s
+2026-10-16 12:47:08,513 gallery.ingest WARNING failure nasa nasa:SSC_2025-11-12_RS-25_Engine_Test audio: listed duration 528s > 330s
+2026-10-16 12:47:08,533 gallery.ingest WARNING failure nasa nasa:SSC_2022-01-19_RS-25_Engine_Test audio: listed duration 528s > 330s
+2026-10-16 12:47:08,552 gallery.ingest WARNING failure nasa nasa:SSC_2025-06-20_RS-25_Engine_Test audio: listed duration 529s > 330s
+2026-10-16 12:47:08,567 gallery.ingest WARNING failure nasa nasa:SSC_2022-03-30_RS-25_Engine_Test audio: listed duration 526s > 330s
+2026-10-16 12:47:08,584 gallery.ingest WARNING failure nasa nasa:SSC_2022-02-24_RS-25_Engine_Test audio: listed duration 529s > 330s
+2026-10-16 12:47:08,599 gallery.ingest WARNING failure nasa nasa:SSC_2023-11-29_RS-25_Engine_Test audio: listed duration 1436s > 330s
+2026-10-16 12:47:08,709 gallery.ingest WARNING failure nasa nasa:AFRC_2022_13854_CarpetDIEM_II_VIDEO_FILE audio: listed duration 486s > 330s
+2026-10-16 12:47:10,321 gallery.ingest INFO round 2: fetching 13 items (have 27 / 40)
+2026-10-16 12:47:10,341 gallery.ingest WARNING failure nasa nasa:KSC-20260612-MH-CSH01-0001-Artemis_III_Launch_Sim_2_LCC-M21434 audio: listed duration 557s > 330s
+2026-10-16 12:47:10,367 gallery.ingest WARNING failure nasa nasa:KSC-04012026-C4829 audio: listed duration 388s > 330s
+2026-10-16 12:47:10,396 gallery.ingest WARNING failure nasa nasa:SSC_2023-05-10_RS-25_Engine_Test audio: listed duration 1405s > 330s
+2026-10-16 12:47:10,422 gallery.ingest WARNING failure nasa nasa:SSC_2021-12-15_RS-25_Engine_Test audio: listed duration 523s > 330s
+2026-10-16 12:47:10,447 gallery.ingest WARNING failure nasa nasa:SSC_2024-02-29_RS-25_Engine_Test audio: listed duration 1389s > 330s
+2026-10-16 12:47:10,472 gallery.ingest WARNING failure nasa nasa:SSC_2021_0406_RS25EngineTest audio: listed duration 678s > 330s
+2026-10-16 12:47:10,500 gallery.ingest WARNING failure nasa nasa:SSC_2022-02-08_RS-25_Engine_Test audio: listed duration 529s > 330s
+2026-10-16 12:47:10,952 gallery.ingest WARNING failure nasa nasa:NASA Administrator Jim Bridenstine gives Artemis update with core stage of Space Launch System audio: listed duration 2613s > 330s
+2026-10-16 12:47:10,981 gallery.ingest WARNING failure nasa nasa:SSC_2021_0520_RS25EngineTest audio: listed duration 522s > 330s
+2026-10-16 12:47:16,209 gallery.ingest INFO round 3: fetching 9 items (have 31 / 40)
+2026-10-16 12:47:17,151 gallery.ingest WARNING failure nasa nasa:SSC_2021-09-30_RS-25_Engine_Test audio: listed duration 523s > 330s
+2026-10-16 12:47:17,163 gallery.ingest WARNING failure nasa nasa:KSC-20260806-MH-GEB01-0002-Artemis_III_Launch_Simulation_Terminal_Count_Sim_FR_1&2_LCC-M26396 audio: effectively silent (loudest -180 dBFS)
+2026-10-16 12:47:17,176 gallery.ingest WARNING failure nasa nasa:SSC_2023-04-05_RS-25_Engine_Test audio: listed duration 522s > 330s
+2026-10-16 12:47:17,199 gallery.ingest WARNING failure nasa nasa:SSC_2023-06-15_RS-25_Engine_Test audio: listed duration 1173s > 330s
+2026-10-16 12:47:17,224 gallery.ingest WARNING failure nasa nasa:SSC_2023-06-08_RS-25_Engine_Test audio: listed duration 1263s > 330s
+2026-10-16 12:47:17,255 gallery.ingest WARNING failure nasa nasa:SSC_2024-01-27_RS-25_Engine_Test audio: listed duration 1205s > 330s
+2026-10-16 12:47:19,355 gallery.ingest INFO round 4: fetching 6 items (have 34 / 40)
+2026-10-16 12:47:19,372 gallery.ingest WARNING failure nasa nasa:SSC_2023-03-08_RS-25_Engine_Test audio: listed duration 542s > 330s
+2026-10-16 12:47:19,385 gallery.ingest WARNING failure nasa nasa:SSC_2023-02-08_RS-25_Engine_Test audio: listed duration 522s > 330s
+2026-10-16 12:47:19,398 gallery.ingest WARNING failure nasa nasa:SSC_2024-03-27_RS-25_Engine_Test audio: listed duration 1213s > 330s
+2026-10-16 12:47:19,412 gallery.ingest WARNING failure nasa nasa:SSC_2024-04-03_RS-25_Engine_Test audio: listed duration 1275s > 330s
+2026-10-16 12:47:19,426 gallery.ingest WARNING failure nasa nasa:SSC_2024-01-23_RS-25_Engine_Test audio: listed duration 1275s > 330s
+2026-10-16 12:47:20,184 gallery.ingest INFO round 5: fetching 5 items (have 35 / 40)
+2026-10-16 12:47:20,203 gallery.ingest WARNING failure nasa nasa:SSC_2023-04-26_RS-25_Engine_Test audio: listed duration 1511s > 330s
+2026-10-16 12:47:20,219 gallery.ingest WARNING failure nasa nasa:SSC_2023-05-23_RS-25_Engine_Test audio: listed duration 1208s > 330s
+2026-10-16 12:47:20,231 gallery.ingest WARNING failure nasa nasa:SSC_2023-06-01_RS-25_Engine_Test audio: listed duration 1441s > 330s
+2026-10-16 12:47:20,245 gallery.ingest WARNING failure nasa nasa:SSC_2023-10-17_RS-25_Engine_Test audio: listed duration 1326s > 330s
+2026-10-16 12:47:20,257 gallery.ingest WARNING failure nasa nasa:SSC_2023-06-22_RS-25_Engine_Test audio: listed duration 1247s > 330s
+2026-10-16 12:47:20,265 gallery.ingest INFO round 6: fetching 5 items (have 35 / 40)
+2026-10-16 12:47:20,282 gallery.ingest WARNING failure nasa nasa:SSC_2023-03-21_RS-25_Engine_Test audio: listed duration 628s > 330s
+2026-10-16 12:47:20,293 gallery.ingest WARNING failure nasa nasa:SSC_2024-02-23_RS-25_Engine_Test audio: listed duration 1317s > 330s
+2026-10-16 12:47:20,308 gallery.ingest WARNING failure nasa nasa:SSC_2024-01-17_RS-25_Engine_Test audio: listed duration 1198s > 330s
+2026-10-16 12:47:20,320 gallery.ingest WARNING failure nasa nasa:SSC-2021-04-06_RS-25_Engine_Test audio: listed duration 527s > 330s
+2026-10-16 12:47:20,901 gallery.ingest.nasa_audio INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/raw/nasa_audio.parquet: 36 rows
+topic
+aircraft               [NASA’s The Quiet Crew | Joe Dussling, NASA’s ...
+engine tests           [NASA Marks RS-25 Testing Milestone for New Sp...
+launches               [Artemis I Launch Collage, Artemis I Launches ...
+marsquakes             [The First Possible Sound of a Marsquake on Th...
+sonification                          [Sounds from Around the Milky Way]
+sounds of mars         [NASA’s Perseverance Rover Captures Puff, Whir...
+space plasma sounds    [EUNIS Sees Evidence for Nanoflare Heating, NA...

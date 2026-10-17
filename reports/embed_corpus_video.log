@@ -1,0 +1,11 @@
+2026-10-16 10:35:23,251 INFO items=5340 (image=3400 text=1700) image_input=image+title chunk=256
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-16 10:37:31,043 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-16 10:37:31,220 INFO Loading SentenceTransformer model from google/embeddinggemma-2.
+Loading weights:   0%|          | 0/624 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 169/624 [00:00<00:00, 1673.53it/s]Loading weights:  54%|█████▍    | 337/624 [00:00<00:00, 1617.28it/s]Loading weights:  80%|███████▉  | 499/624 [00:00<00:00, 1569.49it/s]Loading weights: 100%|██████████| 624/624 [00:00<00:00, 1957.24it/s]
+2026-10-16 10:37:37,084 INFO Loaded 20 prompts with these keys: ['query', 'document', 'BitextMining', 'Classification', 'Clustering', 'CodeRetrieval', 'Document', 'FactChecking', 'InstructionRetrieval', 'MultilabelClassification', 'PairClassification', 'QuestionAnswering', 'Reranking', 'Retrieval', 'Retrieval-document', 'Retrieval-query', 'STS', 'SearchQuery', 'SentenceSimilarity', 'Summarization']
+2026-10-16 10:37:37,087 INFO model loaded in 114.2s
+[transformers] Asked to sample uniformly with `fps`, but the video metadata has no `fps` or `duration`. Keeping every frame and applying only the `max_frames` budget. Pass a `VideoMetadata` object with a valid `fps` and `duration` to sample at a target frame rate.
+2026-10-16 10:54:41,383 INFO chunk 19: rows 4864-5119 (0 img) 1017.1s, 0.3 items/s, done 5120/5340
+2026-10-16 10:57:58,462 INFO chunk 20: rows 5120-5339 (0 img) 196.2s, 1.1 items/s, done 5340/5340
+2026-10-16 10:57:58,556 INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/vectors.npy (5340, 768); embedded 476 new rows in 1221.5s (0.4 rows/s); peak VRAM 2565 MiB

@@ -1,0 +1,24 @@
+2026-10-16 13:23:27,507 INFO items=5558 already_done=5340 todo=218 workers=4
+2026-10-16 13:23:35,881 INFO progress 10/218 ok=10 failed=0 71.73 items/min eta=0.05h
+2026-10-16 13:23:41,233 INFO progress 20/218 ok=20 failed=0 87.48 items/min eta=0.04h
+2026-10-16 13:23:47,490 INFO progress 30/218 ok=30 failed=0 90.12 items/min eta=0.03h
+2026-10-16 13:23:53,125 INFO progress 40/218 ok=40 failed=0 93.71 items/min eta=0.03h
+2026-10-16 13:23:59,004 INFO progress 50/218 ok=50 failed=0 95.27 items/min eta=0.03h
+2026-10-16 13:24:04,178 INFO progress 60/218 ok=60 failed=0 98.19 items/min eta=0.03h
+2026-10-16 13:24:09,781 INFO progress 70/218 ok=70 failed=0 99.37 items/min eta=0.02h
+2026-10-16 13:24:16,174 INFO progress 80/218 ok=80 failed=0 98.64 items/min eta=0.02h
+2026-10-16 13:24:21,367 INFO progress 90/218 ok=90 failed=0 100.27 items/min eta=0.02h
+2026-10-16 13:24:26,965 INFO progress 100/218 ok=100 failed=0 100.92 items/min eta=0.02h
+2026-10-16 13:24:32,599 INFO progress 110/218 ok=110 failed=0 101.41 items/min eta=0.02h
+2026-10-16 13:24:37,792 INFO progress 120/218 ok=120 failed=0 102.45 items/min eta=0.02h
+2026-10-16 13:24:43,491 INFO progress 130/218 ok=130 failed=0 102.66 items/min eta=0.01h
+2026-10-16 13:24:48,934 INFO progress 140/218 ok=140 failed=0 103.17 items/min eta=0.01h
+2026-10-16 13:24:55,169 INFO progress 150/218 ok=150 failed=0 102.67 items/min eta=0.01h
+2026-10-16 13:25:00,635 INFO progress 160/218 ok=160 failed=0 103.09 items/min eta=0.01h
+2026-10-16 13:25:06,885 INFO progress 170/218 ok=170 failed=0 102.64 items/min eta=0.01h
+2026-10-16 13:25:12,052 INFO progress 180/218 ok=180 failed=0 103.31 items/min eta=0.01h
+2026-10-16 13:25:17,957 INFO progress 190/218 ok=190 failed=0 103.22 items/min eta=0.00h
+2026-10-16 13:25:23,079 INFO progress 200/218 ok=200 failed=0 103.83 items/min eta=0.00h
+2026-10-16 13:25:28,983 INFO progress 210/218 ok=210 failed=0 103.73 items/min eta=0.00h
+2026-10-16 13:25:32,796 INFO progress 218/218 ok=218 failed=0 104.40 items/min eta=0.00h
+2026-10-16 13:25:32,798 INFO done: {'ok': 218, 'failed': 0, 'skipped': 5340, 'seconds': 125.3}

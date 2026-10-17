@@ -1,0 +1,6 @@
+{
+  "mode": "raw",
+  "image_input": "image+title",
+  "k": 12,
+  "weak_threshold": 0.6677
+}

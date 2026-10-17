@@ -1,0 +1,34 @@
+{
+ "seq_mean_s": 0.99,
+ "seq_all_s": [
+  0.75,
+  1.28,
+  0.96,
+  1.04,
+  0.89,
+  0.95,
+  0.92,
+  1.11,
+  0.9,
+  1.08
+ ],
+ "parallel4_12items_s": 5.8,
+ "parallel4_s_per_item": 0.49,
+ "examples": [
+  [
+   "nasa:fx",
+   55,
+   "This Hubble image presents the spiral galaxy M83, also known as the Southern Pinwheel. The vast cosmic structure displays a bright, central core from which elegant spiral arms extend across the dark expanse of space. Numerous blue and red star-forming regions are visible within these arms, highlighting the active stellar nurseries within this distant galaxy."
+  ],
+  [
+   "aic:65811",
+   71,
+   "This oil on canvas by Paul C\u00e9zanne, painted in 1877, presents a still life featuring a white bowl overflowing with vibrant apples set upon a muted surface. The composition is notable for C\u00e9zanne's early exploration of form and color, rendering the fruit with simplified, structured planes of color. The arrangement emphasizes the solid, geometric presence of the fruit against the warm, earthy tones of the background, characteristic of his developing style."
+  ],
+  [
+   "aic:65811",
+   62,
+   "This oil on canvas by Paul C\u00e9zanne, painted in 1877, depicts a simple arrangement of apples piled high within a shallow white bowl set upon a muted surface. The fruit is rendered with visible brushstrokes, showcasing C\u00e9zanne's early explorations into structure and form. The composition is notable for its deliberate, somewhat geometric arrangement of color and shape, characteristic of his developing style."
+  ]
+ ]
+}

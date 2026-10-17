@@ -1,0 +1,20 @@
+Oscar-Claude Monet was a French painter and founder of Impressionist painting who is seen as a key precursor to modernism, especially in his attempts to paint nature as he perceived it. During his long career, he was the most consistent and prolific practitioner of Impressionism's philosophy of expressing one's perceptions before nature.
+Too short to keep as a paragraph.
+
+
+== Early life ==
+Claude Monet was born on 14 November 1840 on the fifth floor of 45 rue Laffitte, in the 9th arrondissement of Paris. He was the second son of Claude Adolphe Monet and Louise Justine Aubrée Monet, both of them second-generation Parisians, and he was baptised in the local parish church.
+
+=== Education ===
+Monet was enrolled at the Le Havre secondary school of the arts in 1851, where he became known locally for his charcoal caricatures, which he would sell for ten to twenty francs. Monet also undertook his first drawing lessons from Jacques-François Ochard, a former student of Jacques-Louis David, and met Eugène Boudin.
+
+
+== References ==
+Wildenstein, Daniel (1996). Monet or the Triumph of Impressionism. Cologne: Taschen. This is a long reference line that has more than forty words in it so that the chunker would keep it if it did not skip the references section entirely, which it must do here in this test.
+
+=== Sources ===
+Another long line in a subsection of references that should be skipped because its parent heading was skipped; it also has well over forty words so length alone would not drop it from the output of the chunker at all, which is why it is here.
+
+
+== Legacy ==
+Monet's work is widely exhibited and his paintings sell for very large sums. His series of water lilies, haystacks and Rouen Cathedral are among the most famous paintings of the late nineteenth and early twentieth centuries, and they influenced generations of abstract painters who came after him in Europe and America.

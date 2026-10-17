@@ -1,0 +1,18 @@
+2026-10-16 17:28:05,712 gallery.ingest.moon INFO gazetteer: 2023 named features (73 broad)
+2026-10-16 17:28:14,837 gallery.ingest WARNING failure moon moon:5/28/12 z6 child 1,0 missing; z5 quadrant used: HTTP 403 for https://s3.amazonaws.com/opmbuilder/301_moon/tiles/w/hillshaded-albedo/6/57/39.png
+2026-10-16 17:30:01,414 gallery.ingest.moon INFO built 1024 tiles
+2026-10-16 17:30:16,424 gallery.ingest.moon INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data_moon/items.parquet: 1024 rows; 589 titled after a named feature
+topic
+crater     467
+terrain    435
+rima        29
+mare        25
+mons        14
+catena      10
+dorsum      10
+vallis       9
+sinus        8
+lacus        7
+oceanus      4
+rupes        4
+EXIT 0

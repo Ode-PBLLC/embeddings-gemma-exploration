@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Embedding Gallery</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.min.js" } }
+  </script>
+</head>
+<body>
+  <div id="stage" aria-label="The collection as a cloud of points"></div>
+
+  <header class="title-wall">
+    <p class="kicker">The Embedding Gallery</p>
+    <p class="holdings" id="holdings">&nbsp;</p>
+  </header>
+
+  <div class="loading" id="loading">Hanging the collection…</div>
+
+  <form class="ask" id="ask" autocomplete="off">
+    <div class="weak-badge" id="weak-badge" hidden>Nothing close</div>
+    <label class="visually-hidden" for="q">Ask the collection</label>
+    <input id="q" name="q" type="text" placeholder="Ask the collection…" maxlength="500" spellcheck="false">
+    <p class="ask-hint" id="ask-hint">Press Enter</p>
+    <button type="button" class="scope-btn" id="scope-btn" aria-haspopup="true" aria-expanded="false" aria-controls="scope">
+      <span id="scope-label">All works</span><span class="caret" aria-hidden="true"></span>
+    </button>
+    <div class="scope" id="scope" hidden>
+      <p class="scope-kicker">Search within</p>
+      <div class="scope-group">
+        <span class="scope-label">Type</span>
+        <div class="seg" role="radiogroup" aria-label="Type">
+          <button type="button" role="radio" data-modality="" aria-checked="true">All</button>
+          <button type="button" role="radio" data-modality="image" aria-checked="false">Images</button>
+          <button type="button" role="radio" data-modality="text" aria-checked="false">Text</button>
+          <button type="button" role="radio" data-modality="video" aria-checked="false">Video</button>
+          <button type="button" role="radio" data-modality="audio" aria-checked="false">Sound</button>
+        </div>
+      </div>
+      <div class="scope-group">
+        <span class="scope-label">Collection</span>
+        <div class="chips">
+          <button type="button" class="chip" data-source="aic" aria-pressed="true">Art Institute of Chicago</button>
+          <button type="button" class="chip" data-source="nasa" aria-pressed="true">NASA</button>
+          <button type="button" class="chip" data-source="wiki" aria-pressed="true">Wikipedia</button>
+        </div>
+      </div>
+      <p class="scope-count" id="scope-count"></p>
+      <p class="scope-note">Exact metadata filters, applied before the semantic ranking. In a real index these would be extracted fields.</p>
+    </div>
+    <p class="ask-error" id="ask-error" role="alert" hidden></p>
+  </form>
+
+  <p class="fine-print" id="data-note" hidden></p>
+
+  <aside class="wall" id="wall" aria-hidden="true">
+    <div class="wall-head">
+      <div class="wall-tools">
+        <span class="wall-kicker" id="wall-kicker">Nearest works</span>
+        <span class="wall-actions">
+          <button type="button" class="text-btn" id="open-page">Open as page</button>
+          <button type="button" class="text-btn" id="close-wall" aria-label="Close the wall">Close</button>
+        </span>
+      </div>
+      <h2 class="exhibit-title" id="wall-title"></h2>
+      <p class="wall-sub" id="wall-sub"></p>
+      <p class="wall-fine" id="wall-fine" hidden>Balanced across sources</p>
+    </div>
+    <div class="hang" id="hang"></div>
+  </aside>
+
+  <section class="page" id="page" aria-hidden="true">
+    <div class="page-inner">
+      <div class="page-tools">
+        <span class="wall-kicker" id="page-kicker">Nearest works</span>
+        <button type="button" class="text-btn" id="back-to-cloud">Back to cloud</button>
+      </div>
+      <h2 class="exhibit-title exhibit-title--page" id="page-title"></h2>
+      <p class="wall-sub" id="page-sub"></p>
+      <div class="hang hang--page" id="page-hang"></div>
+      <footer class="page-foot">
+        <h3>Sources</h3>
+        <ol id="page-sources"></ol>
+      </footer>
+    </div>
+  </section>
+
+  <aside class="wall-label" id="wall-label" aria-live="polite">
+    <p class="wall-label-kicker">Gemma’s note</p>
+    <p class="wall-label-text"></p>
+    <p class="pending" hidden>Summary pending: showing the source description</p>
+  </aside>
+
+  <aside class="detail" id="detail" aria-hidden="true">
+    <button type="button" class="text-btn detail-close" aria-label="Close">Close</button>
+    <div class="detail-body"></div>
+  </aside>
+
+  <div class="dot-tip" id="dot-tip" aria-hidden="true"></div>
+
+  <button type="button" class="globe-toggle" id="globe-toggle" hidden>Into embedding space</button>
+
+  <p class="nav-hint" id="nav-hint">Drag to turn · right-drag to pan · scroll to zoom in on any spot</p>
+
+  <div class="bench" id="bench" hidden></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

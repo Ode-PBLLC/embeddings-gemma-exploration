@@ -1,0 +1,26 @@
+2026-10-16 10:35:24,211 INFO items=5340 already_done=5100 todo=240 workers=4
+2026-10-16 10:35:39,111 INFO progress 10/240 ok=10 failed=0 40.30 items/min eta=0.10h
+2026-10-16 10:35:50,816 INFO progress 20/240 ok=20 failed=0 45.13 items/min eta=0.08h
+2026-10-16 10:36:04,856 INFO progress 30/240 ok=30 failed=0 44.30 items/min eta=0.08h
+2026-10-16 10:36:17,098 INFO progress 40/240 ok=40 failed=0 45.39 items/min eta=0.07h
+2026-10-16 10:36:30,335 INFO progress 50/240 ok=50 failed=0 45.38 items/min eta=0.07h
+2026-10-16 10:36:43,222 INFO progress 60/240 ok=60 failed=0 45.57 items/min eta=0.07h
+2026-10-16 10:36:56,272 INFO progress 70/240 ok=70 failed=0 45.63 items/min eta=0.06h
+2026-10-16 10:37:08,022 INFO progress 80/240 ok=80 failed=0 46.24 items/min eta=0.06h
+2026-10-16 10:37:22,593 INFO progress 90/240 ok=90 failed=0 45.62 items/min eta=0.05h
+2026-10-16 10:37:35,957 INFO progress 100/240 ok=100 failed=0 45.54 items/min eta=0.05h
+2026-10-16 10:37:49,431 INFO progress 110/240 ok=110 failed=0 45.45 items/min eta=0.05h
+2026-10-16 10:38:03,406 INFO progress 120/240 ok=120 failed=0 45.23 items/min eta=0.04h
+2026-10-16 10:38:13,808 INFO progress 130/240 ok=130 failed=0 45.99 items/min eta=0.04h
+2026-10-16 10:38:27,715 INFO progress 140/240 ok=140 failed=0 45.78 items/min eta=0.04h
+2026-10-16 10:38:40,246 INFO progress 150/240 ok=150 failed=0 45.91 items/min eta=0.03h
+2026-10-16 10:38:53,608 INFO progress 160/240 ok=160 failed=0 45.85 items/min eta=0.03h
+2026-10-16 10:39:06,786 INFO progress 170/240 ok=170 failed=0 45.83 items/min eta=0.03h
+2026-10-16 10:39:18,999 INFO progress 180/240 ok=180 failed=0 46.00 items/min eta=0.02h
+2026-10-16 10:39:33,304 INFO progress 190/240 ok=190 failed=0 45.77 items/min eta=0.02h
+2026-10-16 10:39:46,443 INFO progress 200/240 ok=200 failed=0 45.76 items/min eta=0.01h
+2026-10-16 10:39:59,366 INFO progress 210/240 ok=210 failed=0 45.79 items/min eta=0.01h
+2026-10-16 10:40:12,194 INFO progress 220/240 ok=220 failed=0 45.84 items/min eta=0.01h
+2026-10-16 10:40:25,999 INFO progress 230/240 ok=230 failed=0 45.73 items/min eta=0.00h
+2026-10-16 10:40:35,765 INFO progress 240/240 ok=240 failed=0 46.22 items/min eta=0.00h
+2026-10-16 10:40:35,768 INFO done: {'ok': 240, 'failed': 0, 'skipped': 5100, 'seconds': 311.6}

@@ -1,0 +1,18 @@
+2026-10-16 17:45:18,873 INFO items=1024 (image=1024 text=0) image_input=image+title chunk=128
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-16 17:47:36,216 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-16 17:47:36,399 INFO Loading SentenceTransformer model from google/embeddinggemma-2.
+Loading weights:   0%|          | 0/624 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 162/624 [00:00<00:00, 1616.01it/s]Loading weights:  52%|█████▏    | 324/624 [00:00<00:00, 1569.15it/s]Loading weights:  77%|███████▋  | 482/624 [00:00<00:00, 1565.11it/s]Loading weights: 100%|██████████| 624/624 [00:00<00:00, 1989.07it/s]
+2026-10-16 17:47:41,703 INFO Loaded 20 prompts with these keys: ['query', 'document', 'BitextMining', 'Classification', 'Clustering', 'CodeRetrieval', 'Document', 'FactChecking', 'InstructionRetrieval', 'MultilabelClassification', 'PairClassification', 'QuestionAnswering', 'Reranking', 'Retrieval', 'Retrieval-document', 'Retrieval-query', 'STS', 'SearchQuery', 'SentenceSimilarity', 'Summarization']
+2026-10-16 17:47:41,705 INFO model loaded in 120.9s
+[transformers] Image decoding with `torchvision` is deprecated and will be removed in future versions .Please install `torchcodec>=0.16.0` instead. 
+2026-10-16 17:47:56,790 INFO chunk 0: rows 0-127 (128 img) 14.7s, 8.7 items/s, done 128/1024
+2026-10-16 17:48:11,177 INFO chunk 1: rows 128-255 (128 img) 14.0s, 9.1 items/s, done 256/1024
+2026-10-16 17:48:25,744 INFO chunk 2: rows 256-383 (128 img) 14.2s, 9.0 items/s, done 384/1024
+2026-10-16 17:48:39,192 INFO chunk 3: rows 384-511 (128 img) 13.1s, 9.8 items/s, done 512/1024
+2026-10-16 17:48:52,378 INFO chunk 4: rows 512-639 (128 img) 12.9s, 10.0 items/s, done 640/1024
+2026-10-16 17:49:06,354 INFO chunk 5: rows 640-767 (128 img) 13.7s, 9.4 items/s, done 768/1024
+2026-10-16 17:49:20,268 INFO chunk 6: rows 768-895 (128 img) 13.6s, 9.4 items/s, done 896/1024
+2026-10-16 17:49:34,248 INFO chunk 7: rows 896-1023 (128 img) 13.6s, 9.4 items/s, done 1024/1024
+2026-10-16 17:49:34,273 INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data_moon/vectors.npy (1024, 768); embedded 1024 new rows in 112.6s (9.1 rows/s); peak VRAM 1512 MiB
+EXIT 0

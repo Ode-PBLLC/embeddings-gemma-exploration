@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/624 [00:00<?, ?it/s]Loading weights:  26%|██▋       | 165/624 [00:00<00:00, 1641.98it/s]Loading weights:  53%|█████▎    | 330/624 [00:00<00:00, 1623.49it/s]Loading weights:  79%|███████▉  | 493/624 [00:00<00:00, 1576.21it/s]Loading weights: 100%|██████████| 624/624 [00:00<00:00, 1925.03it/s]
+# Weak threshold: data_moon
+
+1024 items; 15 on-topic and 10 off-topic queries (eval/moon_queries.yaml).
+
+- on-topic best similarity: p10 0.7151, median 0.7506
+- off-topic best similarity: p90 0.6242, median 0.5806
+- threshold = midpoint = **0.6697**
+- off-topic flagged weak: 10/10; on-topic flagged weak: 0/15
+- result: PASS
+EXIT 0

@@ -1,0 +1,656 @@
+2026-10-16 13:06:32,359 INFO HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small.en/revision/main "HTTP/1.1 200 OK"
+2026-10-16 13:06:33,588 INFO Processing audio with duration 01:29.077
+2026-10-16 13:06:33,921 INFO VAD filter removed 01:28.213 of audio
+2026-10-16 13:06:34,472 INFO NASA’s Perseverance Rover Captures Puff, Whir, Zap Sounds fr wordless (0 words)
+2026-10-16 13:06:34,601 INFO Processing audio with duration 03:44.403
+2026-10-16 13:06:34,996 INFO VAD filter removed 00:17.683 of audio
+2026-10-16 13:06:45,168 INFO Perseverance Sends More Sounds From Mars on This Week @NASA  speech (568 words)
+2026-10-16 13:06:45,273 INFO Processing audio with duration 02:44.589
+2026-10-16 13:06:45,512 INFO VAD filter removed 02:44.589 of audio
+2026-10-16 13:06:45,518 INFO NASA’s Perseverance Rover Hears Ingenuity Mars Helicopter in wordless (0 words)
+2026-10-16 13:06:45,592 INFO Processing audio with duration 01:58.427
+2026-10-16 13:06:45,766 INFO VAD filter removed 01:58.427 of audio
+2026-10-16 13:06:45,772 INFO InSight Captures Sound of a Meteoroid Striking Mars          wordless (0 words)
+2026-10-16 13:06:45,863 INFO Processing audio with duration 02:13.195
+2026-10-16 13:06:46,056 INFO VAD filter removed 00:06.091 of audio
+2026-10-16 13:06:52,084 INFO Mars Report: Update on NASA’s Perseverance Rover SuperCam In speech (381 words)
+2026-10-16 13:06:52,171 INFO Processing audio with duration 02:12.266
+2026-10-16 13:06:52,363 INFO VAD filter removed 00:29.931 of audio
+2026-10-16 13:06:57,393 INFO How NASA’s Perseverance Rover Takes a Selfie                 speech (332 words)
+2026-10-16 13:06:57,520 INFO Processing audio with duration 03:15.611
+2026-10-16 13:06:57,870 INFO VAD filter removed 00:24.987 of audio
+2026-10-16 13:07:06,958 INFO Open Mic on Mars                                             speech (548 words)
+2026-10-16 13:07:07,085 INFO Processing audio with duration 02:57.870
+2026-10-16 13:07:07,392 INFO VAD filter removed 00:06.126 of audio
+2026-10-16 13:07:15,433 INFO Mission Overview: NASA’s Perseverance Mars Rover             speech (467 words)
+2026-10-16 13:07:15,571 INFO Processing audio with duration 03:31.214
+2026-10-16 13:07:15,954 INFO VAD filter removed 00:12.958 of audio
+2026-10-16 13:07:24,300 INFO The First Possible Sound of a Marsquake on This Week @NASA – speech (520 words)
+2026-10-16 13:07:24,352 INFO Processing audio with duration 01:09.573
+2026-10-16 13:07:24,450 INFO VAD filter removed 01:09.573 of audio
+2026-10-16 13:07:24,457 INFO First Likely Marsquake Heard by NASA's InSight               wordless (0 words)
+2026-10-16 13:07:24,530 INFO Processing audio with duration 01:42.545
+2026-10-16 13:07:24,679 INFO VAD filter removed 00:08.753 of audio
+2026-10-16 13:07:29,278 INFO Are There Earthquakes On Other Planets? We Asked A NASA Expe speech (252 words)
+2026-10-16 13:07:29,350 INFO Processing audio with duration 01:33.257
+2026-10-16 13:07:29,499 INFO VAD filter removed 00:05.369 of audio
+2026-10-16 13:07:33,737 INFO The Cause of a Christmas Eve Quake on Mars on This Week @NAS speech (232 words)
+2026-10-16 13:07:33,869 INFO Processing audio with duration 03:31.957
+2026-10-16 13:07:34,219 INFO VAD filter removed 00:04.965 of audio
+2026-10-16 13:07:42,495 INFO The Next Commercial Crew Test Mission to the Space Station o speech (515 words)
+2026-10-16 13:07:42,643 INFO Processing audio with duration 04:06.880
+2026-10-16 13:07:43,004 INFO VAD filter removed 00:08.144 of audio
+2026-10-16 13:07:52,696 INFO The Webb Telescope is Closer to Starting Its Mission of Scie speech (589 words)
+2026-10-16 13:07:52,741 INFO Processing audio with duration 01:03.721
+2026-10-16 13:07:52,830 INFO VAD filter removed 01:03.721 of audio
+2026-10-16 13:07:52,836 INFO Sounds from Around the Milky Way                             wordless (0 words)
+2026-10-16 13:07:52,930 INFO Processing audio with duration 02:37.716
+2026-10-16 13:07:53,164 INFO VAD filter removed 00:19.604 of audio
+2026-10-16 13:07:58,513 INFO EUNIS Sees Evidence for Nanoflare Heating                    speech (336 words)
+2026-10-16 13:07:58,665 INFO Processing audio with duration 04:03.908
+2026-10-16 13:07:59,063 INFO VAD filter removed 00:07.760 of audio
+2026-10-16 13:08:09,307 INFO NASA ScienceCasts: On the Cusp of Understanding              speech (565 words)
+2026-10-16 13:08:09,353 INFO Processing audio with duration 00:59.356
+2026-10-16 13:08:09,444 INFO VAD filter removed 00:14.140 of audio
+2026-10-16 13:08:11,398 INFO Artemis I Launch Collage                                     speech (118 words)
+2026-10-16 13:08:11,499 INFO Processing audio with duration 02:31.214
+2026-10-16 13:08:11,730 INFO VAD filter removed 00:47.790 of audio
+2026-10-16 13:08:16,071 INFO Artemis I Launches to the Moon (Official NASA Recap)         speech (257 words)
+2026-10-16 13:08:16,127 INFO Processing audio with duration 01:15.297
+2026-10-16 13:08:16,246 INFO VAD filter removed 00:25.953 of audio
+2026-10-16 13:08:18,511 INFO Around the Moon for All Humanity: Artemis II (Official Launc speech (129 words)
+2026-10-16 13:08:18,650 INFO Processing audio with duration 03:40.886
+2026-10-16 13:08:19,017 INFO VAD filter removed 03:40.886 of audio
+2026-10-16 13:08:19,023 INFO Artemis II at Launch Pad 39B                                 wordless (0 words)
+2026-10-16 13:08:19,101 INFO Processing audio with duration 02:00.842
+2026-10-16 13:08:19,273 INFO VAD filter removed 00:07.210 of audio
+2026-10-16 13:08:24,239 INFO The First Artemis Robotic Launch to the Moon on This Week @N speech (301 words)
+2026-10-16 13:08:24,304 INFO Processing audio with duration 01:37.529
+2026-10-16 13:08:24,443 INFO VAD filter removed 00:04.489 of audio
+2026-10-16 13:08:28,296 INFO The Move to the Launch Pad for Artemis I on This Week @NASA  speech (234 words)
+2026-10-16 13:08:28,438 INFO Processing audio with duration 03:58.441
+2026-10-16 13:08:28,777 INFO VAD filter removed 03:58.441 of audio
+2026-10-16 13:08:28,783 INFO Artemis III Launch Simulation - Terminal Count Sim           wordless (0 words)
+2026-10-16 13:08:28,862 INFO Processing audio with duration 02:02.979
+2026-10-16 13:08:29,034 INFO VAD filter removed 01:54.339 of audio
+2026-10-16 13:08:29,350 INFO Artemis I Launch Imagery                                     wordless (0 words)
+2026-10-16 13:08:29,477 INFO Processing audio with duration 03:31.772
+2026-10-16 13:08:29,774 INFO VAD filter removed 03:31.772 of audio
+2026-10-16 13:08:29,780 INFO NASA Marks RS-25 Testing Milestone for New Space Launch Syst wordless (0 words)
+2026-10-16 13:08:29,909 INFO Processing audio with duration 03:31.772
+2026-10-16 13:08:30,260 INFO VAD filter removed 03:31.772 of audio
+2026-10-16 13:08:30,266 INFO NASA Achieves Testing Milestone with Engines for Initial SLS wordless (0 words)
+2026-10-16 13:08:30,410 INFO Processing audio with duration 03:58.800
+2026-10-16 13:08:30,764 INFO VAD filter removed 03:58.800 of audio
+2026-10-16 13:08:30,770 INFO NASA Conducts RS-25 Hot Fire Test at Stennis Space Center    wordless (0 words)
+2026-10-16 13:08:30,841 INFO Processing audio with duration 01:54.155
+2026-10-16 13:08:30,999 INFO VAD filter removed 01:52.299 of audio
+2026-10-16 13:08:31,202 INFO Engineers Complete 5th Green Run Test of Space Launch System wordless (0 words)
+2026-10-16 13:08:31,291 INFO Processing audio with duration 02:19.883
+2026-10-16 13:08:31,506 INFO VAD filter removed 00:28.427 of audio
+2026-10-16 13:08:38,676 INFO NASA’s The Quiet Crew | Joe Dussling                         speech (431 words)
+2026-10-16 13:08:38,801 INFO Processing audio with duration 02:45.146
+2026-10-16 13:08:39,084 INFO VAD filter removed 00:31.418 of audio
+2026-10-16 13:08:45,867 INFO NASA’s The Quiet Crew | Kurt Long                            speech (422 words)
+2026-10-16 13:08:45,950 INFO Processing audio with duration 02:09.666
+2026-10-16 13:08:46,135 INFO VAD filter removed 00:40.898 of audio
+2026-10-16 13:08:51,059 INFO NASA’s The Quiet Crew | Larry Cliatt                         speech (300 words)
+2026-10-16 13:08:51,140 INFO Processing audio with duration 02:05.951
+2026-10-16 13:08:51,323 INFO VAD filter removed 00:28.479 of audio
+2026-10-16 13:08:56,662 INFO NASA's The Quiet Crew | Tegan French                         speech (307 words)
+2026-10-16 13:08:56,717 INFO Processing audio with duration 00:46.446
+2026-10-16 13:08:56,803 INFO VAD filter removed 00:42.318 of audio
+2026-10-16 13:08:57,149 INFO NASA’s X-59 Quiet Supersonic Aircraft Begins Taxi Tests Brol wordless (0 words)
+2026-10-16 13:08:57,280 INFO Processing audio with duration 02:49.511
+2026-10-16 13:08:57,535 INFO VAD filter removed 02:49.511 of audio
+2026-10-16 13:08:57,541 INFO Inside the Quesst - Fall 2022                                wordless (0 words)
+2026-10-16 13:08:57,651 INFO Processing audio with duration 02:49.511
+2026-10-16 13:08:57,982 INFO VAD filter removed 02:49.511 of audio
+2026-10-16 13:08:57,989 INFO Learn the Latest About X-59 and its Mission - March 2023     wordless (0 words)
+2026-10-16 13:08:58,116 INFO Processing audio with duration 02:34.802
+2026-10-16 13:08:58,379 INFO VAD filter removed 00:13.970 of audio
+2026-10-16 13:09:05,213 INFO Shiva as Lord of the Dance (Nataraja) — audio guide          speech (377 words)
+2026-10-16 13:09:05,273 INFO Processing audio with duration 01:13.352
+2026-10-16 13:09:05,411 INFO VAD filter removed 00:05.584 of audio
+2026-10-16 13:09:08,868 INFO Seated Bodhisattva — audio guide                             speech (166 words)
+2026-10-16 13:09:08,953 INFO Processing audio with duration 01:52.901
+2026-10-16 13:09:09,137 INFO VAD filter removed 00:03.765 of audio
+2026-10-16 13:09:13,775 INFO Karttikeya, Commander of the Divine Army, Seated on a Peacoc speech (234 words)
+2026-10-16 13:09:13,838 INFO Processing audio with duration 01:28.529
+2026-10-16 13:09:13,969 INFO VAD filter removed 00:02.321 of audio
+2026-10-16 13:09:18,014 INFO Incense Burner in the Form of a Duck — audio guide           speech (234 words)
+2026-10-16 13:09:18,088 INFO Processing audio with duration 01:47.938
+2026-10-16 13:09:18,259 INFO VAD filter removed 00:08.482 of audio
+2026-10-16 13:09:22,209 INFO Funerary Urn (Hunping) — audio guide                         speech (215 words)
+2026-10-16 13:09:22,282 INFO Processing audio with duration 01:43.994
+2026-10-16 13:09:22,430 INFO VAD filter removed 00:20.185 of audio
+2026-10-16 13:09:25,912 INFO Tiered Offering Mandala of the Goddess of Wealth (Vasudhara) speech (195 words)
+2026-10-16 13:09:25,973 INFO Processing audio with duration 01:24.532
+2026-10-16 13:09:26,097 INFO VAD filter removed 00:11.540 of audio
+2026-10-16 13:09:29,131 INFO Head of a Luohan — audio guide                               speech (175 words)
+2026-10-16 13:09:29,200 INFO Processing audio with duration 01:40.702
+2026-10-16 13:09:29,343 INFO VAD filter removed 00:00.656 of audio
+2026-10-16 13:09:33,422 INFO Cow Suckling a Calf — audio guide                            speech (240 words)
+2026-10-16 13:09:33,500 INFO Processing audio with duration 01:42.531
+2026-10-16 13:09:33,650 INFO VAD filter removed 00:06.243 of audio
+2026-10-16 13:09:37,458 INFO Tankard (Hanap) with Tulips, Hyacinths, Roses, and Carnation speech (208 words)
+2026-10-16 13:09:37,518 INFO Processing audio with duration 01:23.409
+2026-10-16 13:09:37,638 INFO VAD filter removed 00:00.560 of audio
+2026-10-16 13:09:41,086 INFO Pair of Cups — audio guide                                   speech (197 words)
+2026-10-16 13:09:41,171 INFO Processing audio with duration 02:13.773
+2026-10-16 13:09:41,363 INFO VAD filter removed 00:00.304 of audio
+2026-10-16 13:09:47,778 INFO Buddha — audio guide                                         speech (353 words)
+2026-10-16 13:09:47,843 INFO Processing audio with duration 01:25.211
+2026-10-16 13:09:47,981 INFO VAD filter removed 00:05.691 of audio
+2026-10-16 13:09:51,493 INFO Shukongojin — audio guide                                    speech (188 words)
+2026-10-16 13:09:51,564 INFO Processing audio with duration 01:35.373
+2026-10-16 13:09:51,732 INFO VAD filter removed 00:06.112 of audio
+2026-10-16 13:09:56,741 INFO Duck-Shaped Ewer with Daoist Priest — audio guide            speech (221 words)
+2026-10-16 13:09:56,815 INFO Processing audio with duration 01:35.713
+2026-10-16 13:09:56,963 INFO VAD filter removed 00:06.401 of audio
+2026-10-16 13:10:00,729 INFO Camel and Rider — audio guide                                speech (210 words)
+2026-10-16 13:10:00,822 INFO Processing audio with duration 02:05.257
+2026-10-16 13:10:01,006 INFO VAD filter removed 00:00.000 of audio
+2026-10-16 13:10:05,701 INFO Standing Bodhisattva with Human-Figure Necklace — audio guid speech (256 words)
+2026-10-16 13:10:05,805 INFO Processing audio with duration 02:48.725
+2026-10-16 13:10:06,050 INFO VAD filter removed 00:18.773 of audio
+2026-10-16 13:10:12,421 INFO Twenty-Armed Dancing God Ganesha, Remover of Obstacles — aud speech (317 words)
+2026-10-16 13:10:12,487 INFO Processing audio with duration 01:13.117
+2026-10-16 13:10:12,614 INFO VAD filter removed 00:03.005 of audio
+2026-10-16 13:10:15,724 INFO Bishamon — audio guide                                       speech (177 words)
+2026-10-16 13:10:15,808 INFO Processing audio with duration 01:52.013
+2026-10-16 13:10:15,969 INFO VAD filter removed 00:24.429 of audio
+2026-10-16 13:10:20,149 INFO Entertainer — audio guide                                    speech (209 words)
+2026-10-16 13:10:20,247 INFO Processing audio with duration 02:17.613
+2026-10-16 13:10:20,454 INFO VAD filter removed 00:00.432 of audio
+2026-10-16 13:10:26,517 INFO Goblet (jia) — audio guide                                   speech (376 words)
+2026-10-16 13:10:26,573 INFO Processing audio with duration 01:23.435
+2026-10-16 13:10:26,694 INFO VAD filter removed 00:02.059 of audio
+2026-10-16 13:10:30,642 INFO Horse — audio guide                                          speech (210 words)
+2026-10-16 13:10:30,700 INFO Processing audio with duration 01:14.789
+2026-10-16 13:10:30,808 INFO VAD filter removed 00:01.733 of audio
+2026-10-16 13:10:34,156 INFO Sōgyō Hachiman — audio guide                                 speech (193 words)
+2026-10-16 13:10:34,215 INFO Processing audio with duration 01:23.879
+2026-10-16 13:10:34,339 INFO VAD filter removed 00:03.047 of audio
+2026-10-16 13:10:38,127 INFO Maitreya Buddha — audio guide                                speech (191 words)
+2026-10-16 13:10:38,195 INFO Processing audio with duration 01:38.429
+2026-10-16 13:10:38,340 INFO VAD filter removed 00:01.821 of audio
+2026-10-16 13:10:42,426 INFO Tile with a Double-Arched Prayer Niche (Mihrab) — audio guid speech (226 words)
+2026-10-16 13:10:42,486 INFO Processing audio with duration 01:29.966
+2026-10-16 13:10:42,614 INFO VAD filter removed 00:02.414 of audio
+2026-10-16 13:10:46,538 INFO Yakushi Nyorai — audio guide                                 speech (232 words)
+2026-10-16 13:10:46,616 INFO Processing audio with duration 02:00.085
+2026-10-16 13:10:46,795 INFO VAD filter removed 00:08.848 of audio
+2026-10-16 13:10:51,211 INFO Inscribed Mina'i Bowl with an Enthroned Figure and Narrative speech (253 words)
+2026-10-16 13:10:51,282 INFO Processing audio with duration 01:53.084
+2026-10-16 13:10:51,442 INFO VAD filter removed 00:00.528 of audio
+2026-10-16 13:10:56,277 INFO Necklace Inscribed with the Name of King Pratapamalladeva —  speech (250 words)
+2026-10-16 13:10:56,354 INFO Processing audio with duration 01:52.144
+2026-10-16 13:10:56,524 INFO VAD filter removed 00:07.152 of audio
+2026-10-16 13:11:01,622 INFO Seated Woman Holding Mirror — audio guide                    speech (244 words)
+2026-10-16 13:11:01,706 INFO Processing audio with duration 02:05.675
+2026-10-16 13:11:01,899 INFO VAD filter removed 00:00.432 of audio
+2026-10-16 13:11:08,042 INFO Brushpot Depicting a Daoist Paradise — audio guide           speech (321 words)
+2026-10-16 13:11:08,097 INFO Processing audio with duration 01:23.461
+2026-10-16 13:11:08,235 INFO VAD filter removed 00:02.181 of audio
+2026-10-16 13:11:12,201 INFO Vase (Vase étrusque à rouleau) — audio guide                 speech (200 words)
+2026-10-16 13:11:12,275 INFO Processing audio with duration 01:35.765
+2026-10-16 13:11:12,434 INFO VAD filter removed 00:07.765 of audio
+2026-10-16 13:11:16,755 INFO King Vulture — audio guide                                   speech (196 words)
+2026-10-16 13:11:16,818 INFO Processing audio with duration 01:27.301
+2026-10-16 13:11:16,970 INFO VAD filter removed 00:06.469 of audio
+2026-10-16 13:11:20,567 INFO Sideboard — audio guide                                      speech (180 words)
+2026-10-16 13:11:20,626 INFO Processing audio with duration 01:08.493
+2026-10-16 13:11:20,750 INFO VAD filter removed 00:02.573 of audio
+2026-10-16 13:11:24,206 INFO Wine Cistern — audio guide                                   speech (175 words)
+2026-10-16 13:11:24,278 INFO Processing audio with duration 01:37.358
+2026-10-16 13:11:24,426 INFO VAD filter removed 00:02.446 of audio
+2026-10-16 13:11:29,147 INFO Cabinet — audio guide                                        speech (254 words)
+2026-10-16 13:11:29,224 INFO Processing audio with duration 01:45.038
+2026-10-16 13:11:29,383 INFO VAD filter removed 00:05.070 of audio
+2026-10-16 13:11:33,611 INFO Coffer — audio guide                                         speech (218 words)
+2026-10-16 13:11:33,662 INFO Processing audio with duration 01:07.344
+2026-10-16 13:11:33,761 INFO VAD filter removed 00:01.664 of audio
+2026-10-16 13:11:36,563 INFO Wall Clock — audio guide                                     speech (161 words)
+2026-10-16 13:11:36,623 INFO Processing audio with duration 01:23.096
+2026-10-16 13:11:36,743 INFO VAD filter removed 00:05.335 of audio
+2026-10-16 13:11:39,921 INFO Cup in the Form of a Horse and Rider — audio guide           speech (205 words)
+2026-10-16 13:11:39,984 INFO Processing audio with duration 01:29.156
+2026-10-16 13:11:40,118 INFO VAD filter removed 00:20.164 of audio
+2026-10-16 13:11:42,839 INFO Fall-Front Desk — audio guide                                speech (158 words)
+2026-10-16 13:11:42,950 INFO Processing audio with duration 02:48.124
+2026-10-16 13:11:43,191 INFO VAD filter removed 00:20.076 of audio
+2026-10-16 13:11:49,473 INFO A12: Cape Cod Living Room, 1750–1850 — audio guide           speech (362 words)
+2026-10-16 13:11:49,582 INFO Processing audio with duration 02:38.668
+2026-10-16 13:11:49,808 INFO VAD filter removed 00:11.724 of audio
+2026-10-16 13:11:56,166 INFO E29: English Roman Catholic Church in the Gothic Style, 1275 speech (365 words)
+2026-10-16 13:11:56,273 INFO Processing audio with duration 02:41.541
+2026-10-16 13:11:56,511 INFO VAD filter removed 00:18.725 of audio
+2026-10-16 13:12:03,149 INFO A1: Massachusetts Living Room and Kitchen, 1675–1700 — audio speech (380 words)
+2026-10-16 13:12:03,255 INFO Processing audio with duration 02:19.128
+2026-10-16 13:12:03,490 INFO VAD filter removed 00:17.272 of audio
+2026-10-16 13:12:09,809 INFO E24: French Salon of the Louis XVI Period, c. 1780 — audio g speech (284 words)
+2026-10-16 13:12:09,950 INFO Processing audio with duration 03:10.407
+2026-10-16 13:12:10,265 INFO VAD filter removed 00:07.223 of audio
+2026-10-16 13:12:20,275 INFO E12: English Drawing Room of the Georgian Period, c. 1800 —  speech (520 words)
+2026-10-16 13:12:20,367 INFO Processing audio with duration 01:51.177
+2026-10-16 13:12:20,566 INFO VAD filter removed 00:03.712 of audio
+2026-10-16 13:12:26,453 INFO Reliquary Monstrance with a Tooth of Saint John the Baptist  speech (315 words)
+2026-10-16 13:12:26,544 INFO Processing audio with duration 02:07.896
+2026-10-16 13:12:26,731 INFO VAD filter removed 00:32.168 of audio
+2026-10-16 13:12:30,886 INFO A30: Georgia Double Parlor, c. 1850 — audio guide            speech (215 words)
+2026-10-16 13:12:30,979 INFO Processing audio with duration 02:13.968
+2026-10-16 13:12:31,176 INFO VAD filter removed 00:09.712 of audio
+2026-10-16 13:12:36,882 INFO Garniture for Field and Foot Tourney at the Barriers — audio speech (330 words)
+2026-10-16 13:12:36,938 INFO Processing audio with duration 01:19.778
+2026-10-16 13:12:37,063 INFO VAD filter removed 00:01.922 of audio
+2026-10-16 13:12:40,320 INFO Bureau Secretary — audio guide                               speech (189 words)
+2026-10-16 13:12:40,396 INFO Processing audio with duration 01:45.247
+2026-10-16 13:12:40,552 INFO VAD filter removed 00:02.495 of audio
+2026-10-16 13:12:44,532 INFO Sideboard and Wine Cabinet — audio guide                     speech (231 words)
+2026-10-16 13:12:44,590 INFO Processing audio with duration 01:20.013
+2026-10-16 13:12:44,709 INFO VAD filter removed 00:02.416 of audio
+2026-10-16 13:12:47,622 INFO Vase with Cover — audio guide                                speech (200 words)
+2026-10-16 13:12:47,672 INFO Processing audio with duration 01:10.687
+2026-10-16 13:12:47,769 INFO VAD filter removed 00:01.919 of audio
+2026-10-16 13:12:50,674 INFO Bureau Secretary — audio guide                               speech (169 words)
+2026-10-16 13:12:50,741 INFO Processing audio with duration 01:34.145
+2026-10-16 13:12:50,874 INFO VAD filter removed 00:06.913 of audio
+2026-10-16 13:12:54,615 INFO Ewer — audio guide                                           speech (220 words)
+2026-10-16 13:12:54,675 INFO Processing audio with duration 01:17.061
+2026-10-16 13:12:54,787 INFO VAD filter removed 00:00.272 of audio
+2026-10-16 13:12:58,695 INFO Center Table — audio guide                                   speech (223 words)
+2026-10-16 13:12:58,747 INFO Processing audio with duration 01:11.419
+2026-10-16 13:12:58,848 INFO VAD filter removed 00:01.776 of audio
+2026-10-16 13:13:01,822 INFO Tureen and Stand — audio guide                               speech (152 words)
+2026-10-16 13:13:01,886 INFO Processing audio with duration 01:33.153
+2026-10-16 13:13:02,025 INFO VAD filter removed 00:02.593 of audio
+2026-10-16 13:13:05,618 INFO Punch Pot — audio guide                                      speech (201 words)
+2026-10-16 13:13:05,673 INFO Processing audio with duration 01:18.681
+2026-10-16 13:13:05,788 INFO VAD filter removed 00:08.217 of audio
+2026-10-16 13:13:08,975 INFO Tureen in the form of a Rabbit — audio guide                 speech (171 words)
+2026-10-16 13:13:09,061 INFO Processing audio with duration 02:13.368
+2026-10-16 13:13:09,249 INFO VAD filter removed 00:07.080 of audio
+2026-10-16 13:13:15,017 INFO Infantry Armor — audio guide                                 speech (337 words)
+2026-10-16 13:13:15,141 INFO Processing audio with duration 03:03.771
+2026-10-16 13:13:15,426 INFO VAD filter removed 00:14.379 of audio
+2026-10-16 13:13:22,651 INFO Coronation Stone of Moctezuma Xocoyotzin — audio guide       speech (380 words)
+2026-10-16 13:13:22,727 INFO Processing audio with duration 01:45.352
+2026-10-16 13:13:22,894 INFO VAD filter removed 00:05.008 of audio
+2026-10-16 13:13:27,593 INFO The Child's Bath — audio guide                               speech (272 words)
+2026-10-16 13:13:27,681 INFO Processing audio with duration 02:00.555
+2026-10-16 13:13:27,869 INFO VAD filter removed 00:00.272 of audio
+2026-10-16 13:13:34,209 INFO The Herring Net — audio guide                                speech (349 words)
+2026-10-16 13:13:34,304 INFO Processing audio with duration 02:18.658
+2026-10-16 13:13:34,514 INFO VAD filter removed 00:16.002 of audio
+2026-10-16 13:13:41,214 INFO The Fountain, Villa Torlonia, Frascati, Italy — audio guide  speech (361 words)
+2026-10-16 13:13:41,278 INFO Processing audio with duration 01:24.454
+2026-10-16 13:13:41,404 INFO VAD filter removed 00:00.144 of audio
+2026-10-16 13:13:45,544 INFO Nocturne: Blue and Gold—Southampton Water — audio guide      speech (232 words)
+2026-10-16 13:13:45,605 INFO Processing audio with duration 01:19.412
+2026-10-16 13:13:45,724 INFO VAD filter removed 00:13.780 of audio
+2026-10-16 13:13:49,036 INFO At Mouquin's — audio guide                                   speech (173 words)
+2026-10-16 13:13:49,098 INFO Processing audio with duration 01:23.043
+2026-10-16 13:13:49,217 INFO VAD filter removed 00:00.272 of audio
+2026-10-16 13:13:52,851 INFO View of Cotopaxi — audio guide                               speech (208 words)
+2026-10-16 13:13:52,906 INFO Processing audio with duration 01:18.811
+2026-10-16 13:13:53,016 INFO VAD filter removed 00:02.843 of audio
+2026-10-16 13:13:56,687 INFO For Sunday's Dinner — audio guide                            speech (212 words)
+2026-10-16 13:13:56,747 INFO Processing audio with duration 01:23.200
+2026-10-16 13:13:56,863 INFO VAD filter removed 00:02.192 of audio
+2026-10-16 13:14:00,062 INFO The Two Disciples at the Tomb — audio guide                  speech (210 words)
+2026-10-16 13:14:00,120 INFO Processing audio with duration 01:18.916
+2026-10-16 13:14:00,232 INFO VAD filter removed 00:00.000 of audio
+2026-10-16 13:14:03,752 INFO The Bronco Buster — audio guide                              speech (209 words)
+2026-10-16 13:14:03,802 INFO Processing audio with duration 01:10.531
+2026-10-16 13:14:03,903 INFO VAD filter removed 00:00.240 of audio
+2026-10-16 13:14:07,044 INFO Arrangement in Flesh Color and Brown: Portrait of Arthur Jer speech (185 words)
+2026-10-16 13:14:07,112 INFO Processing audio with duration 01:38.247
+2026-10-16 13:14:07,253 INFO VAD filter removed 00:00.432 of audio
+2026-10-16 13:14:12,170 INFO Ritual Cache — audio guide                                   speech (282 words)
+2026-10-16 13:14:12,227 INFO Processing audio with duration 01:17.270
+2026-10-16 13:14:12,346 INFO VAD filter removed 00:02.438 of audio
+2026-10-16 13:14:15,744 INFO Cabinet — audio guide                                        speech (198 words)
+2026-10-16 13:14:15,795 INFO Processing audio with duration 01:07.840
+2026-10-16 13:14:15,893 INFO VAD filter removed 00:02.528 of audio
+2026-10-16 13:14:18,967 INFO Richard Bill — audio guide                                   speech (187 words)
+2026-10-16 13:14:19,014 INFO Processing audio with duration 01:09.773
+2026-10-16 13:14:19,113 INFO VAD filter removed 00:02.349 of audio
+2026-10-16 13:14:22,349 INFO Sideboard — audio guide                                      speech (195 words)
+2026-10-16 13:14:22,413 INFO Processing audio with duration 01:27.536
+2026-10-16 13:14:22,552 INFO VAD filter removed 00:03.008 of audio
+2026-10-16 13:14:27,104 INFO Cornelius Allerton — audio guide                             speech (205 words)
+2026-10-16 13:14:27,177 INFO Processing audio with duration 01:26.047
+2026-10-16 13:14:27,319 INFO VAD filter removed 00:00.336 of audio
+2026-10-16 13:14:32,054 INFO Machinist — audio guide                                      speech (214 words)
+2026-10-16 13:14:32,113 INFO Processing audio with duration 01:14.449
+2026-10-16 13:14:32,239 INFO VAD filter removed 00:01.809 of audio
+2026-10-16 13:14:36,108 INFO Bureau Table — audio guide                                   speech (194 words)
+2026-10-16 13:14:36,171 INFO Processing audio with duration 01:27.641
+2026-10-16 13:14:36,309 INFO VAD filter removed 00:05.657 of audio
+2026-10-16 13:14:40,026 INFO York Harbor, Coast of Maine — audio guide                    speech (191 words)
+2026-10-16 13:14:40,083 INFO Processing audio with duration 01:15.886
+2026-10-16 13:14:40,200 INFO VAD filter removed 00:10.448 of audio
+2026-10-16 13:14:43,578 INFO The Solitude of the Soul — audio guide                       speech (173 words)
+2026-10-16 13:14:43,668 INFO Processing audio with duration 02:04.552
+2026-10-16 13:14:43,862 INFO VAD filter removed 00:16.936 of audio
+2026-10-16 13:14:49,558 INFO Life Study (Study of an Egyptian Girl) — audio guide         speech (288 words)
+2026-10-16 13:14:49,625 INFO Processing audio with duration 01:26.570
+2026-10-16 13:14:49,760 INFO VAD filter removed 00:06.176 of audio
+2026-10-16 13:14:53,741 INFO Nydia, The Blind Flower Girl of Pompeii — audio guide        speech (198 words)
+2026-10-16 13:14:53,794 INFO Processing audio with duration 01:05.149
+2026-10-16 13:14:53,899 INFO VAD filter removed 00:02.557 of audio
+2026-10-16 13:14:56,751 INFO Woman (Elevation) — audio guide                              speech (152 words)
+2026-10-16 13:14:56,818 INFO Processing audio with duration 01:35.974
+2026-10-16 13:14:56,962 INFO VAD filter removed 00:02.310 of audio
+2026-10-16 13:15:01,972 INFO Figure of a Seated Leader — audio guide                      speech (264 words)
+2026-10-16 13:15:02,034 INFO Processing audio with duration 01:33.571
+2026-10-16 13:15:02,167 INFO VAD filter removed 00:00.752 of audio
+2026-10-16 13:15:05,996 INFO Rehearsal of the Pasdeloup Orchestra at the Cirque d'Hiver — speech (244 words)
+2026-10-16 13:15:06,058 INFO Processing audio with duration 01:27.406
+2026-10-16 13:15:06,181 INFO VAD filter removed 00:03.374 of audio
+2026-10-16 13:15:09,544 INFO Seventeenth-Century Interior — audio guide                   speech (203 words)
+2026-10-16 13:15:09,605 INFO Processing audio with duration 01:12.464
+2026-10-16 13:15:09,709 INFO VAD filter removed 00:01.920 of audio
+2026-10-16 13:15:13,171 INFO Major-General Henry Dearborn — audio guide                   speech (193 words)
+2026-10-16 13:15:13,240 INFO Processing audio with duration 01:44.307
+2026-10-16 13:15:13,391 INFO VAD filter removed 00:02.035 of audio
+2026-10-16 13:15:18,095 INFO Portrait Bust of a Woman — audio guide                       speech (286 words)
+2026-10-16 13:15:18,150 INFO Processing audio with duration 01:12.411
+2026-10-16 13:15:18,251 INFO VAD filter removed 00:00.000 of audio
+2026-10-16 13:15:21,489 INFO Kylix (Drinking Cup) — audio guide                           speech (217 words)
+2026-10-16 13:15:21,575 INFO Processing audio with duration 02:10.926
+2026-10-16 13:15:21,775 INFO VAD filter removed 00:04.094 of audio
+2026-10-16 13:15:28,301 INFO Statue of the Aphrodite of Knidos — audio guide              speech (382 words)
+2026-10-16 13:15:28,354 INFO Processing audio with duration 01:16.983
+2026-10-16 13:15:28,462 INFO VAD filter removed 00:03.063 of audio
+2026-10-16 13:15:31,786 INFO Belly-Amphora (Storage Jar) — audio guide                    speech (194 words)
+2026-10-16 13:15:31,870 INFO Processing audio with duration 01:43.941
+2026-10-16 13:15:32,072 INFO VAD filter removed 00:00.528 of audio
+2026-10-16 13:15:37,339 INFO Stamnos (Mixing Jar) — audio guide                           speech (280 words)
+2026-10-16 13:15:37,390 INFO Processing audio with duration 01:01.675
+2026-10-16 13:15:37,480 INFO VAD filter removed 00:01.072 of audio
+2026-10-16 13:15:40,372 INFO Portrait Head of Emperor Hadrian — audio guide               speech (163 words)
+2026-10-16 13:15:40,465 INFO Processing audio with duration 01:42.922
+2026-10-16 13:15:40,628 INFO VAD filter removed 00:00.592 of audio
+2026-10-16 13:15:45,286 INFO Relief of a Falling Warrior — audio guide                    speech (262 words)
+2026-10-16 13:15:45,365 INFO Processing audio with duration 01:48.042
+2026-10-16 13:15:45,536 INFO VAD filter removed 00:02.091 of audio
+2026-10-16 13:15:50,852 INFO Bell Krater (Mixing Bowl) — audio guide                      speech (282 words)
+2026-10-16 13:15:50,947 INFO Processing audio with duration 02:11.579
+2026-10-16 13:15:51,148 INFO VAD filter removed 00:00.000 of audio
+2026-10-16 13:15:58,498 INFO Portrait Head of Antinous — audio guide                      speech (401 words)
+2026-10-16 13:15:58,580 INFO Processing audio with duration 01:43.053
+2026-10-16 13:15:58,744 INFO VAD filter removed 00:02.541 of audio
+2026-10-16 13:16:04,014 INFO Statuette of Hercules — audio guide                          speech (260 words)
+2026-10-16 13:16:04,090 INFO Processing audio with duration 01:24.584
+2026-10-16 13:16:04,220 INFO VAD filter removed 00:02.312 of audio
+2026-10-16 13:16:09,220 INFO Tetradrachm (Coin) Portraying Queen Cleopatra VII — audio gu speech (225 words)
+2026-10-16 13:16:09,266 INFO Processing audio with duration 00:57.313
+2026-10-16 13:16:09,348 INFO VAD filter removed 00:00.432 of audio
+2026-10-16 13:16:11,894 INFO Statue of Meleager — audio guide                             speech (147 words)
+2026-10-16 13:16:11,944 INFO Processing audio with duration 01:04.549
+2026-10-16 13:16:12,039 INFO VAD filter removed 00:00.240 of audio
+2026-10-16 13:16:14,709 INFO Oinochoe (Pitcher) — audio guide                             speech (154 words)
+2026-10-16 13:16:14,772 INFO Processing audio with duration 01:29.078
+2026-10-16 13:16:14,903 INFO VAD filter removed 00:11.216 of audio
+2026-10-16 13:16:18,439 INFO Pair of Protomes Depicting the Forepart of a Griffin — audio speech (210 words)
+2026-10-16 13:16:18,516 INFO Processing audio with duration 01:25.342
+2026-10-16 13:16:18,653 INFO VAD filter removed 00:00.624 of audio
+2026-10-16 13:16:22,470 INFO Statuette of a Striding Figure — audio guide                 speech (212 words)
+2026-10-16 13:16:22,538 INFO Processing audio with duration 01:28.346
+2026-10-16 13:16:22,668 INFO VAD filter removed 00:02.714 of audio
+2026-10-16 13:16:26,833 INFO Foot of a Cista (Storage Box) — audio guide                  speech (219 words)
+2026-10-16 13:16:26,927 INFO Processing audio with duration 02:12.833
+2026-10-16 13:16:27,125 INFO VAD filter removed 00:11.457 of audio
+2026-10-16 13:16:32,168 INFO Attachments Depicting Busts of Silenoi — audio guide         speech (297 words)
+2026-10-16 13:16:32,238 INFO Processing audio with duration 01:43.158
+2026-10-16 13:16:32,385 INFO VAD filter removed 00:02.102 of audio
+2026-10-16 13:16:36,235 INFO Portrait Head of a Young Woman — audio guide                 speech (230 words)
+2026-10-16 13:16:36,296 INFO Processing audio with duration 01:28.555
+2026-10-16 13:16:36,428 INFO VAD filter removed 00:03.291 of audio
+2026-10-16 13:16:40,742 INFO Hand Mirror — audio guide                                    speech (242 words)
+2026-10-16 13:16:40,830 INFO Processing audio with duration 02:08.052
+2026-10-16 13:16:41,054 INFO VAD filter removed 00:12.116 of audio
+2026-10-16 13:16:47,497 INFO Octadrachm (Coin) Portraying Queen Arsinoe II — audio guide  speech (334 words)
+2026-10-16 13:16:47,551 INFO Processing audio with duration 01:10.557
+2026-10-16 13:16:47,654 INFO VAD filter removed 00:01.728 of audio
+2026-10-16 13:16:50,666 INFO Loutrophoros (Container for Bath Water) — audio guide        speech (161 words)
+2026-10-16 13:16:50,734 INFO Processing audio with duration 01:36.862
+2026-10-16 13:16:50,920 INFO VAD filter removed 00:00.368 of audio
+2026-10-16 13:16:55,561 INFO Statue of Young Dionysos — audio guide                       speech (245 words)
+2026-10-16 13:16:55,654 INFO Processing audio with duration 02:13.956
+2026-10-16 13:16:55,856 INFO VAD filter removed 00:09.556 of audio
+2026-10-16 13:17:02,185 INFO The Bedroom — audio guide                                    speech (309 words)
+2026-10-16 13:17:02,282 INFO Processing audio with duration 02:15.549
+2026-10-16 13:17:02,491 INFO VAD filter removed 00:14.125 of audio
+2026-10-16 13:17:08,356 INFO Paris Street; Rainy Day — audio guide                        speech (309 words)
+2026-10-16 13:17:08,431 INFO Processing audio with duration 01:43.967
+2026-10-16 13:17:08,615 INFO VAD filter removed 00:02.687 of audio
+2026-10-16 13:17:13,992 INFO Water Lilies — audio guide                                   speech (298 words)
+2026-10-16 13:17:14,046 INFO Processing audio with duration 01:11.445
+2026-10-16 13:17:14,156 INFO VAD filter removed 00:02.965 of audio
+2026-10-16 13:17:18,043 INFO Two Sisters (On the Terrace) — audio guide                   speech (185 words)
+2026-10-16 13:17:18,103 INFO Processing audio with duration 01:13.665
+2026-10-16 13:17:18,217 INFO VAD filter removed 00:03.041 of audio
+2026-10-16 13:17:21,838 INFO Self-Portrait — audio guide                                  speech (185 words)
+2026-10-16 13:17:21,896 INFO Processing audio with duration 01:14.658
+2026-10-16 13:17:22,014 INFO VAD filter removed 00:03.074 of audio
+2026-10-16 13:17:25,697 INFO Arrival of the Normandy Train, Gare Saint-Lazare — audio gui speech (195 words)
+2026-10-16 13:17:25,753 INFO Processing audio with duration 01:15.207
+2026-10-16 13:17:25,862 INFO VAD filter removed 00:02.791 of audio
+2026-10-16 13:17:28,951 INFO The Basket of Apples — audio guide                           speech (196 words)
+2026-10-16 13:17:29,008 INFO Processing audio with duration 01:08.650
+2026-10-16 13:17:29,115 INFO VAD filter removed 00:02.858 of audio
+2026-10-16 13:17:32,217 INFO Woman at Her Toilette — audio guide                          speech (178 words)
+2026-10-16 13:17:32,328 INFO Processing audio with duration 02:03.455
+2026-10-16 13:17:32,533 INFO VAD filter removed 00:03.360 of audio
+2026-10-16 13:17:37,758 INFO Saint George and the Dragon — audio guide                    speech (303 words)
+2026-10-16 13:17:37,835 INFO Processing audio with duration 01:18.916
+2026-10-16 13:17:37,948 INFO VAD filter removed 00:03.012 of audio
+2026-10-16 13:17:41,223 INFO The Crucifixion — audio guide                                speech (149 words)
+2026-10-16 13:17:41,304 INFO Processing audio with duration 01:26.021
+2026-10-16 13:17:41,434 INFO VAD filter removed 00:02.981 of audio
+2026-10-16 13:17:45,262 INFO The Girl by the Window — audio guide                         speech (228 words)
+2026-10-16 13:17:45,333 INFO Processing audio with duration 01:20.457
+2026-10-16 13:17:45,456 INFO VAD filter removed 00:02.729 of audio
+2026-10-16 13:17:49,541 INFO Cupid Chastised — audio guide                                speech (203 words)
+2026-10-16 13:17:49,630 INFO Processing audio with duration 01:10.165
+2026-10-16 13:17:49,734 INFO VAD filter removed 00:02.773 of audio
+2026-10-16 13:17:53,491 INFO The Watermill with the Great Red Roof — audio guide          speech (192 words)
+2026-10-16 13:17:53,627 INFO Processing audio with duration 01:39.187
+2026-10-16 13:17:53,789 INFO VAD filter removed 00:06.003 of audio
+2026-10-16 13:17:59,152 INFO Acrobats at the Cirque Fernando (Francisca and Angelina Wart speech (232 words)
+2026-10-16 13:17:59,248 INFO Processing audio with duration 01:29.704
+2026-10-16 13:17:59,421 INFO VAD filter removed 00:01.944 of audio
+2026-10-16 13:18:03,991 INFO Landscape with Saint John on Patmos — audio guide            speech (214 words)
+2026-10-16 13:18:04,085 INFO Processing audio with duration 01:25.473
+2026-10-16 13:18:04,219 INFO VAD filter removed 00:02.913 of audio
+2026-10-16 13:18:08,679 INFO The Millinery Shop — audio guide                             speech (218 words)
+2026-10-16 13:18:08,767 INFO Processing audio with duration 01:30.671
+2026-10-16 13:18:08,918 INFO VAD filter removed 00:00.000 of audio
+2026-10-16 13:18:13,003 INFO Old Man with a Gold Chain — audio guide                      speech (209 words)
+2026-10-16 13:18:13,110 INFO Processing audio with duration 01:18.916
+2026-10-16 13:18:13,249 INFO VAD filter removed 00:03.140 of audio
+2026-10-16 13:18:17,468 INFO Hercules and the Lernaean Hydra — audio guide                speech (195 words)
+2026-10-16 13:18:17,527 INFO Processing audio with duration 01:15.337
+2026-10-16 13:18:17,661 INFO VAD filter removed 00:03.017 of audio
+2026-10-16 13:18:21,475 INFO Equestrienne (At the Cirque Fernando) — audio guide          speech (180 words)
+2026-10-16 13:18:21,537 INFO Processing audio with duration 01:15.389
+2026-10-16 13:18:21,666 INFO VAD filter removed 00:01.837 of audio
+2026-10-16 13:18:25,141 INFO Jesus Mocked by the Soldiers — audio guide                   speech (166 words)
+2026-10-16 13:18:25,208 INFO Processing audio with duration 01:28.424
+2026-10-16 13:18:25,352 INFO VAD filter removed 00:01.440 of audio
+2026-10-16 13:18:28,934 INFO Still Life with Game Fowl — audio guide                      speech (212 words)
+2026-10-16 13:18:29,007 INFO Processing audio with duration 01:38.038
+2026-10-16 13:18:29,154 INFO VAD filter removed 00:00.000 of audio
+2026-10-16 13:18:32,974 INFO Arlésiennes (Mistral) — audio guide                          speech (219 words)
+2026-10-16 13:18:33,029 INFO Processing audio with duration 01:09.016
+2026-10-16 13:18:33,132 INFO VAD filter removed 00:02.712 of audio
+2026-10-16 13:18:36,177 INFO The Captive Slave (Ira Aldridge) — audio guide               speech (184 words)
+2026-10-16 13:18:36,255 INFO Processing audio with duration 01:43.602
+2026-10-16 13:18:36,411 INFO VAD filter removed 00:06.962 of audio
+2026-10-16 13:18:39,959 INFO Bust of a Youth (Saint John the Baptist) — audio guide       speech (212 words)
+2026-10-16 13:18:40,027 INFO Processing audio with duration 01:29.992
+2026-10-16 13:18:40,161 INFO VAD filter removed 00:02.056 of audio
+2026-10-16 13:18:43,980 INFO Judith — audio guide                                         speech (214 words)
+2026-10-16 13:18:44,046 INFO Processing audio with duration 01:28.033
+2026-10-16 13:18:44,176 INFO VAD filter removed 00:02.785 of audio
+2026-10-16 13:18:47,474 INFO The Interior of the Palm House on the Pfaueninsel Near Potsd speech (195 words)
+2026-10-16 13:18:47,553 INFO Processing audio with duration 01:48.774
+2026-10-16 13:18:47,707 INFO VAD filter removed 00:05.446 of audio
+2026-10-16 13:18:51,661 INFO In the Sea — audio guide                                     speech (239 words)
+2026-10-16 13:18:51,727 INFO Processing audio with duration 01:28.424
+2026-10-16 13:18:51,854 INFO VAD filter removed 00:07.656 of audio
+2026-10-16 13:18:55,130 INFO Beata Beatrix — audio guide                                  speech (196 words)
+2026-10-16 13:18:55,192 INFO Processing audio with duration 01:21.842
+2026-10-16 13:18:55,315 INFO VAD filter removed 00:03.250 of audio
+2026-10-16 13:18:59,173 INFO Still Life with Dead Game, Fruits, and Vegetables in a Marke speech (200 words)
+2026-10-16 13:18:59,249 INFO Processing audio with duration 01:28.451
+2026-10-16 13:18:59,409 INFO VAD filter removed 00:02.419 of audio
+2026-10-16 13:19:04,763 INFO Madame Cezanne in a Yellow Chair — audio guide               speech (240 words)
+2026-10-16 13:19:04,823 INFO Processing audio with duration 01:12.255
+2026-10-16 13:19:04,965 INFO VAD filter removed 00:01.743 of audio
+2026-10-16 13:19:09,298 INFO Amédée-David, the Comte de Pastoret — audio guide            speech (196 words)
+2026-10-16 13:19:09,402 INFO Processing audio with duration 01:59.719
+2026-10-16 13:19:09,622 INFO VAD filter removed 00:02.951 of audio
+2026-10-16 13:19:16,129 INFO Woman Reading — audio guide                                  speech (314 words)
+2026-10-16 13:19:16,227 INFO Processing audio with duration 01:15.860
+2026-10-16 13:19:16,351 INFO VAD filter removed 00:00.080 of audio
+2026-10-16 13:19:20,155 INFO Virgin and Child with the Young Saint John the Baptist — aud speech (189 words)
+2026-10-16 13:19:20,208 INFO Processing audio with duration 01:14.945
+2026-10-16 13:19:20,337 INFO VAD filter removed 00:01.745 of audio
+2026-10-16 13:19:24,439 INFO The Annunciation — audio guide                               speech (208 words)
+2026-10-16 13:19:24,519 INFO Processing audio with duration 01:42.557
+2026-10-16 13:19:24,680 INFO VAD filter removed 00:03.069 of audio
+2026-10-16 13:19:29,550 INFO Merahi metua no Tehamana (Tehamana Has Many Parents or The A speech (260 words)
+2026-10-16 13:19:29,619 INFO Processing audio with duration 01:28.137
+2026-10-16 13:19:29,750 INFO VAD filter removed 00:00.496 of audio
+2026-10-16 13:19:33,809 INFO Boy on a Ram — audio guide                                   speech (220 words)
+2026-10-16 13:19:33,872 INFO Processing audio with duration 01:27.014
+2026-10-16 13:19:34,009 INFO VAD filter removed 00:03.558 of audio
+2026-10-16 13:19:38,208 INFO The Nativity — audio guide                                   speech (221 words)
+2026-10-16 13:19:38,292 INFO Processing audio with duration 01:37.698
+2026-10-16 13:19:38,459 INFO VAD filter removed 00:09.058 of audio
+2026-10-16 13:19:41,827 INFO The Holy Family with Saints Elizabeth and John the Baptist — speech (192 words)
+2026-10-16 13:19:41,965 INFO Processing audio with duration 01:36.914
+2026-10-16 13:19:42,107 INFO VAD filter removed 00:02.738 of audio
+2026-10-16 13:19:46,484 INFO Salome with the Head of Saint John the Baptist — audio guide speech (257 words)
+2026-10-16 13:19:46,555 INFO Processing audio with duration 01:38.194
+2026-10-16 13:19:46,704 INFO VAD filter removed 00:06.418 of audio
+2026-10-16 13:19:50,426 INFO Stoke-by-Nayland — audio guide                               speech (226 words)
+2026-10-16 13:19:50,492 INFO Processing audio with duration 01:22.051
+2026-10-16 13:19:50,612 INFO VAD filter removed 00:01.667 of audio
+2026-10-16 13:19:54,098 INFO The Combat of the Giaour and Hassan — audio guide            speech (195 words)
+2026-10-16 13:19:54,165 INFO Processing audio with duration 01:40.598
+2026-10-16 13:19:54,307 INFO VAD filter removed 00:01.846 of audio
+2026-10-16 13:19:58,168 INFO Lady Sarah Bunbury Sacrificing to the Graces — audio guide   speech (232 words)
+2026-10-16 13:19:58,238 INFO Processing audio with duration 01:42.949
+2026-10-16 13:19:58,383 INFO VAD filter removed 00:01.893 of audio
+2026-10-16 13:20:02,965 INFO Bust of Paris — audio guide                                  speech (290 words)
+2026-10-16 13:20:03,011 INFO Processing audio with duration 01:00.160
+2026-10-16 13:20:03,095 INFO VAD filter removed 00:02.352 of audio
+2026-10-16 13:20:05,729 INFO The Annunciation — audio guide                               speech (155 words)
+2026-10-16 13:20:05,792 INFO Processing audio with duration 01:32.317
+2026-10-16 13:20:05,924 INFO VAD filter removed 00:05.053 of audio
+2026-10-16 13:20:09,639 INFO Gian Lodovico Madruzzo — audio guide                         speech (199 words)
+2026-10-16 13:20:09,701 INFO Processing audio with duration 01:17.584
+2026-10-16 13:20:09,818 INFO VAD filter removed 00:02.000 of audio
+2026-10-16 13:20:13,443 INFO Pastoral Scene — audio guide                                 speech (190 words)
+2026-10-16 13:20:13,508 INFO Processing audio with duration 01:18.681
+2026-10-16 13:20:13,623 INFO VAD filter removed 00:01.849 of audio
+2026-10-16 13:20:16,908 INFO Two Cows and a Young Bull beside a Fence in a Meadow — audio speech (187 words)
+2026-10-16 13:20:16,985 INFO Processing audio with duration 01:38.978
+2026-10-16 13:20:17,130 INFO VAD filter removed 00:02.402 of audio
+2026-10-16 13:20:21,743 INFO Portrait of a Man in Costume — audio guide                   speech (245 words)
+2026-10-16 13:20:21,830 INFO Processing audio with duration 01:55.827
+2026-10-16 13:20:22,027 INFO VAD filter removed 00:03.155 of audio
+2026-10-16 13:20:28,092 INFO The Song of the Lark — audio guide                           speech (320 words)
+2026-10-16 13:20:28,160 INFO Processing audio with duration 01:23.069
+2026-10-16 13:20:28,292 INFO VAD filter removed 00:04.528 of audio
+2026-10-16 13:20:31,885 INFO Water Lily Pond — audio guide                                speech (192 words)
+2026-10-16 13:20:31,948 INFO Processing audio with duration 01:17.531
+2026-10-16 13:20:32,071 INFO VAD filter removed 00:02.555 of audio
+2026-10-16 13:20:35,848 INFO Mahana no atua (Day of the God) — audio guide                speech (200 words)
+2026-10-16 13:20:35,918 INFO Processing audio with duration 01:29.051
+2026-10-16 13:20:36,056 INFO VAD filter removed 00:01.883 of audio
+2026-10-16 13:20:40,131 INFO The Resurrection — audio guide                               speech (231 words)
+2026-10-16 13:20:40,192 INFO Processing audio with duration 01:15.624
+2026-10-16 13:20:40,308 INFO VAD filter removed 00:02.697 of audio
+2026-10-16 13:20:43,768 INFO On the Bank of the Seine, Bennecourt — audio guide           speech (194 words)
+2026-10-16 13:20:43,825 INFO Processing audio with duration 01:17.427
+2026-10-16 13:20:43,944 INFO VAD filter removed 00:02.899 of audio
+2026-10-16 13:20:47,817 INFO The Races at Longchamp — audio guide                         speech (209 words)
+2026-10-16 13:20:47,875 INFO Processing audio with duration 01:15.024
+2026-10-16 13:20:47,984 INFO VAD filter removed 00:01.680 of audio
+2026-10-16 13:20:51,815 INFO Houses of Parliament, London — audio guide                   speech (191 words)
+2026-10-16 13:20:51,889 INFO Processing audio with duration 01:35.034
+2026-10-16 13:20:52,047 INFO VAD filter removed 00:01.737 of audio
+2026-10-16 13:20:56,053 INFO Are They Thinking about the Grape? (Pensent-ils au raisin?)  speech (205 words)
+2026-10-16 13:20:56,106 INFO Processing audio with duration 01:12.385
+2026-10-16 13:20:56,211 INFO VAD filter removed 00:01.985 of audio
+2026-10-16 13:20:59,451 INFO Trompe-l'Oeil Still Life with a Flower Garland and a Curtain speech (168 words)
+2026-10-16 13:20:59,507 INFO Processing audio with duration 01:15.494
+2026-10-16 13:20:59,614 INFO VAD filter removed 00:02.758 of audio
+2026-10-16 13:21:02,723 INFO Virgin and Child with an Angel — audio guide                 speech (175 words)
+2026-10-16 13:21:02,787 INFO Processing audio with duration 01:28.111
+2026-10-16 13:21:02,919 INFO VAD filter removed 00:06.479 of audio
+2026-10-16 13:21:06,497 INFO Tarquin and Lucretia — audio guide                           speech (207 words)
+2026-10-16 13:21:06,570 INFO Processing audio with duration 01:47.520
+2026-10-16 13:21:06,725 INFO VAD filter removed 00:02.688 of audio
+2026-10-16 13:21:11,873 INFO The Temptation of Saint Jerome — audio guide                 speech (300 words)
+2026-10-16 13:21:11,943 INFO Processing audio with duration 01:30.619
+2026-10-16 13:21:12,096 INFO VAD filter removed 00:03.195 of audio
+2026-10-16 13:21:16,881 INFO Kitchen Scene — audio guide                                  speech (227 words)
+2026-10-16 13:21:16,936 INFO Processing audio with duration 01:13.744
+2026-10-16 13:21:17,045 INFO VAD filter removed 00:03.024 of audio
+2026-10-16 13:21:20,719 INFO The Sacred Grove, Beloved of the Arts and the Muses — audio  speech (184 words)
+2026-10-16 13:21:20,831 INFO Processing audio with duration 02:40.862
+2026-10-16 13:21:21,096 INFO VAD filter removed 00:00.368 of audio
+2026-10-16 13:21:29,121 INFO Ecce Agnus Dei — audio guide                                 speech (447 words)
+2026-10-16 13:21:29,198 INFO Processing audio with duration 01:46.266
+2026-10-16 13:21:29,353 INFO VAD filter removed 00:07.722 of audio
+2026-10-16 13:21:33,521 INFO Diptych of the Virgin and Child Enthroned and the Crucifixio speech (228 words)
+2026-10-16 13:21:33,573 INFO Processing audio with duration 01:09.512
+2026-10-16 13:21:33,676 INFO VAD filter removed 00:04.232 of audio
+2026-10-16 13:21:36,915 INFO Milton Dictating to His Daughter — audio guide               speech (175 words)
+2026-10-16 13:21:36,999 INFO Processing audio with duration 02:10.743
+2026-10-16 13:21:37,186 INFO VAD filter removed 00:08.903 of audio
+2026-10-16 13:21:42,470 INFO Veranda Post (Òpó Ògògá) — audio guide                       speech (315 words)
+2026-10-16 13:21:42,535 INFO Processing audio with duration 01:40.624
+2026-10-16 13:21:42,683 INFO VAD filter removed 00:00.000 of audio
+2026-10-16 13:21:47,608 INFO Coffin and Mummy of Paankhaenamun — audio guide              speech (249 words)
+2026-10-16 13:21:47,685 INFO Processing audio with duration 01:41.825
+2026-10-16 13:21:47,843 INFO VAD filter removed 00:03.905 of audio
+2026-10-16 13:21:52,831 INFO Triptych — audio guide                                       speech (248 words)
+2026-10-16 13:21:52,955 INFO Processing audio with duration 03:05.443
+2026-10-16 13:21:53,253 INFO VAD filter removed 00:08.931 of audio
+2026-10-16 13:22:02,260 INFO Funerary Mask — audio guide                                  speech (509 words)
+2026-10-16 13:22:02,346 INFO Processing audio with duration 02:47.445
+2026-10-16 13:22:02,586 INFO VAD filter removed 00:11.557 of audio
+2026-10-16 13:22:10,860 INFO Statue of Horus — audio guide                                speech (444 words)
+2026-10-16 13:22:10,913 INFO Processing audio with duration 01:13.378
+2026-10-16 13:22:11,032 INFO VAD filter removed 00:02.930 of audio
+2026-10-16 13:22:14,497 INFO Statue of Ptah-Sokar-Osiris — audio guide                    speech (181 words)
+2026-10-16 13:22:14,577 INFO Processing audio with duration 02:05.388
+2026-10-16 13:22:14,760 INFO VAD filter removed 00:02.252 of audio
+2026-10-16 13:22:20,549 INFO Tusk — audio guide                                           speech (331 words)
+2026-10-16 13:22:20,624 INFO Processing audio with duration 01:48.121
+2026-10-16 13:22:20,784 INFO VAD filter removed 00:02.329 of audio
+2026-10-16 13:22:25,454 INFO Horn — audio guide                                           speech (292 words)
+2026-10-16 13:22:25,570 INFO Processing audio with duration 02:54.681
+2026-10-16 13:22:25,836 INFO VAD filter removed 00:06.681 of audio
+2026-10-16 13:22:33,690 INFO Elevator Grille from the Chicago Stock Exchange, Chicago, Il speech (456 words)
+2026-10-16 13:22:33,742 INFO Processing audio with duration 00:58.436
+2026-10-16 13:22:33,827 INFO VAD filter removed 00:58.436 of audio
+2026-10-16 13:22:33,832 INFO Improvisation No. 30 (Cannons) — audio guide                 wordless (0 words)
+2026-10-16 13:22:33,903 INFO Processing audio with duration 01:42.818
+2026-10-16 13:22:34,058 INFO VAD filter removed 00:02.242 of audio
+2026-10-16 13:22:38,573 INFO Jacques and Berthe Lipchitz — audio guide                    speech (238 words)
+2026-10-16 13:22:38,641 INFO Processing audio with duration 01:34.224
+2026-10-16 13:22:38,780 INFO VAD filter removed 00:05.616 of audio
+2026-10-16 13:22:42,934 INFO Painting with Green Center — audio guide                     speech (221 words)
+2026-10-16 13:22:42,999 INFO Processing audio with duration 01:35.634
+2026-10-16 13:22:43,138 INFO VAD filter removed 00:01.970 of audio
+2026-10-16 13:22:47,711 INFO Day (Truth) — audio guide                                    speech (242 words)
+2026-10-16 13:22:47,711 INFO done: 218 sounds, 202 with speech, 16 wordless

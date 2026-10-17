@@ -1,0 +1,11 @@
+2026-10-16 13:23:27,284 INFO items=5558 (image=3400 text=1700) image_input=image+title chunk=256
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-16 13:25:47,928 WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-16 13:25:48,177 INFO Loading SentenceTransformer model from google/embeddinggemma-2.
+Loading weights:   0%|          | 0/1376 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 220/1376 [00:00<00:00, 2181.07it/s]Loading weights:  32%|███▏      | 439/1376 [00:00<00:00, 2034.86it/s]Loading weights:  47%|████▋     | 645/1376 [00:00<00:00, 2043.85it/s]Loading weights:  62%|██████▏   | 850/1376 [00:00<00:00, 1902.46it/s]Loading weights:  76%|███████▌  | 1042/1376 [00:00<00:00, 1728.13it/s]Loading weights:  89%|████████▊ | 1218/1376 [00:00<00:00, 1649.85it/s]Loading weights: 100%|██████████| 1376/1376 [00:00<00:00, 1918.66it/s]
+2026-10-16 13:25:54,723 INFO Loaded 20 prompts with these keys: ['query', 'document', 'BitextMining', 'Classification', 'Clustering', 'CodeRetrieval', 'Document', 'FactChecking', 'InstructionRetrieval', 'MultilabelClassification', 'PairClassification', 'QuestionAnswering', 'Reranking', 'Retrieval', 'Retrieval-document', 'Retrieval-query', 'STS', 'SearchQuery', 'SentenceSimilarity', 'Summarization']
+2026-10-16 13:25:54,726 INFO model loaded in 125.2s
+[transformers] Asked to sample uniformly with `fps`, but the video metadata has no `fps` or `duration`. Keeping every frame and applying only the `max_frames` budget. Pass a `VideoMetadata` object with a valid `fps` and `duration` to sample at a target frame rate.
+2026-10-16 13:29:24,299 INFO chunk 20: rows 5120-5375 (0 img) 201.4s, 1.3 items/s, done 5376/5558
+2026-10-16 13:30:14,846 INFO chunk 21: rows 5376-5557 (0 img) 50.1s, 3.6 items/s, done 5558/5558
+2026-10-16 13:30:14,946 INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/vectors.npy (5558, 768); embedded 438 new rows in 260.2s (1.7 rows/s); peak VRAM 2070 MiB

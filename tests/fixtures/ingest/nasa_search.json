@@ -1,0 +1,17 @@
+{"collection": {"items": [
+  {"href": "https://images-assets.nasa.gov/image/PIA14417/collection.json",
+   "data": [{"center": "JPL", "date_created": "2011-08-10T21:00:09Z", "description": "<p>The Dumbbell nebula pumps out infrared light.</p>",
+             "media_type": "image", "nasa_id": "PIA14417", "title": "Weighing in on the Dumbbell Nebula"}],
+   "links": [{"href": "https://images-assets.nasa.gov/image/PIA14417/PIA14417~medium.jpg", "rel": "alternate", "render": "image"},
+             {"href": "https://images-assets.nasa.gov/image/PIA14417/PIA14417~small.jpg", "rel": "alternate", "render": "image"},
+             {"href": "https://images-assets.nasa.gov/image/PIA14417/PIA14417~thumb.jpg", "rel": "preview", "render": "image"}]},
+  {"href": "https://images-assets.nasa.gov/image/A2/collection.json",
+   "data": [{"center": "KSC", "photographer": "NASA/Kim Shiflett", "date_created": "2020-05-30T00:00:00Z", "description": "",
+             "media_type": "image", "nasa_id": "A2", "title": "Weighing In On The Dumbbell  Nebula"}],
+   "links": [{"href": "https://images-assets.nasa.gov/image/A2/A2~thumb.jpg", "rel": "preview", "render": "image"}]},
+  {"href": "https://images-assets.nasa.gov/image/V1/collection.json",
+   "data": [{"media_type": "video", "nasa_id": "V1", "title": "A video"}], "links": []},
+  {"href": "https://images-assets.nasa.gov/image/A3/collection.json",
+   "data": [{"center": "GSFC", "date_created": "2017-12-08T00:00:00Z", "description": "Ring nebula.", "media_type": "image",
+             "nasa_id": "A3", "title": "Ring Nebula"}], "links": []}
+]}}

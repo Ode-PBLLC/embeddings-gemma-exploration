@@ -1,0 +1,33 @@
+{
+ "load_s": 127.9,
+ "after_load_alloc_MiB": 849,
+ "sim_query_x_image": [
+  [
+   0.7615000009536743,
+   0.5575000047683716
+  ],
+  [
+   0.5644000172615051,
+   0.7477999925613403
+  ]
+ ],
+ "sim_query_x_image_plus_title": [
+  [
+   0.7983999848365784,
+   0.5956000089645386
+  ],
+  [
+   0.6017000079154968,
+   0.7239000201225281
+  ]
+ ],
+ "query_ms_p50": 77.9,
+ "query_ms_p95": 87.8,
+ "images_per_s_bs8": 11.2,
+ "images_per_s_bs16": 7.2,
+ "images_per_s_bs32": 4.6,
+ "doc_texts_per_s_bs32": 270.4,
+ "peak_alloc_MiB": 3458,
+ "peak_reserved_MiB": 4814,
+ "dtype": "bfloat16"
+}

@@ -1,0 +1,2 @@
+- galaxy.jpg: NASA Image and Video Library, nasa_id GSFC_20171208_Archive_e001262 "spiral galaxy M83" (NASA media, public domain). Resized to 512 px.
+- still_life.jpg: Art Institute of Chicago 65811, Paul Cezanne, "The Plate of Apples" (CC0). Resized to 512 px.

@@ -1,0 +1,29 @@
+2026-10-15 22:28:23,516 gallery.ingest.aic INFO Prints and Drawings                           quota  173  candidates  300
+2026-10-15 22:28:23,543 gallery.ingest.aic INFO Arts of Asia                                  quota  172  candidates  300
+2026-10-15 22:28:23,572 gallery.ingest.aic INFO Textiles                                      quota  172  candidates  300
+2026-10-15 22:28:23,602 gallery.ingest.aic INFO Applied Arts of Europe                        quota  172  candidates  300
+2026-10-15 22:28:23,627 gallery.ingest.aic INFO Photography and Media                         quota  172  candidates  300
+2026-10-15 22:28:23,654 gallery.ingest.aic INFO Arts of the Americas                          quota  172  candidates  300
+2026-10-15 22:28:23,682 gallery.ingest.aic INFO Arts of Greece, Rome, and Byzantium           quota  172  candidates  300
+2026-10-15 22:28:23,709 gallery.ingest.aic INFO Painting and Sculpture of Europe              quota  172  candidates  299
+2026-10-15 22:28:23,735 gallery.ingest.aic INFO Arts of Africa                                quota  172  candidates  242
+2026-10-15 22:28:23,767 gallery.ingest.aic INFO Architecture and Design                       quota  172  candidates  275
+2026-10-15 22:28:23,781 gallery.ingest.aic INFO Modern Art                                    quota   24  candidates   24
+2026-10-15 22:28:23,794 gallery.ingest.aic INFO Ryerson and Burnham Libraries Special Collections quota    6  candidates    6
+2026-10-15 22:28:23,795 gallery.ingest INFO round 1: fetching 1700 items (have 0 / 1700)
+2026-10-15 22:28:41,159 gallery.ingest WARNING failure aic aic:196370 image: cannot identify image file <_io.BytesIO object at 0x754770d8e4d0>
+2026-10-15 22:28:42,286 gallery.ingest INFO round 2: fetching 1 items (have 1699 / 1700)
+2026-10-15 22:28:55,624 gallery.ingest.aic INFO wrote /mnt/o/Ode/Github/embeddings-gemma-exploration/data/raw/aic.parquet: 1700 rows
+topic
+Prints and Drawings                                  167
+Arts of Asia                                         167
+Textiles                                             167
+Applied Arts of Europe                               167
+Photography and Media                                167
+Arts of the Americas                                 167
+Arts of Greece, Rome, and Byzantium                  167
+Painting and Sculpture of Europe                     167
+Arts of Africa                                       167
+Architecture and Design                              167
+Modern Art                                            24
+Ryerson and Burnham Libraries Special Collections      6
