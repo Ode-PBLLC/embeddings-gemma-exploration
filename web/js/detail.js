@@ -11,8 +11,10 @@ function el(tag, cls, text) {
 }
 
 export class Detail {
-  constructor(items, root, onClose) {
+  // placards: false where the larger images (media/) are not published, i.e. the static site
+  constructor(items, root, onClose, { placards = true } = {}) {
     this.items = items;
+    this.placards = placards;
     this.root = root;
     this.onClose = onClose;
     this.index = null;
@@ -48,11 +50,13 @@ export class Detail {
       const img = el('img');
       img.alt = it.title;
       img.src = it.thumb;  // show the thumbnail at once, then swap in the larger image
-      const big = it.thumb.replace(/^thumbs\//, 'media/');
-      const probe = new Image();
-      probe.onload = () => { if (this.index === index) img.src = big; };
-      probe.onerror = () => console.warn('larger image unavailable, keeping thumbnail', big);
-      probe.src = big;
+      if (this.placards) {
+        const big = it.thumb.replace(/^thumbs\//, 'media/');
+        const probe = new Image();
+        probe.onload = () => { if (this.index === index) img.src = big; };
+        probe.onerror = () => console.warn('larger image unavailable, keeping thumbnail', big);
+        probe.src = big;
+      }
       mat.appendChild(img);
       frame.appendChild(mat);
       body.appendChild(frame);

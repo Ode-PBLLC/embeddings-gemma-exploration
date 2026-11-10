@@ -32,6 +32,28 @@ memory. It also runs on CPU, more slowly.
 **llama.cpp** server, and it takes many hours. The script header gives the exact `llama-server`
 command. Every stage is resumable.
 
+## The static site
+
+The same gallery and Moon also run without a server, as a static site for GitHub Pages:
+https://ode-pbllc.github.io/embeddings-gemma-exploration/. Pages opens on a front page that links to both.
+Search runs in the visitor's browser:
+- EmbeddingGemma 2 (ONNX, [Transformers.js](https://huggingface.co/docs/transformers.js)) embeds the query, then
+  JavaScript searches the stored vectors.
+- With WebGPU it runs the q8 build (346 MB). Without WebGPU it runs fp16 on the CPU (575 MB).
+- The model downloads from Hugging Face on the first visit and the browser keeps it afterwards.
+- A few suggested searches carry precomputed vectors, so they work while it downloads.
+- The results match the server's: `reports/static_parity.md`.
+
+```bash
+uv run python scripts/build_static.py            # dist/site/ from the local build
+python -m http.server 8090 -d dist/site          # preview at http://localhost:8090/
+```
+
+`.github/workflows/pages.yml` builds the same site from the `data-v2` release and deploys it on every push to
+the `static-site` branch. Like the data release, the site leaves out the AIC audio guides. It also leaves out the
+larger placard images, so a placard shows the thumbnail. `scripts/embed_demo_queries.py` rebuilds the
+suggested searches' vectors.
+
 ## Using it
 
 - **Ask:** type a query and press Enter. A query with nothing close is flagged *Nothing close*.
@@ -66,8 +88,11 @@ seed and still names Ollama for Gemma; the build uses llama.cpp instead (BUILD.m
 ## Tests
 
 ```bash
-uv run pytest tests --ignore=tests/e2e     # unit and API tests
+uv run pytest tests --ignore=tests/e2e --ignore=tests/e2e_static     # unit and API tests
 uv run playwright install chromium && uv run pytest tests/e2e   # browser tests (synthetic data, no GPU)
+uv run pytest tests/e2e_static                     # the static site in dist/site (run separately from tests/e2e)
+RUN_MODEL_E2E=1 uv run pytest tests/e2e_static     # ...including a model download and free-text search
+STATIC_SITE_URL=https://ode-pbllc.github.io/embeddings-gemma-exploration/ RUN_MODEL_E2E=1 uv run pytest tests/e2e_static
 ```
 
 `test_scripts/` holds ad hoc checks against a running server, for example
@@ -82,6 +107,6 @@ uv run playwright install chromium && uv run pytest tests/e2e   # browser tests 
 | Space images, clips, sounds | [NASA Image and Video Library](https://images.nasa.gov/) | NASA media guidelines (generally not copyrighted) |
 | Encyclopedia text | English Wikipedia | CC BY-SA 4.0 |
 | The Moon | [OpenPlanetaryMap](https://www.openplanetary.org/) Moon Hillshaded Albedo (LOLA / USGS); names from the [IAU/USGS Gazetteer of Planetary Nomenclature](https://planetarynames.wr.usgs.gov/) | Tile licence not stated by OpenPlanetaryMap; attribution kept |
-| Models | [EmbeddingGemma 2](https://huggingface.co/google/embeddinggemma-2), Gemma 4 E4B ([GGUF](https://huggingface.co/ggml-org/gemma-4-E4B-it-GGUF)) | Gemma terms of use |
+| Models | [EmbeddingGemma 2](https://huggingface.co/google/embeddinggemma-2) (and its [ONNX build](https://huggingface.co/onnx-community/embeddinggemma-2-ONNX) on the static site), Gemma 4 E4B ([GGUF](https://huggingface.co/ggml-org/gemma-4-E4B-it-GGUF)) | Apache 2.0 (per both model cards) |
 
 Gemma's labels are machine-written and can be wrong. This is a demo, not a reference.

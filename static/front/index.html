@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Embedding Gallery</title>
+  <meta name="description" content="Search art, space imagery, sound, video and text by meaning, with EmbeddingGemma 2 running in your browser.">
+  <style>
+    @font-face { font-family: "Cormorant Garamond"; font-weight: 400; font-style: normal; font-display: swap;
+      src: url("gallery/vendor/fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Cormorant Garamond"; font-weight: 400; font-style: italic; font-display: swap;
+      src: url("gallery/vendor/fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2"); }
+    @font-face { font-family: "Cormorant Garamond"; font-weight: 500; font-style: normal; font-display: swap;
+      src: url("gallery/vendor/fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Work Sans"; font-weight: 400; font-style: normal; font-display: swap;
+      src: url("gallery/vendor/fonts/work-sans-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Work Sans"; font-weight: 500; font-style: normal; font-display: swap;
+      src: url("gallery/vendor/fonts/work-sans-latin-500-normal.woff2") format("woff2"); }
+    :root {
+      --wall: #f6f4ef; --paper: #fdfcf9; --mat: #fbfaf6; --frame: #2b2723;
+      --ink: #23201c; --ink-2: #4e4841; --ink-3: #8a847a; --rule: #e3ded4;
+      --serif: "Cormorant Garamond", Garamond, Georgia, serif;
+      --sans: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+      --ease: cubic-bezier(.2, .7, .2, 1);
+      --shadow-1: 0 1px 2px rgba(40, 30, 20, .06), 0 6px 18px rgba(40, 30, 20, .07);
+      --shadow-2: 0 2px 4px rgba(40, 30, 20, .07), 0 16px 36px rgba(40, 30, 20, .13);
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--wall); color: var(--ink);
+      font-family: var(--sans); -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 1120px; margin: 0 auto; padding: 72px 16px 56px; }
+    @media (min-width: 760px) { main { padding: 96px 48px 64px; } }
+    .kicker, .room-kicker, .enter {
+      font-size: 10.5px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase;
+    }
+    .kicker { color: var(--ink-3); margin: 0 0 18px; }
+    h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(40px, 6vw, 64px); line-height: 1.02; margin: 0; text-wrap: balance; }
+    .lede { font-family: var(--serif); font-size: clamp(19px, 2.2vw, 23px); line-height: 1.4; color: var(--ink-2);
+      max-width: 40em; margin: 20px 0 0; text-wrap: pretty; }
+    .rooms { display: grid; gap: 28px; margin-top: 56px; }
+    @media (min-width: 760px) { .rooms { grid-template-columns: 1fr 1fr; gap: 40px; } }
+    .room { display: block; color: inherit; text-decoration: none; }
+    .frame { background: var(--frame); padding: 8px; box-shadow: var(--shadow-1); transition: box-shadow 260ms var(--ease), transform 260ms var(--ease); }
+    .mat { background: var(--mat); padding: 14px; }
+    .mat img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+    .room:hover .frame { box-shadow: var(--shadow-2); transform: translateY(-2px); }
+    .room:focus-visible { outline: 2px solid var(--ink-2); outline-offset: 6px; }
+    .room-kicker { color: var(--ink-3); margin: 22px 0 6px; }
+    .room h2 { font-family: var(--serif); font-weight: 500; font-size: 30px; margin: 0; }
+    .room p { font-size: 14px; line-height: 1.55; color: var(--ink-2); margin: 8px 0 0; max-width: 34em; }
+    .enter { display: inline-block; margin-top: 14px; color: var(--ink); border-bottom: 1px solid var(--rule); padding-bottom: 3px;
+      transition: border-color 200ms var(--ease); }
+    .room:hover .enter { border-color: var(--ink-2); }
+    footer { margin-top: 64px; padding-top: 22px; border-top: 1px solid var(--rule); display: grid; gap: 14px;
+      font-size: 12px; line-height: 1.55; color: var(--ink-3); }
+    @media (min-width: 760px) { footer { grid-template-columns: 1fr 1fr; gap: 40px; } }
+    footer p { margin: 0; max-width: 40em; }
+    footer a { color: var(--ink-2); }
+    @media (prefers-reduced-motion: reduce) { .frame, .enter { transition: none; } .room:hover .frame { transform: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kicker">Ode · EmbeddingGemma 2 × Gemma 4</p>
+    <h1>The Embedding Gallery</h1>
+    <p class="lede">Type a search and watch where it lands. EmbeddingGemma 2 puts pictures, passages, video clips and
+      sounds in one space, so a query finds its neighbours whatever form they take. Gemma 4 read every work and wrote
+      the label it carries.</p>
+
+    <div class="rooms">
+      <a class="room" href="gallery/">
+        <div class="frame"><div class="mat"><img src="img/gallery.jpg" width="1200" height="675"
+          alt="The gallery: a cloud of works with lines running from the query “fire and heat” to its nearest neighbours, hung on a wall beside it"></div></div>
+        <p class="room-kicker">{{gallery_n}} works</p>
+        <h2>The Gallery</h2>
+        <p>Paintings and objects from the Art Institute of Chicago, NASA images, video clips and sounds, and Wikipedia
+          passages, floating as one cloud. Search, then explore the neighbourhood, a timeline, or a single collection.</p>
+        <span class="enter">Enter the gallery</span>
+      </a>
+      <a class="room" href="moon/">
+        <div class="frame"><div class="mat"><img src="img/moon.jpg" width="1200" height="675"
+          alt="The Moon as a globe built from map tiles"></div></div>
+        <p class="room-kicker">{{moon_n}} tiles</p>
+        <h2>The Moon</h2>
+        <p>A global lunar map cut into tiles and named from the IAU gazetteer. It opens as a globe; one button breaks it
+          apart and flies every tile to its place in embedding space.</p>
+        <span class="enter">Enter the Moon</span>
+      </a>
+    </div>
+
+    <footer>
+      <p>Search runs in your browser. The first search downloads EmbeddingGemma 2 from Hugging Face, about
+        {{webgpu_mb}} MB in a browser with WebGPU and {{wasm_mb}} MB without, and the browser keeps it for later visits.
+        The suggested searches work while it downloads.</p>
+      <p>Works from the <a href="https://www.artic.edu/open-access">Art Institute of Chicago</a> (public-domain images),
+        <a href="https://images.nasa.gov/">NASA</a> and <a href="https://en.wikipedia.org/">Wikipedia</a> (CC BY-SA 4.0).
+        Moon tiles: LOLA / USGS via <a href="https://www.openplanetary.org/">OpenPlanetaryMap</a>. Gemma’s labels are
+        machine-written and can be wrong.</p>
+    </footer>
+  </main>
+</body>
+</html>

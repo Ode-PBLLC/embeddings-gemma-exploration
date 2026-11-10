@@ -1,0 +1,29 @@
+{
+  "id": "onnx-community/embeddinggemma-2-ONNX",
+  "hub": "https://huggingface.co",
+  "revision": "daa72c51243991dfcaf9f9137d2c573d8f7790c0",
+  "transformers_js": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.2",
+  "query_prompt": "task: search result | query: ",
+  "paths": {
+    "webgpu": {
+      "dtype": "q8",
+      "files": {
+        "config.json": 5031,
+        "tokenizer.json": 32170510,
+        "tokenizer_config.json": 1599,
+        "onnx/model_quantized.onnx": 495165,
+        "onnx/model_quantized.onnx_data": 313724928
+      }
+    },
+    "wasm": {
+      "dtype": "fp16",
+      "files": {
+        "config.json": 5031,
+        "tokenizer.json": 32170510,
+        "tokenizer_config.json": 1599,
+        "onnx/model_fp16.onnx": 425780,
+        "onnx/model_fp16.onnx_data": 542085120
+      }
+    }
+  }
+}

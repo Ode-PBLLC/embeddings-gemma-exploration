@@ -26,6 +26,12 @@
     <label class="visually-hidden" for="q">Ask the collection</label>
     <input id="q" name="q" type="text" placeholder="Ask the collection…" maxlength="500" spellcheck="false">
     <p class="ask-hint" id="ask-hint">Press Enter</p>
+    <div class="model-status" id="model-status" aria-live="polite" hidden>
+      <p class="model-text" id="model-text"></p>
+      <div class="model-track" aria-hidden="true"><div class="model-bar" id="model-bar"></div></div>
+      <p class="model-note" id="model-note"></p>
+      <div class="suggest" id="suggest"></div>
+    </div>
     <button type="button" class="scope-btn" id="scope-btn" aria-haspopup="true" aria-expanded="false" aria-controls="scope">
       <span id="scope-label">All works</span><span class="caret" aria-hidden="true"></span>
     </button>

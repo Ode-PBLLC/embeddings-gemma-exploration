@@ -1,0 +1,52 @@
+# Builds the static site (scripts/build_static.py) from the public data release and publishes it to
+# GitHub Pages. Search runs in the visitor's browser; nothing here needs a GPU or the model.
+name: Pages
+
+on:
+  push:
+    branches: [static-site]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  DATA_TAG: data-v2   # the release holding gallery-data.tar.gz (scripts/make_release.py)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install numpy==2.5.4
+      - name: Fetch the data release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download "$DATA_TAG" --pattern 'gallery-data.tar.gz*' --dir release
+          (cd release && sha256sum -c gallery-data.tar.gz.sha256)
+          tar -xzf release/gallery-data.tar.gz -C release
+      - run: python scripts/build_static.py --root release --out _site
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

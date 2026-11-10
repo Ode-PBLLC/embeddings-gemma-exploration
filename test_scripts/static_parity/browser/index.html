@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><title>probe</title><pre id="log"></pre>
+<script type="module">
+import { AutoConfig, AutoModel, AutoTokenizer, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.2";
+const p = new URLSearchParams(location.search), dtype = p.get("dtype") || "q8", device = p.get("device") || "wasm";
+const id = "onnx-community/embeddinggemma-2-ONNX";
+const t0 = performance.now();
+try {
+  const config = await AutoConfig.from_pretrained(id); config.vision_config = config.audio_config = null;
+  const model = await AutoModel.from_pretrained(id, { config, device, dtype });
+  const tok = await AutoTokenizer.from_pretrained(id);
+  const load = performance.now() - t0; const ms = [];
+  let v;
+  const sets = await (await fetch("queries.json")).json();
+  const qs = p.get("all") ? [...sets.gallery, ...sets.moon].map((x) => x.q.trim()) : ["fire and heat", "light on water", "a painting by Winslow Homer of the sea", "quarterly tax filing deadlines", "the night sky"];
+  const all = [];
+  for (const q of qs) {
+    const t = performance.now(); v = (await model(await tok(["task: search result | query: " + q]))).sentence_embedding.data; ms.push(performance.now() - t); all.push(Array.from(v));
+  }
+  window.RESULT = { dtype, device, load_ms: Math.round(load), query_ms: ms.map(Math.round), head: Array.from(v.slice(0, 4)), vectors: p.get("all") ? all : undefined }; window.RESULT.query_ms_median = [...ms].sort((a,b)=>a-b)[ms.length>>1];
+} catch (e) { window.RESULT = { error: String(e) }; }
+document.getElementById("log").textContent = "done";
+</script>

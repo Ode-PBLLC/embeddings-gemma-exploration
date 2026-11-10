@@ -6,6 +6,7 @@ import { Scope } from './scope.js';
 import { Globe } from './globe.js';
 import { Timeline } from './timeline.js';
 import { tween, cancelExcept, ease } from './anim.js';
+import { StaticSearch } from './static_search.js';
 
 const FLY_MS = 900;
 const WORLD = 10;   // cloud.js: layout units -> world units
@@ -20,6 +21,8 @@ const weakBadge = $('weak-badge');
 
 const state = { phase: 'idle', lastResult: null, pulsedIndex: null, run: 0, timings: {} };
 let cloud, wall, detail, tip, scope, globe = null, timeline = null;
+// POST /search on the server; on the static site, search in the browser (static_search.js)
+let search = postSearch;
 // the Moon set has one collection and one type: no scope to choose, no filters sent
 const NO_SCOPE = { filters: () => ({}), label: () => 'All tiles', count: 0, isOpen: false, toggle() {} };
 
@@ -105,6 +108,49 @@ async function postSearch(query, filters) {
   return body;
 }
 
+const MB = (b) => Math.round(b / 1e6).toLocaleString();
+
+// The static site's model download: what is happening, how far along, and that it happens once.
+function renderModelStatus(s) {
+  const el = $('model-status');
+  el.hidden = false;
+  el.dataset.state = s.state;
+  const via = s.device === 'webgpu' ? 'on this computer’s GPU' : 'on this computer’s processor';
+  let text, note = '';
+  if (s.state === 'downloading') {
+    text = s.cached ? `Loading the search model from this browser · ${MB(s.loaded)} of ${MB(s.total)} MB`
+      : `Downloading the search model · ${MB(s.loaded)} of ${MB(s.total)} MB`;
+    note = s.cached ? '' : 'Once only: the browser keeps it for your next visit. The suggested searches work now.';
+  } else if (s.state === 'preparing') {
+    text = 'Preparing the search model…';
+  } else if (s.state === 'ready') {
+    text = `Search model ready · EmbeddingGemma 2, running ${via}`;
+    setTimeout(() => el.classList.add('is-done'), 2500);
+  } else {
+    text = `The search model could not load: ${s.message}`;
+    note = 'The suggested searches still work.';
+  }
+  $('model-text').textContent = text;
+  $('model-note').textContent = note;
+  $('model-bar').style.transform = `scaleX(${s.total ? Math.min(1, s.loaded / s.total) : 0})`;
+  $('suggest').hidden = s.state === 'ready';
+}
+
+function renderSuggestions(qs) {
+  const el = $('suggest');
+  const label = document.createElement('span');
+  label.className = 'suggest-label';
+  label.textContent = 'Try';
+  el.replaceChildren(label, ...qs.slice(0, 6).map((q) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'suggest-q';
+    b.textContent = q;
+    b.addEventListener('click', () => { input.value = q; $('ask').requestSubmit(); });
+    return b;
+  }));
+}
+
 function lineOpacity(sim, lo, hi) {
   if (hi - lo < 1e-6) return 1;
   return 0.35 + 0.65 * (sim - lo) / (hi - lo);
@@ -181,7 +227,7 @@ async function submit(e) {
     const filters = scope.filters();
     const onTimeline = !!(timeline && timeline.t === 1);
     if (onTimeline && !filters.year) filters.year = [...scope.span];   // the timeline holds dated works only
-    result = await postSearch(query, filters);
+    result = await search(query, filters);
     result.onTimeline = onTimeline;
     result.yearSet = !!scope.years;
   } catch (err) {
@@ -341,7 +387,14 @@ async function main() {
     onClose: closeWall,
   });
   cloud.hoverCb = (i) => { if (state.phase === 'wall') setPulsed(i); };
-  detail = new Detail(items, $('detail'), () => document.body.classList.remove('detail-open'));
+  detail = new Detail(items, $('detail'), () => document.body.classList.remove('detail-open'),
+    { placards: !(meta.static && meta.static.placards === false) });
+  if (meta.static) {
+    const engine = await StaticSearch.create(meta, items, xyz, renderModelStatus);
+    search = (q, f) => engine.search(q, f);
+    renderSuggestions(engine.suggestions);
+    window.__static = engine;   // test handle
+  }
   tip = new Tip(items, $('dot-tip'));
   if (meta.globe) {
     globe = new Globe(cloud, meta.globe);
