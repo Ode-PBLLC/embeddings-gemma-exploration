@@ -4,9 +4,11 @@ import { Wall } from './wall.js';
 import { Detail, Tip } from './detail.js';
 import { Scope } from './scope.js';
 import { Globe } from './globe.js';
+import { Timeline } from './timeline.js';
 import { tween, cancelExcept, ease } from './anim.js';
 
 const FLY_MS = 900;
+const WORLD = 10;   // cloud.js: layout units -> world units
 const LINE_MS = 300;
 const LINE_STAGGER_MS = 60;
 const DIM_TO = 0.22;
@@ -17,13 +19,50 @@ const errorEl = $('ask-error');
 const weakBadge = $('weak-badge');
 
 const state = { phase: 'idle', lastResult: null, pulsedIndex: null, run: 0, timings: {} };
-let cloud, wall, detail, tip, scope, globe = null;
+let cloud, wall, detail, tip, scope, globe = null, timeline = null;
 // the Moon set has one collection and one type: no scope to choose, no filters sent
 const NO_SCOPE = { filters: () => ({}), label: () => 'All tiles', count: 0, isOpen: false, toggle() {} };
 
 function setPhase(p) {
   state.phase = p;
   document.body.dataset.phase = p;
+  renderTrail();
+}
+
+// The breadcrumb above the search box: each metadata filter in force, then the semantic query once a
+// wall is up. It is the drill-down made visible: exact filters decide what is eligible, the query ranks it.
+function renderTrail() {
+  const el = $('trail');
+  if (!el || !scope || !scope.trail) return;
+  const steps = scope.trail();
+  const r = state.lastResult;
+  if (r && ['flying', 'lines', 'wall', 'page'].includes(state.phase)) {
+    steps.push({ kind: 'semantic', field: 'Query', label: `“${r.query}”`, clear: closeWall });
+  }
+  el.hidden = steps.length === 0;
+  el.replaceChildren(...steps.flatMap((st, i) => {
+    const chip = document.createElement('span');
+    chip.className = 'trail-step';
+    chip.dataset.kind = st.kind;
+    const kind = document.createElement('span');
+    kind.className = 'trail-kind';
+    kind.textContent = `${st.field} · ${st.kind}`;
+    const label = document.createElement('span');
+    label.className = 'trail-label';
+    label.textContent = st.label;
+    const x = document.createElement('button');
+    x.type = 'button';
+    x.className = 'trail-x';
+    x.setAttribute('aria-label', `Remove ${st.field.toLowerCase()} ${st.label}`);
+    x.textContent = '×';
+    x.addEventListener('click', (e) => { e.preventDefault(); st.clear(); });
+    chip.append(kind, label, x);
+    if (i === 0) return [chip];
+    const sep = document.createElement('span');
+    sep.className = 'trail-sep';
+    sep.textContent = '›';
+    return [sep, chip];
+  }));
 }
 
 async function loadBundle() {
@@ -84,14 +123,24 @@ async function runQuery(result, run) {
   // on the Moon's globe: break it up into embedding space first
   if (globe && globe.active && !(await globe.morph(1, run))) return;
   syncGlobeToggle();
-  await cloud.ensure3d();   // a query from the flat map first rounds it back into the cloud
-  if (run !== state.run) return;
-  cloud.mode = 'result';
+  const onTimeline = !!(timeline && timeline.t === 1);
+  if (!onTimeline) {
+    await cloud.ensure3d();   // a query from the flat map first rounds it back into the cloud
+    if (run !== state.run) return;
+    cloud.mode = 'result';
+  }
 
   const { neighbors } = result;
   neighbors.forEach((n) => cloud.preload(n.index));
-  const q = cloud.showQuery(result.position);
-  const pts = [q, ...neighbors.map((n) => cloud.worldPos(n.index))];
+  let q, pts;
+  if (onTimeline) {   // stay on the timeline: the query hovers over the swarm, the chart slides beside the wall
+    const at = timeline.queryPoint(neighbors);
+    q = cloud.showQuery([at.x / WORLD, at.y / WORLD, at.z / WORLD]);
+    pts = [q, ...timeline.bounds()];
+  } else {
+    q = cloud.showQuery(result.position);
+    pts = [q, ...neighbors.map((n) => cloud.worldPos(n.index))];
+  }
   const d0 = cloud.uniforms.uDim.value;
   if (d0 < 1) tween(300, (e) => cloud.setDim(d0 + (1 - d0) * e), { run });
 
@@ -129,7 +178,12 @@ async function submit(e) {
   let result;
   const tReq = performance.now();
   try {
-    result = await postSearch(query, scope.filters());
+    const filters = scope.filters();
+    const onTimeline = !!(timeline && timeline.t === 1);
+    if (onTimeline && !filters.year) filters.year = [...scope.span];   // the timeline holds dated works only
+    result = await postSearch(query, filters);
+    result.onTimeline = onTimeline;
+    result.yearSet = !!scope.years;
   } catch (err) {
     showError(err.message);
     return;
@@ -158,10 +212,76 @@ function closeWall() {
   weakBadge.hidden = true;
   setPulsed(null);
   setPhase('idle');
-  cloud.reset(run);
+  if (timeline && timeline.t === 1) backToTimeline(run);
+  else cloud.reset(run);
+}
+
+// Close a result hung on the timeline: drop it, undim, and glide back to the timeline's own framing.
+async function backToTimeline(run) {
+  cloud.clearResult();
+  const d0 = cloud.uniforms.uDim.value, s0 = cloud.shift;
+  const p0 = cloud.camera.position.clone(), t0 = cloud.controls.target.clone();
+  cloud.flying = true;
+  cloud.controls.enabled = false;
+  await tween(700, (e) => {
+    cloud.setDim(d0 + (1 - d0) * e);
+    cloud.shift = s0 * (1 - e);
+    cloud.applyShift();
+    cloud.camera.position.lerpVectors(p0, timeline.home.position, e);
+    cloud.controls.target.lerpVectors(t0, timeline.home.target, e);
+  }, { run });
+  cloud.settleControls();
+  cloud.flying = false;
+  cloud.controls.enabled = true;
 }
 
 const NAV_GLOBE = 'Drag to turn the Moon · scroll to zoom · click a tile';
+const NAV_TIMELINE = 'Drag to pan · scroll to zoom · click a work';
+
+function syncTimelineToggle() {
+  if (!timeline) return;
+  const on = timeline.t === 1;
+  $('timeline-toggle').textContent = on ? 'Back to the cloud' : 'Timeline';
+  $('timeline-toggle').disabled = timeline.busy;
+  document.body.dataset.timeline = on || timeline.busy ? 'on' : 'off';
+  if (on) $('nav-hint').textContent = NAV_TIMELINE;
+  else cloud.viewCb(cloud.view);
+}
+
+async function toggleTimeline() {
+  if (!timeline || timeline.busy) return;
+  const run = ++state.run;
+  cancelExcept(run);
+  if (timeline.t === 0) {   // put away any hung result and the flat map; keep the camera's angle
+    wall.hide();
+    weakBadge.hidden = true;
+    setPulsed(null);
+    detail.close();
+    cloud.clearResult();
+    cloud.setDim(1);
+    await cloud.ensure3d();
+    cloud.shift = 0;
+    cloud.applyShift();
+    setPhase('idle');
+    const p = timeline.enter(run);
+    syncTimelineToggle();
+    await p;
+  } else {   // a result hung on the timeline goes first: its lines point at the swarm
+    wall.hide();
+    weakBadge.hidden = true;
+    setPulsed(null);
+    detail.close();
+    cloud.clearResult();
+    cloud.setDim(1);
+    cloud.shift = 0;
+    cloud.applyShift();
+    setPhase('idle');
+    const p = timeline.exit(run);
+    syncTimelineToggle();
+    await p;
+  }
+  syncTimelineToggle();
+}
 
 function syncGlobeToggle() {
   if (!globe) return;
@@ -231,7 +351,21 @@ async function main() {
     $('globe-toggle').hidden = false;
     $('globe-toggle').addEventListener('click', toggleGlobe);
   } else {
-    scope = new Scope(items, { onChange: (flags) => cloud.setMuted(flags) });
+    scope = new Scope(items, {
+      onChange: (flags) => {
+        cloud.setMuted(flags);
+        renderTrail();
+        if (timeline && timeline.t === 1) {
+          if (state.phase !== 'idle') closeWall();   // the old answer's lines would point at moved dots
+          timeline.restack(state.run);
+        }
+      },
+    });
+    if (items.some((it) => it.years)) {
+      timeline = new Timeline(cloud, items, { inScope: (i) => scope.matches(items[i]) });
+      $('timeline-toggle').hidden = false;
+      $('timeline-toggle').addEventListener('click', toggleTimeline);
+    }
   }
   cloud.clickCb = (i) => { tip.show(null); detail.open(i); document.body.classList.add('detail-open'); };
   cloud.tipCb = (i, x, y) => tip.show(i, x, y);
@@ -239,6 +373,7 @@ async function main() {
   cloud.viewCb = (v) => {
     document.body.dataset.view = v === '3d' ? '3d' : 'flat';
     if (globe && globe.t < 1) { hint.textContent = NAV_GLOBE; return; }
+    if (timeline && timeline.t === 1) { hint.textContent = NAV_TIMELINE; return; }
     hint.textContent = v === '3d'
       ? 'Drag to turn · right-drag to pan · scroll to zoom in on any spot'
       : 'Drag to pan · scroll to zoom · click a work · zoom out to return to the cloud';
@@ -257,6 +392,11 @@ async function main() {
   if (notes.length) { $('data-note').textContent = notes.join(' '); $('data-note').hidden = false; }
 
   $('ask').addEventListener('submit', submit);
+  // The scope's fields share the form with the search box, and a form with several text fields and no
+  // submit button does not submit on Enter: submit from the search box ourselves.
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); $('ask').requestSubmit(); }
+  });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && scope.isOpen) { scope.toggle(false); return; }
     if (e.key === 'Escape' && detail.isOpen) { detail.close(); return; }
@@ -281,6 +421,9 @@ async function main() {
     get morph() { return cloud.morph; },
     get globe() { return globe ? { t: globe.t, busy: globe.busy } : null; },
     toggleGlobe,
+    get timeline() { return timeline ? { t: timeline.t, busy: timeline.busy, members: timeline.members ? timeline.members.size : 0 } : null; },
+    toggleTimeline,
+    get trail() { return [...document.querySelectorAll('#trail .trail-step')].map((e) => e.querySelector('.trail-label').textContent); },
     get mapThumbCount() { return cloud.mapSprites.size; },
     get mapThumbIndices() { return [...cloud.mapSprites.keys()]; },
     get pane() { const p = cloud.pane; return p ? { members: p.members.length, reanchors: cloud.reanchors || 0, relaxMs: cloud.relaxMs, spacing: cloud.minSpacingPx } : null; },

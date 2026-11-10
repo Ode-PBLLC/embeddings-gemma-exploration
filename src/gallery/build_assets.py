@@ -8,6 +8,9 @@ Writes (GALLERY_ASSETS_DIR, default web/):
   data/items.json  list, index-aligned with points.bin
   data/meta.json   counts, flags and the binary layout description
   thumbs/<source>/<file>.jpg  copies of the UI thumbnails
+  items carry "years": [start, end] (AIC: AIC's own numeric dates via gallery.ingest.aic_meta;
+  NASA: the created date as a fractional year) and "artist" (AIC's artist_title; NASA's centre or
+  photographer) for the year/artist filters and the timeline; Wikipedia passages have neither.
   data/<atlas>     only for a dataset with <data>/globe.json (the Moon): the globe texture; each
                    item then carries "tile": [x, y] and meta.json a "globe" block
 
@@ -68,6 +71,42 @@ def _rgb(hex_colors: pd.Series) -> np.ndarray:
     return np.array([[int(h[i:i + 2], 16) for i in (1, 3, 5)] for h in hex_colors], dtype=np.uint8)
 
 
+def load_aic_meta(data: Path, items: pd.DataFrame) -> dict[str, tuple]:
+    """artwork id -> (date_start, date_end, artist_title), from data/raw/aic_meta.parquet."""
+    path = data / "raw" / "aic_meta.parquet"
+    if not (items["source"] == "aic").any() or (data / "fake_topics.npz").is_file():
+        return {}   # no AIC works, or the synthetic set (no real AIC metadata to join)
+    if not path.is_file():
+        raise FileNotFoundError(f"{path} missing: run `uv run python -m gallery.ingest.aic_meta`")
+    m = pd.read_parquet(path)
+    return {r.id: (r.date_start, r.date_end, r.artist_title) for r in m.itertuples(index=False)}
+
+
+def nasa_year(date: str) -> float | None:
+    """'2014-06-10' -> 2014.44 (fractional year, so the timeline spreads a year's works across it)."""
+    try:
+        d = datetime.strptime(date[:10], "%Y-%m-%d")
+    except ValueError:
+        return None
+    return round(d.year + (d.timetuple().tm_yday - 1) / 366, 3)
+
+
+def years_and_artist(r, aic_meta: dict, sound_meta: dict | None) -> tuple[list | None, str]:
+    if r.source == "aic":
+        art = (sound_meta or {}).get("artwork_id", r.id)   # an audio guide takes its artwork's
+        if art not in aic_meta:
+            if not aic_meta:
+                return None, ""
+            raise KeyError(f"{r.id}: artwork {art} not in aic_meta.parquet (re-run gallery.ingest.aic_meta)")
+        y0, y1, artist = aic_meta[art]
+        years = None if pd.isna(y0) else [int(y0), int(y1) if not pd.isna(y1) else int(y0)]
+        return years, artist or ""
+    if r.source == "nasa":
+        y = nasa_year(r.date or "")
+        return ([y, y] if y is not None else None), r.creator or ""
+    return None, ""
+
+
 def build(data: Path, out: Path, include_pending: bool = False) -> dict:
     items = pd.read_parquet(data / "items.parquet")
     ids = json.loads((data / "vector_ids.json").read_text())
@@ -79,6 +118,7 @@ def build(data: Path, out: Path, include_pending: bool = False) -> dict:
 
     globe = json.loads((data / "globe.json").read_text()) if (data / "globe.json").is_file() else None
     summaries = load_summaries(data / "summaries.jsonl")
+    aic_meta = load_aic_meta(data, items)
     has = items["id"].isin(summaries)
     keep = np.ones(len(items), bool) if include_pending else has.to_numpy()
     rows = np.flatnonzero(keep)
@@ -94,7 +134,7 @@ def build(data: Path, out: Path, include_pending: bool = False) -> dict:
     audio_out = out / "audio"
     for r in sel.itertuples(index=False):
         thumb = video = ""
-        sound = None
+        sound = meta_s = None
         if r.modality == "audio":
             from gallery.ingest.nasa_audio import audio_paths
 
@@ -151,6 +191,11 @@ def build(data: Path, out: Path, include_pending: bool = False) -> dict:
             rec["video"] = video   # short silent loop (the wall and placard play it)
         if sound:
             rec.update(sound)      # playable sound, waveform, timed words or a static caption
+        years, artist = years_and_artist(r, aic_meta, meta_s)
+        if years:
+            rec["years"] = years       # [start, end]; negative = BCE
+        if artist:
+            rec["artist"] = artist
         if globe:
             rec["tile"] = globe["tiles"][r.id]   # [x, y] in the globe's XYZ grid
         if pending:

@@ -20,7 +20,11 @@ SOURCES = ("aic", "nasa", "wiki", "moon")
 MODALITIES = ("image", "text", "video", "audio")
 # Metadata a query may be restricted to. Deterministic pre-filters applied before the nearest-neighbour
 # ranking: the semantic part of a query stays the embedding; these only decide what is eligible.
-FILTER_FIELDS = {"modality": MODALITIES, "source": SOURCES}
+#   modality, source: lists of allowed values
+#   artist: list of exact artist names (checked against the index)
+#   year: [from, to], inclusive, negative = BCE; a work is eligible when its date range overlaps it
+#         (works without a date, i.e. Wikipedia passages, are not)
+FILTER_FIELDS = {"modality": MODALITIES, "source": SOURCES, "artist": None, "year": None}
 
 EmbedFn = Callable[[str], np.ndarray]
 
@@ -58,8 +62,20 @@ def validate_filters(filters: dict | None) -> dict[str, list[str]]:
     for field, values in filters.items():
         if field not in FILTER_FIELDS:
             raise QueryError(f"unknown filter field {field!r}; allowed: {sorted(FILTER_FIELDS)}")
+        if field == "year":
+            if (not isinstance(values, list) or len(values) != 2
+                    or not all(isinstance(v, (int, float)) and not isinstance(v, bool) for v in values)):
+                raise QueryError("filter 'year' must be [from, to] (numbers; negative = BCE)")
+            if values[0] > values[1]:
+                raise QueryError(f"filter 'year': from {values[0]} is after to {values[1]}")
+            out["year"] = [float(values[0]), float(values[1])]
+            continue
         if not isinstance(values, list) or not all(isinstance(v, str) for v in values):
             raise QueryError(f"filter {field!r} must be a list of strings")
+        if FILTER_FIELDS[field] is None:   # free values (artist): checked against the index by the Searcher
+            if values:
+                out[field] = sorted(set(values))
+            continue
         bad = sorted(set(values) - set(FILTER_FIELDS[field]))
         if bad:
             raise QueryError(f"unknown {field} value(s) {bad}; allowed: {list(FILTER_FIELDS[field])}")
@@ -78,7 +94,8 @@ def validate_query(q: str) -> str:
 
 class Searcher:
     def __init__(self, vectors: np.ndarray, layout: np.ndarray, sources: np.ndarray, ids: list[str],
-                 config: RetrievalConfig, embed: EmbedFn, modalities: np.ndarray | None = None):
+                 config: RetrievalConfig, embed: EmbedFn, modalities: np.ndarray | None = None,
+                 artists: np.ndarray | None = None, years: np.ndarray | None = None):
         if not (len(vectors) == len(layout) == len(sources) == len(ids)):
             raise ValueError(f"misaligned inputs: vectors {len(vectors)}, layout {len(layout)}, "
                              f"sources {len(sources)}, ids {len(ids)}")
@@ -90,6 +107,11 @@ class Searcher:
         self.modalities = None if modalities is None else np.asarray(modalities)
         if self.modalities is not None and len(self.modalities) != len(ids):
             raise ValueError(f"misaligned modalities: {len(self.modalities)} vs {len(ids)} items")
+        n = len(ids)
+        self.artists = np.full(n, "", dtype=object) if artists is None else np.asarray(artists, dtype=object)
+        self.years = np.full((n, 2), np.nan) if years is None else np.asarray(years, dtype=float)
+        if len(self.artists) != n or self.years.shape != (n, 2):
+            raise ValueError(f"misaligned artists/years: {len(self.artists)}, {self.years.shape} vs {n} items")
         self.ids = list(ids)
         self.config = config
         self.embed = embed
@@ -103,6 +125,15 @@ class Searcher:
             if self.modalities is None:
                 raise RuntimeError("searcher was built without modality metadata")
             mask &= np.isin(self.modalities, filters["modality"])
+        if "artist" in filters:
+            unknown = sorted(set(filters["artist"]) - set(self.artists))
+            if unknown:
+                raise QueryError(f"unknown artist(s) {unknown}")
+            mask &= np.isin(self.artists, filters["artist"])
+        if "year" in filters:
+            lo, hi = filters["year"]
+            with np.errstate(invalid="ignore"):   # undated works (NaN) compare False: not eligible
+                mask &= (self.years[:, 1] >= lo) & (self.years[:, 0] <= hi)
         return mask
 
     def _pick(self, sims: np.ndarray, mask: np.ndarray) -> np.ndarray:

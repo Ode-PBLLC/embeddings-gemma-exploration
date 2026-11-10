@@ -377,6 +377,57 @@ body[data-phase="wall"] .globe-toggle, body[data-phase="page"] .globe-toggle { r
 .scope-count { margin: 2px 0 8px; font-family: var(--serif); font-size: 16px; color: var(--ink); }
 .scope-count.is-empty { color: var(--alert); }
 .scope-note { margin: 0; font-size: 11px; line-height: 1.45; color: var(--ink-3); font-style: italic; font-family: var(--serif); }
+.scope-input {
+  width: 100%; font-family: var(--sans); font-size: 12.5px; color: var(--ink);
+  background: var(--wall); border: 1px solid var(--rule); border-radius: 999px; padding: 6px 12px; outline: none;
+  transition: border-color var(--slow) var(--ease);
+}
+.scope-input:focus { border-color: #cfc8bb; }
+.scope-input::placeholder { color: var(--ink-3); }
+.scope-input.is-invalid { border-color: var(--alert); }
+.scope-years { display: flex; align-items: center; gap: 8px; color: var(--ink-3); }
+.scope-years .scope-input { width: 100px; }
+.scope-hint { margin: 0; font-size: 10.5px; line-height: 1.4; color: var(--ink-3); }
+.scope-clear { margin-top: 12px; color: var(--ink-3); }
+
+/* ---------- the drill-down breadcrumb (above the search box) ---------- */
+.trail {
+  position: fixed; left: 48px; top: 104px; z-index: 6;
+  max-width: calc(100vw - 96px - 220px);
+  display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 6px 8px;
+  animation: settle 260ms var(--ease);
+}
+.trail[hidden] { display: none; }
+body[data-phase="wall"] .trail, body[data-phase="lines"] .trail, body[data-phase="flying"] .trail {
+  top: 40px; max-width: calc(100vw - var(--wall-w) - 96px - 200px);
+}
+body[data-timeline="on"] .trail { top: 40px; }
+@keyframes settle { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.trail-step {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 999px;
+  padding: 5px 6px 5px 12px; box-shadow: var(--shadow-1);
+}
+.trail-step[data-kind="semantic"] { border-color: var(--ink-3); }
+.trail-kind { font-family: var(--sans); font-size: 8.5px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+.trail-step[data-kind="semantic"] .trail-kind { color: var(--amber); }
+.trail-label { font-family: var(--serif); font-size: 15px; color: var(--ink); }
+.trail-x {
+  border: 0; background: none; cursor: pointer; color: var(--ink-3); font-size: 14px; line-height: 1;
+  padding: 0 6px; border-radius: 999px; transition: color var(--slow) var(--ease);
+}
+.trail-x:hover { color: var(--ink); }
+.trail-sep { color: var(--ink-3); font-family: var(--serif); font-size: 18px; }
+
+/* ---------- timeline view ---------- */
+.globe-toggle.timeline-toggle { top: 40px; }   /* the main gallery has no globe button, so it takes that spot */
+.timeline-axis { position: fixed; inset: 0; pointer-events: none; z-index: 4; opacity: 0; }
+.timeline-axis span {
+  position: absolute; left: 0; top: 0; white-space: nowrap;
+  font-family: var(--sans); font-size: 10.5px; letter-spacing: .04em; color: var(--ink-3);
+}
+body[data-timeline="on"] .title-wall { opacity: 0; }
+
 .wall-scope { margin: 6px 0 0; color: var(--ink-3); font-size: 11px; font-style: italic; font-family: var(--serif); }
 
 /* ---------- sound works: listening cards (dark, unlike the paper text cards) ---------- */
@@ -416,3 +467,4 @@ body[data-phase="wall"] .globe-toggle, body[data-phase="page"] .globe-toggle { r
 .sound-card--placard { margin: 8px 0 18px; }
 .sound-notice { margin: 10px 0 0; font-size: 10.5px; color: var(--ink-on-2); }
 .detail-license { margin: -6px 0 16px; font-size: 11px; color: var(--ink-3); }
+.scope-group[hidden] { display: none; }

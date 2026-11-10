@@ -23,6 +23,7 @@ from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from gallery import search_fetch
 from gallery.paths import WEB, assets_dir, data_dir, retrieval_config
 from gallery.schema import ROOT
 from gallery.search import EmbedFn, KeywordEmbedder, QueryError, RetrievalConfig, Searcher, gemma_embed_fn
@@ -32,8 +33,9 @@ log = logging.getLogger("gallery.app")
 
 class SearchRequest(BaseModel):
     query: str
-    # deterministic metadata pre-filter, e.g. {"modality": ["text"], "source": ["nasa"]}
-    filters: dict[str, list[str]] | None = None
+    # deterministic metadata pre-filter, e.g. {"modality": ["text"], "source": ["aic"],
+    # "artist": ["Alfred Stieglitz"], "year": [1890, 1940]}; values are checked by gallery.search
+    filters: dict[str, list[str | float]] | None = None
 
 
 def load_searcher(data: Path, assets: Path, retrieval: Path, embed: EmbedFn) -> Searcher:
@@ -59,6 +61,8 @@ def load_searcher(data: Path, assets: Path, retrieval: Path, embed: EmbedFn) -> 
         config=RetrievalConfig.load(retrieval),
         embed=embed,
         modalities=np.array([it["modality"] for it in items]),
+        artists=np.array([it.get("artist", "") for it in items], dtype=object),
+        years=np.array([it.get("years", [np.nan, np.nan]) for it in items], dtype=float),
     )
 
 
@@ -112,6 +116,7 @@ def create_app(searcher: Searcher | None = None, assets: Path | None = None, dat
         result["ms"] = round((time.perf_counter() - t0) * 1000, 1)
         return result
 
+    search_fetch.install(app, searcher, assets, data)   # /v1: the contract Ode agents call
     app.mount("/data", StaticFiles(directory=assets / "data"), name="data")
     thumbs = assets / "thumbs"
     thumbs.mkdir(parents=True, exist_ok=True)

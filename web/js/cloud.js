@@ -66,6 +66,8 @@ const POINT_FRAG = /* glsl */`
   varying float vMute;
   varying float vAway;
   void main() {
+    // hidden points: a point size of 0 is still drawn as one pixel by some GPUs, so drop them here
+    if (vHidden > 0.5 || vAway > 1.5) discard;
     vec2 p = gl_PointCoord - 0.5;
     float r = length(p);
     float a = 1.0 - smoothstep(0.40, 0.5, r);
@@ -227,6 +229,7 @@ export class Cloud {
     this.tipCb = null;              // (index|null, x, y) => void, item under the pointer
     this.live = new Map();          // index -> {video, entry}: clips playing inside their framed thumbnail
     this.globe = null;              // the Moon set's Globe (globe.js), when the bundle has one
+    this.timeline = null;           // the Timeline view (timeline.js), for bundles with dated works
 
     const r = this.renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
     r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
@@ -354,7 +357,8 @@ export class Cloud {
   }
 
   worldPos(index) {
-    const p = this.positions;
+    // on the timeline a work's place is its spot in the swarm, so lines and pictures attach there
+    const p = this.timeline && this.timeline.t === 1 ? this.shown : this.positions;
     return new THREE.Vector3(p[index * 3], p[index * 3 + 1], p[index * 3 + 2]);
   }
 
@@ -1357,6 +1361,7 @@ export class Cloud {
     }
 
     if (this.globe) this.globe.step();
+    if (this.timeline) this.timeline.step();
     this.renderer.render(this.scene, this.camera);
   }
 

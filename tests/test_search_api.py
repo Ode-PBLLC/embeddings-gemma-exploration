@@ -7,7 +7,7 @@ from fastapi.testclient import TestClient
 
 from _interface_data import tiny_dataset
 from gallery.app import create_app, load_searcher
-from gallery.search import KeywordEmbedder, RetrievalConfig, Searcher
+from gallery.search import KeywordEmbedder, QueryError, RetrievalConfig, Searcher
 
 
 @pytest.fixture(scope="module")
@@ -188,3 +188,57 @@ def test_bad_or_empty_filters_422(fc, filters, msg):
 def test_empty_filter_lists_mean_no_filter(fc):
     r = fc.post("/search", json={"query": "galaxy", "filters": {"source": [], "modality": []}}).json()
     assert r["filters"] == {} and len(r["neighbors"]) == 12
+
+
+# ---------- artist and year filters ----------
+
+def _dated_searcher():
+    rng = np.random.default_rng(1)
+    n = 40
+    v = rng.normal(size=(n, 16)).astype(np.float32)
+    v /= np.linalg.norm(v, axis=1, keepdims=True)
+    artists = np.array(["Monet"] * 10 + ["Stieglitz"] * 10 + [""] * 20, dtype=object)
+    years = np.array([[1870 + i, 1870 + i] for i in range(10)] + [[1900 + 3 * i, 1905 + 3 * i] for i in range(10)]
+                     + [[2000 + i, 2000 + i] for i in range(10)] + [[np.nan, np.nan]] * 10, dtype=float)
+    sources = np.array(["aic"] * 20 + ["nasa"] * 10 + ["wiki"] * 10)
+    cfg = RetrievalConfig(mode="raw", k=5, weak_threshold=0.0)
+    return Searcher(vectors=v, layout=rng.normal(size=(n, 3)), sources=sources, ids=[f"i{k}" for k in range(n)],
+                    config=cfg, embed=lambda q: v[0], modalities=np.array(["image"] * 30 + ["text"] * 10),
+                    artists=artists, years=years)
+
+
+def test_artist_filter_is_exact():
+    s = _dated_searcher()
+    r = s.search("x", {"artist": ["Stieglitz"]})
+    assert r["eligible"] == 10 and all(10 <= n["index"] < 20 for n in r["neighbors"])
+    with pytest.raises(QueryError, match="unknown artist"):
+        s.search("x", {"artist": ["Rembrandt"]})
+
+
+def test_year_filter_overlaps_ranges_and_drops_undated():
+    s = _dated_searcher()
+    r = s.search("x", {"year": [1906, 1910]})
+    # Stieglitz ranges [1900+3i, 1905+3i] overlapping 1906..1910: i = 1, 2, 3 (1903-08, 1906-11, 1909-14)
+    assert r["eligible"] == 3 and {n["index"] for n in r["neighbors"]} == {11, 12, 13}
+    assert s.search("x", {"year": [-5000, 3000]})["eligible"] == 30   # every dated work, no undated one
+
+
+def test_filters_stack_metadata_then_semantic():
+    s = _dated_searcher()
+    r = s.search("x", {"source": ["aic"], "artist": ["Monet"], "year": [1875, 1879]})
+    assert r["eligible"] == 5 and r["filters"]["year"] == [1875.0, 1879.0]
+    sims = [n["similarity"] for n in r["neighbors"]]
+    assert sims == sorted(sims, reverse=True) and {n["index"] for n in r["neighbors"]} == set(range(5, 10))
+
+
+@pytest.mark.parametrize("year, msg", [([1900], "must be"), ([1950, 1900], "after"), (["1900", 1950], "must be")])
+def test_bad_year_filter(year, msg):
+    with pytest.raises(QueryError, match=msg):
+        _dated_searcher().search("x", {"year": year})
+
+
+def test_year_and_artist_over_http(fc):
+    r = fc.post("/search", json={"query": "galaxy", "filters": {"year": [1900, 1950]}})
+    assert r.status_code == 422 and "no works match" in r.text   # the tiny set carries no dates
+    r = fc.post("/search", json={"query": "galaxy", "filters": {"year": "1900"}})
+    assert r.status_code == 422

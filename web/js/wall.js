@@ -15,11 +15,16 @@ function metaLine(it) {
 }
 
 // What the server actually filtered on, e.g. " · searched Text in Wikipedia" (empty when unfiltered).
-function scopeNote(filters) {
+const fmtYear = (y) => (y < 0 ? `${Math.round(-y)} BCE` : String(Math.round(y)));
+
+function scopeNote(filters, onTimeline = false) {
   if (!filters || !Object.keys(filters).length) return '';
   const type = filters.modality ? ({ image: 'images', text: 'text', video: 'video', audio: 'sound' }[filters.modality[0]] || filters.modality[0]) : 'all types';
   const where = filters.source ? filters.source.map((s) => SOURCE_NAME[s] || s).join(' + ') : 'all collections';
-  return ` · searched ${type} in ${where}`;
+  const by = filters.artist ? ` by ${filters.artist.join(' or ')}` : '';
+  const when = onTimeline && !filters.yearSet ? ', dated works on the timeline'
+    : filters.year ? `, ${fmtYear(filters.year[0])}–${fmtYear(filters.year[1])}` : '';
+  return ` · searched ${type}${by} in ${where}${when}`;
 }
 
 // One hung piece: a framed picture with a museum label, or a text card.
@@ -150,7 +155,7 @@ export class Wall {
     }
     for (const id of ['wall-sub', 'page-sub']) {
       document.getElementById(id).textContent = sub + (mode === 'quota' ? ' · balanced across sources' : '')
-        + scopeNote(result.filters);
+        + scopeNote({ ...result.filters, yearSet: result.yearSet }, result.onTimeline);
     }
     document.getElementById('wall-fine').hidden = mode !== 'quota';
     hangInto(this.hang, this.items, neighbors, 2);

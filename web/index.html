@@ -19,6 +19,8 @@
 
   <div class="loading" id="loading">Hanging the collection…</div>
 
+  <nav class="trail" id="trail" aria-label="Active filters and query" hidden></nav>
+
   <form class="ask" id="ask" autocomplete="off">
     <div class="weak-badge" id="weak-badge" hidden>Nothing close</div>
     <label class="visually-hidden" for="q">Ask the collection</label>
@@ -47,8 +49,23 @@
           <button type="button" class="chip" data-source="wiki" aria-pressed="true">Wikipedia</button>
         </div>
       </div>
+      <div class="scope-group">
+        <label class="scope-label" for="scope-artist">Artist</label>
+        <input class="scope-input" id="scope-artist" list="scope-artists" placeholder="Any artist" autocomplete="off" spellcheck="false">
+        <datalist id="scope-artists"></datalist>
+      </div>
+      <div class="scope-group">
+        <span class="scope-label">Years</span>
+        <div class="scope-years">
+          <input class="scope-input" id="scope-from" type="number" step="1" placeholder="from" aria-label="From year">
+          <span aria-hidden="true">–</span>
+          <input class="scope-input" id="scope-to" type="number" step="1" placeholder="to" aria-label="To year">
+        </div>
+        <p class="scope-hint">Negative years are BCE. Undated works (the Wikipedia passages) drop out.</p>
+      </div>
       <p class="scope-count" id="scope-count"></p>
       <p class="scope-note">Exact metadata filters, applied before the semantic ranking. In a real index these would be extracted fields.</p>
+      <button type="button" class="text-btn scope-clear" id="scope-clear">Clear all</button>
     </div>
     <p class="ask-error" id="ask-error" role="alert" hidden></p>
   </form>
@@ -101,6 +118,8 @@
   <div class="dot-tip" id="dot-tip" aria-hidden="true"></div>
 
   <button type="button" class="globe-toggle" id="globe-toggle" hidden>Into embedding space</button>
+  <button type="button" class="globe-toggle timeline-toggle" id="timeline-toggle" hidden>Timeline</button>
+  <div class="timeline-axis" id="timeline-axis" aria-hidden="true"></div>
 
   <p class="nav-hint" id="nav-hint">Drag to turn · right-drag to pan · scroll to zoom in on any spot</p>
 
