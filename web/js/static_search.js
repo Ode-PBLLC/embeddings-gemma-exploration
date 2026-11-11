@@ -12,6 +12,15 @@ const FIELDS = { modality: MODALITIES, source: SOURCES, artist: null, year: null
 
 export class QueryError extends Error {}
 
+// A typed search needs the model, which has not been fetched: the page asks before downloading it.
+export class ModelNeeded extends Error {
+  constructor(query, status) {
+    super('the search model is not loaded');
+    this.query = query;
+    this.status = status;
+  }
+}
+
 export function validateQuery(q) {
   if (typeof q !== 'string' || !q.trim()) throw new QueryError('query is empty');
   if (q.length > MAX_QUERY_CHARS) throw new QueryError(`query is longer than ${MAX_QUERY_CHARS} characters`);
@@ -146,10 +155,32 @@ export function decodeVector(b64) {
   return new Float32Array(bytes.buffer);
 }
 
-const MB = (b) => Math.round(b / 1e6);
+// Shared with embed_worker.js, so the size the page quotes is the build the worker loads.
+export async function hasWebGPU(nav = self.navigator) {
+  try {
+    return !!(nav.gpu && await nav.gpu.requestAdapter());
+  } catch {
+    return false;
+  }
+}
 
-// The search the page calls instead of POST /search. onStatus(s) gets the model's progress:
-// {state: 'downloading'|'preparing'|'ready'|'failed', loaded, total, device, cached, message}.
+export const MODEL_CACHE = 'transformers-cache';   // Transformers.js' browser cache
+
+export async function modelCached(model, files) {
+  if (!self.caches) return false;
+  try {
+    const cache = await caches.open(MODEL_CACHE);
+    const big = Object.keys(files).find((f) => f.endsWith('.onnx_data'));
+    return !!(await cache.match(`${model.hub}/${model.id}/resolve/${model.revision}/${big}`));
+  } catch {
+    return false;   // a blocked cache only means we can't tell; the page then asks
+  }
+}
+
+export const modelBytes = (model, device) => Object.values(model.paths[device].files).reduce((a, b) => a + b, 0);
+
+// The search the page calls instead of POST /search. Nothing is downloaded until startModel().
+// onStatus(s) gets {state: 'idle'|'downloading'|'preparing'|'ready'|'failed', loaded, total, device, cached, message}.
 export class StaticSearch {
   static async create(meta, items, xyz, onStatus) {
     const [vr, dr] = await Promise.all([fetch('data/vectors.bin'), fetch('data/demo_queries.json')]);
@@ -165,13 +196,24 @@ export class StaticSearch {
     this.suggestions = demos.map((d) => d.q);
     this.model = model;
     this.onStatus = onStatus;
-    this.status = { state: 'downloading', loaded: 0, total: 0 };
+    this.status = { state: 'idle', loaded: 0, total: 0 };
     this.pending = new Map();
     this.nextId = 0;
+    this.worker = null;
+  }
+
+  // What the download would be on this browser: {device, bytes, cached}.
+  async plan() {
+    const device = (await hasWebGPU(navigator)) ? 'webgpu' : 'wasm';
+    return { device, bytes: modelBytes(this.model, device), cached: await modelCached(this.model, this.model.paths[device].files) };
+  }
+
+  startModel() {
+    if (this.worker) return;
     this.worker = new Worker(new URL('./embed_worker.js', import.meta.url), { type: 'module' });
     this.worker.onmessage = (e) => this.onMessage(e.data);
     this.worker.onerror = (e) => this.setStatus({ state: 'failed', message: e.message || 'the model worker failed to start' });
-    this.worker.postMessage({ type: 'load', model });
+    this.worker.postMessage({ type: 'load', model: this.model });
   }
 
   setStatus(s) {
@@ -207,10 +249,7 @@ export class StaticSearch {
     if (!qv) {
       const s = this.status;
       if (s.state === 'failed') throw new Error(`The search model failed to load: ${s.message}`);
-      if (s.state !== 'ready') {
-        const where = s.state === 'downloading' && s.total ? ` (${MB(s.loaded)} of ${MB(s.total)} MB)` : '';
-        throw new Error(`The search model is still loading${where}. Try a suggested search, or ask again in a moment.`);
-      }
+      if (s.state !== 'ready') throw new ModelNeeded(q, s);
       qv = await this.embed(q);
     }
     return rank(this.index, q, qv, filters);

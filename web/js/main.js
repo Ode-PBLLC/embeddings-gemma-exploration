@@ -6,7 +6,7 @@ import { Scope } from './scope.js';
 import { Globe } from './globe.js';
 import { Timeline } from './timeline.js';
 import { tween, cancelExcept, ease } from './anim.js';
-import { StaticSearch } from './static_search.js';
+import { StaticSearch, ModelNeeded } from './static_search.js';
 
 const FLY_MS = 900;
 const WORLD = 10;   // cloud.js: layout units -> world units
@@ -23,6 +23,9 @@ const state = { phase: 'idle', lastResult: null, pulsedIndex: null, run: 0, timi
 let cloud, wall, detail, tip, scope, globe = null, timeline = null;
 // POST /search on the server; on the static site, search in the browser (static_search.js)
 let search = postSearch;
+let engine = null;          // the static site's StaticSearch
+let modelPlan = null;       // {device, bytes, cached} for this browser
+let pendingQuery = null;    // a typed search waiting for the model
 // the Moon set has one collection and one type: no scope to choose, no filters sent
 const NO_SCOPE = { filters: () => ({}), label: () => 'All tiles', count: 0, isOpen: false, toggle() {} };
 
@@ -110,19 +113,28 @@ async function postSearch(query, filters) {
 
 const MB = (b) => Math.round(b / 1e6).toLocaleString();
 
-// The static site's model download: what is happening, how far along, and that it happens once.
+// The static site's model: nothing downloads until someone asks for a search of their own, then the
+// page says what it costs and waits for a yes. Shows what is happening and how far along it is.
 function renderModelStatus(s) {
   const el = $('model-status');
   el.hidden = false;
+  el.classList.remove('is-done');
   el.dataset.state = s.state;
   const via = s.device === 'webgpu' ? 'on this computer’s GPU' : 'on this computer’s processor';
-  let text, note = '';
-  if (s.state === 'downloading') {
-    text = s.cached ? `Loading the search model from this browser · ${MB(s.loaded)} of ${MB(s.total)} MB`
-      : `Downloading the search model · ${MB(s.loaded)} of ${MB(s.total)} MB`;
-    note = s.cached ? '' : 'Once only: the browser keeps it for your next visit. The suggested searches work now.';
+  const waiting = pendingQuery ? `Then it searches for “${pendingQuery}”.` : '';
+  let text = '', note = '';
+  if (s.state === 'asking') {
+    text = `Your own searches need the search model: a one-time download of ${MB(modelPlan.bytes)}\u00a0MB.`;
+    note = 'The browser keeps it for your next visit. The suggested searches work without it.';
+  } else if (s.state === 'downloading') {
+    text = s.cached ? `Loading the search model from this browser · ${MB(s.loaded)} of ${MB(s.total)}\u00a0MB`
+      : `Downloading the search model · ${MB(s.loaded)} of ${MB(s.total)}\u00a0MB`;
+    note = waiting;
   } else if (s.state === 'preparing') {
     text = 'Preparing the search model…';
+    note = waiting;
+  } else if (s.state === 'idle') {
+    // only the suggested searches
   } else if (s.state === 'ready') {
     text = `Search model ready · EmbeddingGemma 2, running ${via}`;
     setTimeout(() => el.classList.add('is-done'), 2500);
@@ -132,8 +144,14 @@ function renderModelStatus(s) {
   }
   $('model-text').textContent = text;
   $('model-note').textContent = note;
+  $('model-ask').hidden = s.state !== 'asking';
   $('model-bar').style.transform = `scaleX(${s.total ? Math.min(1, s.loaded / s.total) : 0})`;
   $('suggest').hidden = s.state === 'ready';
+  if (s.state === 'ready' && pendingQuery) {
+    const q = pendingQuery;
+    pendingQuery = null;
+    if (input.value.trim() === q) $('ask').requestSubmit();
+  }
 }
 
 function renderSuggestions(qs) {
@@ -231,6 +249,11 @@ async function submit(e) {
     result.onTimeline = onTimeline;
     result.yearSet = !!scope.years;
   } catch (err) {
+    if (err instanceof ModelNeeded) {   // static site: ask before downloading, then run this search
+      pendingQuery = err.query;
+      renderModelStatus(err.status.state === 'idle' ? { ...err.status, state: 'asking' } : err.status);
+      return;
+    }
     showError(err.message);
     return;
   } finally {
@@ -390,10 +413,15 @@ async function main() {
   detail = new Detail(items, $('detail'), () => document.body.classList.remove('detail-open'),
     { placards: !(meta.static && meta.static.placards === false) });
   if (meta.static) {
-    const engine = await StaticSearch.create(meta, items, xyz, renderModelStatus);
+    engine = await StaticSearch.create(meta, items, xyz, renderModelStatus);
     search = (q, f) => engine.search(q, f);
     renderSuggestions(engine.suggestions);
     window.__static = engine;   // test handle
+    $('model-download').addEventListener('click', () => engine.startModel());
+    $('model-later').addEventListener('click', () => { pendingQuery = null; renderModelStatus(engine.status); input.focus(); });
+    modelPlan = await engine.plan();
+    if (modelPlan.cached) engine.startModel();   // already in this browser: nothing to ask
+    else renderModelStatus(engine.status);
   }
   tip = new Tip(items, $('dot-tip'));
   if (meta.globe) {

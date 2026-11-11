@@ -40,8 +40,9 @@ Search runs in the visitor's browser:
 - EmbeddingGemma 2 (ONNX, [Transformers.js](https://huggingface.co/docs/transformers.js)) embeds the query, then
   JavaScript searches the stored vectors.
 - With WebGPU it runs the q8 build (346 MB). Without WebGPU it runs fp16 on the CPU (575 MB).
-- The model downloads from Hugging Face on the first visit and the browser keeps it afterwards.
-- A few suggested searches carry precomputed vectors, so they work while it downloads.
+- Nothing downloads when a page opens. The first time someone types their own search, the page states the size
+  and asks; the model then comes from Hugging Face and the browser keeps it, so later visits skip the question.
+- A few suggested searches carry precomputed vectors, so they work without the model.
 - The results match the server's: `reports/static_parity.md`.
 
 ```bash

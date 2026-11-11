@@ -5,6 +5,7 @@ from __future__ import annotations
 import base64
 import json
 import os
+import re
 import urllib.request
 
 import numpy as np
@@ -12,6 +13,13 @@ import pytest
 
 MODEL_E2E = os.environ.get("RUN_MODEL_E2E") == "1"
 MODEL_TIMEOUT_MS = 20 * 60 * 1000   # first download over a slow line
+
+
+MODEL_HOSTS = ("huggingface.co", "cdn.jsdelivr.net")   # the model and its runtime
+
+
+def model_requests(page) -> list[str]:
+    return [u for u in page.requests if any(h in u for h in MODEL_HOSTS)]
 
 
 def fetch(url: str) -> bytes:
@@ -75,6 +83,8 @@ def test_suggested_search_without_the_model(page, site_url, collection, query):
     assert got["weak"] is weak is False
     assert page.evaluate("document.querySelectorAll('#wall .piece, #wall [data-index]').length") >= 1
     assert not any("/audio/aic/" in u for u in page.requests)
+    assert page.evaluate("window.__static.status.state") == "idle"
+    assert not model_requests(page), model_requests(page)   # suggested searches never fetch the model
 
 
 def test_placard_uses_thumbnail_only(page, site_url):
@@ -87,27 +97,38 @@ def test_placard_uses_thumbnail_only(page, site_url):
     assert not any("/media/" in u for u in page.requests), [u for u in page.requests if "/media/" in u]
 
 
-def test_free_text_before_the_model_is_ready_says_so(page, site_url):
+def test_own_search_asks_before_downloading(page, site_url):
     open_set(page, site_url + "gallery/")
-    state = page.evaluate("window.__static.status.state")
-    if state == "ready":
-        pytest.skip("model already loaded from this browser's cache")
+    assert page.evaluate("window.__static.status.state") == "idle"
     page.fill("#q", "a lighthouse at dusk")
     page.press("#q", "Enter")
-    page.wait_for_selector("#ask-error:not([hidden])", timeout=10000)
-    assert "still loading" in page.inner_text("#ask-error")
+    page.wait_for_selector("#model-ask:not([hidden])", timeout=10000)
+    text = page.text_content("#model-text")
+    assert re.search(r"one-time download of [\d,]+\u00a0MB\.$", text), text   # the size, never split from "MB"
     assert page.evaluate("window.__gallery.phase") == "idle"
+    assert page.is_hidden("#ask-error")
+    page.click("#model-later")
+    assert page.is_hidden("#model-ask")
+    page.wait_for_timeout(1000)
+    assert page.evaluate("window.__static.status.state") == "idle"
+    assert not model_requests(page), model_requests(page)   # nothing downloaded without a yes
 
 
 @pytest.mark.skipif(not MODEL_E2E, reason="downloads the model (hundreds of MB); set RUN_MODEL_E2E=1")
 def test_free_text_search_with_the_model(page, site_url):
     open_set(page, site_url + "gallery/")
-    page.wait_for_function("window.__static.status.state === 'ready' || window.__static.status.state === 'failed'",
-                           timeout=MODEL_TIMEOUT_MS)
+    query = "a painting by Winslow Homer of the sea"
+    page.fill("#q", query)
+    page.press("#q", "Enter")
+    page.click("#model-download")
+    # the search waits for the model, then runs by itself
+    page.wait_for_function(
+        "q => (window.__gallery.phase === 'wall' && window.__gallery.lastResult.query === q)"
+        " || window.__static.status.state === 'failed'", arg=query, timeout=MODEL_TIMEOUT_MS)
     status = page.evaluate("window.__static.status")
     assert status["state"] == "ready", status
     assert "Search model ready" in page.inner_text("#model-text")
-    got = ask(page, "a painting by Winslow Homer of the sea")
+    got = page.evaluate("window.__gallery.lastResult")
     # the server's answer (reports/static_parity.md), less the AIC audio guide the public site leaves out
     server = ["wiki:313284:0", "aic:16818", "wiki:313284:1", "aic:8971", "aic:110507", "aic:16815",
               "aic:84088", "aic:68792", "aic:14309", "aic:25865", "aic:16779"]

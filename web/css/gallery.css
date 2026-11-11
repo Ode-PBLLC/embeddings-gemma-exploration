@@ -128,12 +128,25 @@ body:not([data-phase="idle"]) .ask-hint { opacity: 0; }
 .model-status { margin: 12px auto 0; max-width: 440px; transition: opacity var(--slow) var(--ease); }
 .model-status.is-done { opacity: 0; pointer-events: none; }
 .model-status[hidden] { display: none; }
-.model-text { margin: 0; font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.model-text { margin: 0; font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; text-wrap: balance; }
 .model-track { height: 2px; margin: 8px auto 0; background: var(--rule); border-radius: 1px; overflow: hidden; }
 .model-bar { height: 100%; background: var(--ink-2); transform: scaleX(0); transform-origin: left; transition: transform 200ms linear; }
 .model-status[data-state="ready"] .model-track, .model-status[data-state="failed"] .model-track { visibility: hidden; }
+.model-status[data-state="idle"] .model-text, .model-status[data-state="idle"] .model-track,
+.model-status[data-state="asking"] .model-track { display: none; }
+.model-ask { margin-top: 10px; display: flex; justify-content: center; gap: 8px; }
+.model-ask[hidden] { display: none; }
+.model-btn {
+  font-family: var(--sans); font-size: 10.5px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-2); background: var(--paper); border: 1px solid var(--rule); border-radius: 999px;
+  padding: 8px 16px; cursor: pointer; transition: border-color 160ms var(--ease), color 160ms var(--ease);
+}
+.model-btn:hover { border-color: #cfc8bb; color: var(--ink); }
+.model-btn.is-primary { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.model-btn.is-primary:hover { background: #3a352f; color: var(--paper); }
+.model-btn:focus-visible { outline: 2px solid var(--ink-2); outline-offset: 2px; }
 .model-status[data-state="failed"] .model-text { color: var(--alert); }
-.model-note { margin: 6px 0 0; font-size: 11px; line-height: 1.45; color: var(--ink-3); }
+.model-note { margin: 6px 0 0; font-size: 11px; line-height: 1.45; color: var(--ink-3); text-wrap: balance; }
 .model-note:empty { display: none; }
 .suggest { margin-top: 10px; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 6px; }
 .suggest[hidden] { display: none; }
