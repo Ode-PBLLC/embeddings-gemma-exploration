@@ -55,6 +55,26 @@ the `static-site` branch. Like the data release, the site leaves out the AIC aud
 larger placard images, so a placard shows the thumbnail. `scripts/embed_demo_queries.py` rebuilds the
 suggested searches' vectors.
 
+## Labelling in the cloud (prototype)
+
+A separate page turns the cloud into a tool for building a label tree. It has its own server and port, reads
+the gallery's files without changing them, and is not part of the static site.
+
+```bash
+scripts/serve_label.sh        # http://localhost:8010/label/
+```
+
+- **Select** a cluster by drawing around it (the button, or Shift-drag) and name it. The selection is checked against the full
+  768-d vectors: what sits together is ticked, what only lined up on screen is set aside.
+- **Sub-cluster** a label (Ward on its full vectors) and move the granularity slider; the dots recolour as it
+  moves. **Split by words** sorts a label by phrases with EmbeddingGemma ("gold coin, silver coin").
+- **Suggestions** come from the vote of a work's nearest neighbours and wait for a yes or no.
+- Everything saves to `data/labels/`: `labels.json` (the tree, one row per item, and the page's state) and
+  `label_rows.csv`. Each label records its source (person or suggestion), method, review and time.
+
+Code: `gallery.labeling` (numerics), `gallery.label_app` (API), `web_label/` (page). Checks:
+`tests/test_labeling.py`, `test_scripts/label_numeric_check.py`, `test_scripts/label_ui_check.py`.
+
 ## Using it
 
 - **Ask:** type a query and press Enter. A query with nothing close is flagged *Nothing close*.

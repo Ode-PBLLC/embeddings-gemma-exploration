@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Embedding Gallery · Labelling</title>
+  <!-- the gallery's own files (Cloud, fonts, bundle) are served from the root; this page lives at /label/ -->
+  <base href="/">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="label/label.css">
+  <script type="importmap">
+    { "imports": { "three": "/vendor/three/three.module.min.js" } }
+  </script>
+</head>
+<body>
+  <div id="stage" aria-label="The collection as a cloud of points"></div>
+  <canvas id="marks" aria-hidden="true"></canvas>
+
+  <div class="loading" id="loading">Hanging the collection…</div>
+
+  <aside class="side side-left" id="tree-panel" aria-label="Labels">
+    <p class="kicker">The Embedding Gallery · Labelling</p>
+    <p class="holdings" id="holdings">&nbsp;</p>
+    <div class="tree" id="tree" role="tree"></div>
+    <section class="node-actions" id="node-actions"></section>
+    <footer class="side-foot">
+      <p class="save-status" id="save-status">&nbsp;</p>
+      <p class="save-files">
+        <a class="text-btn" href="label/api/state" id="open-json" target="_blank" rel="noopener">Saved state</a>
+        <span id="save-path"></span>
+      </p>
+    </footer>
+  </aside>
+
+  <aside class="side side-right" id="tray" aria-label="Current step" hidden>
+    <div class="tray-head">
+      <span class="wall-kicker" id="tray-kicker"></span>
+      <button type="button" class="text-btn" id="tray-close">Close</button>
+    </div>
+    <div class="tray-body" id="tray-body"></div>
+  </aside>
+
+  <div class="tools" id="tools">
+    <button type="button" class="tool-btn" id="tool-select" aria-pressed="false">Select works</button>
+    <p class="tools-hint" id="tools-hint">or hold Shift and draw · drag to turn · scroll to zoom in on any spot</p>
+    <p class="ask-error" id="page-error" role="alert" hidden></p>
+  </div>
+
+  <aside class="detail" id="detail" aria-hidden="true">
+    <button type="button" class="text-btn detail-close" aria-label="Close">Close</button>
+    <div class="detail-body"></div>
+    <div class="detail-labels" id="detail-labels"></div>
+  </aside>
+
+  <div class="dot-tip" id="dot-tip" aria-hidden="true"></div>
+
+  <script type="module" src="/label/label.js"></script>
+</body>
+</html>
